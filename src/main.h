@@ -35,6 +35,9 @@
 #include <utility>
 #include <vector>
 
+#include <iostream>
+using namespace std;
+
 class CBlockIndex;
 class CBloomFilter;
 class CInv;
@@ -139,6 +142,31 @@ class CWalletInterface;
 struct CNodeStateStats;
 
 struct CBlockTemplate;
+
+
+
+
+
+template <class TblockValue>
+class nHeightDivided {
+    private:
+        TblockValue firstValue, secondValue;
+    public:
+        nHeightDivided (TblockValue a, TblockValue b):
+        firstValue(a), secondValue(b) { }
+        TblockValue devideValue();
+};
+
+template <class TblockValue>
+TblockValue nHeightDivided<TblockValue>::devideValue() {
+    return (firstValue/secondValue);
+}
+
+template <class UblockValue, class VblockValue>
+UblockValue SubsidyValue(UblockValue a, VblockValue b) {
+    return (a / b);
+}
+
 
 /** Register a wallet to receive updates from core */
 void RegisterWallet(CWalletInterface* pwalletIn);
