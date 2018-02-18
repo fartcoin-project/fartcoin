@@ -11,7 +11,6 @@
 
 #include "addrman.h"
 #include "alert.h"
-#include "blockreward.h"
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
