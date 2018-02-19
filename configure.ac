@@ -1,12 +1,12 @@
 dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
-define(_CLIENT_VERSION_MAJOR, 1)
-define(_CLIENT_VERSION_MINOR, 8)
-define(_CLIENT_VERSION_REVISION, 3)
+define(_CLIENT_VERSION_MAJOR, 0)
+define(_CLIENT_VERSION_MINOR, 9)
+define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2015)
-AC_INIT([Fartcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@fartcoin.com],[fartcoin])
+define(_COPYRIGHT_YEAR, 2018)
+AC_INIT([Fartcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[fartcoinproject@gmail.com],[fartcoin])
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
@@ -60,7 +60,7 @@ AC_ARG_ENABLE([upnp-default],
   [AS_HELP_STRING([--enable-upnp-default],
   [if UPNP is enabled, turn it on at startup (default is no)])],
   [use_upnp_default=$enableval],
-  [use_upnp_default=no])
+  [use_upnp_default=yes])
 
 AC_ARG_ENABLE(tests,
     AS_HELP_STRING([--enable-tests],[compile tests (default is yes)]),

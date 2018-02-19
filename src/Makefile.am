@@ -33,6 +33,7 @@ BITCOIN_CORE_H = \
   allocators.h \
   base58.h bignum.h \
   bloom.h \
+  blockreward.h \
   chainparams.h \
   checkpoints.h \
   checkqueue.h \

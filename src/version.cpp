@@ -13,7 +13,7 @@
 const std::string CLIENT_NAME("fartcoin");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "0.9"
+#define CLIENT_VERSION_SUFFIX   ""
 
 
 // The following part of the code determines the CLIENT_BUILD variable.
@@ -38,8 +38,8 @@ const std::string CLIENT_NAME("fartcoin");
 // git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#    define GIT_COMMIT_ID ""
-#    define GIT_COMMIT_DATE ""
+#    define GIT_COMMIT_ID "1001e25d739b1a4462f88a9661fe4d05cd9158b5"
+#    define GIT_COMMIT_DATE "Sun, 18 Feb 2018 21:29:01 +0100"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj,min,rev,build,suffix) \
