@@ -140,7 +140,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     QFont::insertSubstitution("Comic Sans MS", "Comic Neue");
 
     // Fartcoin: Specify Comic Sans as new font.
-    QFont newFont("Comic Sans MS", 13);
+    QFont newFont("Comic Sans MS", 11);
 
     // Fartcoin: Set new application font
     QApplication::setFont(newFont);
@@ -234,6 +234,8 @@ BitcoinGUI::~BitcoinGUI()
 void BitcoinGUI::createActions(bool fIsTestnet)
 {
     QActionGroup *tabGroup = new QActionGroup(this);
+
+	setIconSize(QSize(64, 64));
 
     overviewAction = new QAction(QIcon(":/icons/overview"), tr("&HOME"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));

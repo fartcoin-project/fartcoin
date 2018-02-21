@@ -124,10 +124,11 @@ OverviewPage::OverviewPage(QWidget *parent) :
     // Customized branding image.
     boost::filesystem::path fartpath = GetDataDir(false);
     fartpath /= "fartcoin.png";
-    QPixmap shibecoin(fartpath.string().c_str());
+    QPixmap farticle(fartpath.string().c_str());
 
-    if ( !shibecoin.isNull() ) {
-        ui->label_wallet_bgcoin->setPixmap(shibecoin);
+    if ( !farticle.isNull() ) {
+        ui->label_wallet_bgcoin->setPixmap(farticle);
+	
     }
 
     // start with displaying the "out of sync" warnings
