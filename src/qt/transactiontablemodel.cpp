@@ -28,10 +28,10 @@
 // Amount column is right-aligned it contains numbers
 static int column_alignments[] = {
         Qt::AlignLeft|Qt::AlignVCenter, /* status */
-        Qt::AlignLeft|Qt::AlignVCenter, /* date */
+        Qt::AlignLeft|Qt::AlignVCenter, /* amount */
         Qt::AlignLeft|Qt::AlignVCenter, /* type */
         Qt::AlignLeft|Qt::AlignVCenter, /* address */
-        Qt::AlignRight|Qt::AlignVCenter /* amount */
+        Qt::AlignRight|Qt::AlignVCenter /* date */
     };
 
 // Comparison operator for sort/binary search of model tx list
@@ -235,7 +235,7 @@ TransactionTableModel::TransactionTableModel(CWallet* wallet, WalletModel *paren
         walletModel(parent),
         priv(new TransactionTablePriv(wallet, this))
 {
-    columns << QString() << tr("Amount of Farts") << tr("Transaction Type") << tr("Fart Address") << tr("Date of Fart");
+    columns << QString() << tr("Farts") << tr("Transaction Type") << tr("Fart Address") << tr("Date of Fart");
 
     priv->refreshWallet();
 

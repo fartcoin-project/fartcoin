@@ -18,8 +18,8 @@
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
-#define DECORATION_SIZE 80
-#define NUM_ITEMS 5
+#define DECORATION_SIZE 64
+#define NUM_ITEMS 6
 
 class TxViewDelegate : public QAbstractItemDelegate
 {
@@ -127,7 +127,9 @@ OverviewPage::OverviewPage(QWidget *parent) :
     QPixmap farticle(fartpath.string().c_str());
 
     if ( !farticle.isNull() ) {
-        ui->label_wallet_bgcoin->setPixmap(farticle);
+	    
+	ui->label_wallet_bgcoin->setPixmap(farticle);
+	
 	
     }
 
