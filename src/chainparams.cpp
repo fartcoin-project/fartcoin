@@ -80,7 +80,7 @@ public:
         assert(hashGenesisBlock == uint256("0x30ab0676db11ce93d84e1ed42699cda2f8c118146e1eb42e51acc1f822f09da5"));
         assert(genesis.hashMerkleRoot == uint256("0x12078fb53a2b671d420729221dfb16e561774f1dc5633f83ddae3b4f9a164352"));
 
-        vSeeds.push_back(CDNSSeedData("fartcoin.com", "86.92.161.182"));
+        vSeeds.push_back(CDNSSeedData("omariskandarani.com", "dnsseed.omariskandarani.com"));
 
 
         // Workaround for Boost not being quite compatible with C++11;
@@ -152,7 +152,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testfart", "86.92.161.182"));
+        vSeeds.push_back(CDNSSeedData("testfartomariskandarani.com", "testnet.omariskandarani.com"));
 
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;

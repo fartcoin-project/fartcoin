@@ -28,6 +28,7 @@ src/qt/test/moc*.cpp
 
 db-5.1.29.NC/*
 db5/*
+fartcoin-seeder/*
 
 .deps
 .dirstamp
