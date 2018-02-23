@@ -234,6 +234,7 @@ TransactionTableModel::TransactionTableModel(CWallet* wallet, WalletModel *paren
         wallet(wallet),
         walletModel(parent),
         priv(new TransactionTablePriv(wallet, this))
+
 {
     columns << QString() << tr("Farts") << tr("Transaction Type") << tr("Fart Address") << tr("Date of Fart");
 
@@ -283,6 +284,8 @@ QString TransactionTableModel::formatTxStatus(const TransactionRecord *wtx) cons
 
     switch(wtx->status.status)
     {
+
+
     case TransactionStatus::OpenUntilBlock:
         status = tr("Open for %n more block(s)","",wtx->status.open_for);
         break;

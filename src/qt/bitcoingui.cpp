@@ -121,6 +121,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
         /** Create wallet frame and make it the central widget */
         walletFrame = new WalletFrame(this);
         setCentralWidget(walletFrame);
+	walletFrame->setStyleSheet("WalletFrame { background: #111111 url(:/images/wallet_bgsplash) no-repeat; background-position: bottom left;  border: 1px solid grey; border-radius: 7px; }");
     } else
 #endif
     {
@@ -140,7 +141,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     QFont::insertSubstitution("Comic Sans MS", "Comic Neue");
 
     // Fartcoin: Specify Comic Sans as new font.
-    QFont newFont("Comic Sans MS", 11);
+    QFont newFont("Comic Sans MS", 10);
 
     // Fartcoin: Set new application font
     QApplication::setFont(newFont);
@@ -234,7 +235,7 @@ BitcoinGUI::~BitcoinGUI()
 void BitcoinGUI::createActions(bool fIsTestnet)
 {
     QActionGroup *tabGroup = new QActionGroup(this);
-
+	
 	setIconSize(QSize(64, 64));
 
     overviewAction = new QAction(QIcon(":/icons/overview"), tr("&HOME"), this);

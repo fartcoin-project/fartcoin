@@ -38,6 +38,7 @@ public:
         QIcon icon = qvariant_cast<QIcon>(index.data(Qt::DecorationRole));
         QRect mainRect = option.rect;
         QRect decorationRect(mainRect.topLeft(), QSize(DECORATION_SIZE, DECORATION_SIZE));
+        
         int xspace = DECORATION_SIZE + 6;
         int ypad = 6;
         int halfheight = (mainRect.height() - 2*ypad)/2;
@@ -114,12 +115,14 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
+    
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
+
 
     // Customized branding image.
     boost::filesystem::path fartpath = GetDataDir(false);
@@ -132,6 +135,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
 	
 	
     }
+
 
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);

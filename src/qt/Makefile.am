@@ -331,6 +331,7 @@ RES_IMAGES = \
   res/images/splash.png \
   res/images/splash_testnet.png \
   res/images/paper_wallet.png \
+  res/images/wallet_bgsplash.png \
   res/images/wallet_bgcoin.png
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
