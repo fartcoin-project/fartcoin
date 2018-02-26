@@ -8,7 +8,7 @@
 using namespace std;
 using namespace boost;
 
-unsigned char pchMergedMiningHeader[] = { 0xfa, 0xbe, 'm', 'm' } ;
+unsigned char pchMergedMiningHeader[] = { 0xf2, 0xc1, 0xbf, 0xdb } ;
 
 void RemoveMergedMiningHeader(vector<unsigned char>& vchAux)
 {
