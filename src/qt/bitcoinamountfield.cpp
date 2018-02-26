@@ -70,6 +70,9 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent) :
     unit = new QValueComboBox(this);
     unit->setModel(new BitcoinUnits(this));
     layout->addWidget(unit);
+    unit->setStyleSheet("background-color: rgba(255, 255, 255, 100%); color: #333333; ");
+    unit->setMinimumWidth(80);
+    unit->setMaximumWidth(120);
     layout->addStretch(1);
     layout->setContentsMargins(0,0,0,0);
 

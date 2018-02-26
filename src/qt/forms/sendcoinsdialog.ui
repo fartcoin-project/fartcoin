@@ -19,6 +19,10 @@
    </property>
    <item>
     <widget class="QFrame" name="frameCoinControl">
+<!-- Set the background to 60% with white border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
+            </property>
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -605,10 +609,18 @@
    </item>
    <item>
     <widget class="QScrollArea" name="scrollArea">
+<!-- Set the background to 0% of area with no border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%);  border: 0px;  </string>
+            </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
      <widget class="QWidget" name="scrollAreaWidgetContents">
+<!-- Set the background to 60% with white border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
+            </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -658,6 +670,10 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="sendButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -681,6 +697,10 @@
      </item>
      <item>
       <widget class="QPushButton" name="clearButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -705,8 +725,13 @@
        </property>
       </widget>
      </item>
+
      <item>
       <widget class="QPushButton" name="addButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
        </property>
@@ -735,6 +760,7 @@
        </property>
       </spacer>
      </item>
+
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <property name="spacing">
@@ -742,6 +768,10 @@
        </property>
        <item>
         <widget class="QLabel" name="label">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -755,6 +785,10 @@
        </item>
        <item>
         <widget class="QLabel" name="labelBalance">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -774,6 +808,7 @@
        </item>
       </layout>
      </item>
+
     </layout>
    </item>
   </layout>

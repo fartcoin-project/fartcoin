@@ -21,7 +21,7 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop:0 #F0D0A0, stop:1 #F8D488); color:#000000;</string>
+      <string notr="true">border: 1px solid grey; border-radius: 7px; color:#000000; </string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -50,7 +50,7 @@
             <item>
              <widget class="QLabel" name="label_5">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px; </string>
               </property>
               <property name="font">
                <font>
@@ -70,7 +70,7 @@
                <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Fartcoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
-               <string notr="true">QLabel { color: red; background-color: rgba(0, 0, 0, 0%); }</string>
+               <string notr="true">QLabel { color: red; background-color: rgba(0, 0, 0, 0%); border: 0px; }</string>
               </property>
               <property name="text">
                <string notr="true">(out of sync)</string>
@@ -113,7 +113,7 @@
             <item row="0" column="0">
              <widget class="QLabel" name="label">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px; </string>
               </property>
               <property name="text">
                <string>Available:</string>
@@ -124,7 +124,7 @@
             <item row="0" column="1">
              <widget class="QLabel" name="labelBalance">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; border: 0px; </string>
               </property>
               <property name="font">
                <font>
@@ -153,7 +153,7 @@
             <item row="1" column="0">
              <widget class="QLabel" name="label_3">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; border: 0px; </string>
               </property>
               <property name="text">
                <string>Pending:</string>
@@ -164,7 +164,7 @@
             <item row="1" column="1">
              <widget class="QLabel" name="labelUnconfirmed">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%);  color: #DDDDDD; border: 0px; </string>
               </property>
               <property name="font">
                <font>
@@ -193,7 +193,7 @@
             <item row="2" column="0">
              <widget class="QLabel" name="labelImmatureText">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px; </string>
               </property>
               <property name="text">
                <string>Immature:</string>
@@ -204,7 +204,7 @@
             <item row="2" column="1">
              <widget class="QLabel" name="labelImmature">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px; </string>
               </property>
               <property name="font">
                <font>
@@ -230,7 +230,7 @@
             <item row="4" column="0">
              <widget class="QLabel" name="labelTotalText">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;  </string>
               </property>
               <property name="text">
                <string>Total:</string>
@@ -241,7 +241,7 @@
             <item row="4" column="1">
              <widget class="QLabel" name="labelTotal">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px; </string>
               </property>
               <property name="font">
                <font>
@@ -270,7 +270,7 @@
             <item row="3" column="0" colspan="2">
              <widget class="Line" name="line">
               <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  </string>
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px; </string>
               </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -297,7 +297,7 @@
          </layout>
 
             <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 40%); </string>             
+             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA;</string>             
             </property>
 
         </widget>
@@ -355,7 +355,7 @@
             <item>
              <widget class="QLabel" name="label_4">
             <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;</string>
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;</string>
             </property>
               <property name="text">
                <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
@@ -368,7 +368,7 @@
                <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Fartcoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
-               <string notr="true">QLabel { background-color: rgba(0, 0, 0, 0%); color: red; }</string>
+               <string notr="true">QLabel { background-color: rgba(0, 0, 0, 0%); color: red; border: 0px; }</string>
               </property>
               <property name="text">
                <string notr="true">(out of sync)</string>
@@ -396,7 +396,7 @@
           <item>
            <widget class="QListView" name="listTransactions">
             <property name="styleSheet">
-             <string notr="true"> background-color: rgba(255, 255, 255, 0%); color: #DDDDDD;  </string>
+             <string notr="true"> background-color: rgba(255, 255, 255, 0%); color: #DDDDDD;  border: 0px; </string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -414,7 +414,7 @@
           </item>
          </layout>
             <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 40%); </string>
+             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA;  </string>
             </property>
         </widget>
        </item>

@@ -2,6 +2,10 @@
 <ui version="4.0">
  <class>SendCoinsEntry</class>
  <widget class="QStackedWidget" name="SendCoinsEntry">
+<!-- Set the background to 0% with no-border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 40%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
+            </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -32,6 +36,10 @@
     </property>
     <item row="0" column="0">
      <widget class="QLabel" name="payToLabel">
+<!-- Set the background to 0% with no-border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%); border: 0px; color: #DDDDDD; </string>
+	    </property>
       <property name="text">
        <string>Pay &amp;To:</string>
       </property>
@@ -51,7 +59,7 @@
       <item>
        <widget class="QValidatedLineEdit" name="payTo">
         <property name="toolTip">
-         <string>The address to send the payment to (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</string>
+         <string>The address to send the payment to (e.g. FHN3ZNETUqim2aenVwyQH6WBjgBi6NAM5M)</string>
         </property>
        </widget>
       </item>
@@ -107,6 +115,10 @@
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="labellLabel">
+<!-- Set the background to 0% with no-border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%); border: 0px; color: #DDDDDD; </string>
+	    </property>
       <property name="text">
        <string>&amp;Label:</string>
       </property>
@@ -120,6 +132,7 @@
     </item>
     <item row="1" column="1">
      <widget class="QLineEdit" name="addAsLabel">
+
       <property name="toolTip">
        <string>Enter a label for this address to add it to the list of used addresses</string>
       </property>
@@ -127,6 +140,10 @@
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="amountLabel">
+<!-- Set the background to 0% with no-border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%); border: 0px; color: #DDDDDD; </string>
+	    </property>
       <property name="text">
        <string>A&amp;mount:</string>
       </property>
@@ -648,6 +665,10 @@
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="amountLabel_is">
+<!-- Set the background to 0% with no-border -->
+            <property name="styleSheet">
+             <string notr="true"> background-color: rgba(0, 0, 0, 0%); border: 0px; color: #DDDDDD; </string>
+	    </property>
       <property name="text">
        <string>A&amp;mount:</string>
       </property>

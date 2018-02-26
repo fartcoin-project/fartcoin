@@ -22,6 +22,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
     ui->setupUi(this);
 
     setCurrentWidget(ui->SendCoins);
+    ui->SendCoins->setStyleSheet("SendCoins { background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; padding: 1px; text-align: center; }");
 
 #ifdef Q_OS_MAC
     ui->payToLayout->setSpacing(4);

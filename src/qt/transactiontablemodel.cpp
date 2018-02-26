@@ -234,10 +234,11 @@ TransactionTableModel::TransactionTableModel(CWallet* wallet, WalletModel *paren
         wallet(wallet),
         walletModel(parent),
         priv(new TransactionTablePriv(wallet, this))
+ 
 
 {
     columns << QString() << tr("Farts") << tr("Transaction Type") << tr("Fart Address") << tr("Date of Fart");
-
+     
     priv->refreshWallet();
 
     connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
