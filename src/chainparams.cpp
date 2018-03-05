@@ -81,7 +81,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x12078fb53a2b671d420729221dfb16e561774f1dc5633f83ddae3b4f9a164352"));
 
         vSeeds.push_back(CDNSSeedData("omariskandarani.com", "dnsseed.omariskandarani.com"));
-        vSeeds.push_back(CDNSSeedData("FartcoinHome", "86.92.161.182"));
+       
 
 
         // Workaround for Boost not being quite compatible with C++11;
