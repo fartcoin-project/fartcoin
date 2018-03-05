@@ -11,6 +11,7 @@
 
 #include "addrman.h"
 #include "alert.h"
+#include "blockreward.h"
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
@@ -1245,7 +1246,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
     // After block 10.000.000 block reward stays at 1 FART per block
     int64_t nSubsidy = 1 * COIN;
-	
+
     if(nHeight < 11)
     {
 	int64_t minsub = 1000000 * COIN;

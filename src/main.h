@@ -15,7 +15,6 @@
 #endif
 
 #include "bignum.h"
-#include "blockreward.h"
 #include "chainparams.h"
 #include "coins.h"
 #include "core.h"
@@ -140,9 +139,6 @@ class CWalletInterface;
 struct CNodeStateStats;
 
 struct CBlockTemplate;
-
-
-
 
 /** Register a wallet to receive updates from core */
 void RegisterWallet(CWalletInterface* pwalletIn);

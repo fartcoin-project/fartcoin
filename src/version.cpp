@@ -10,10 +10,10 @@
 // Name of client reported in the 'version' message. Report the same name
 // for both fartcoind and fartcoin-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("flatulence");
+const std::string CLIENT_NAME("fartcoin");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   ""
+#define CLIENT_VERSION_SUFFIX   "0.9"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.

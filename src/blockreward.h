@@ -1,11 +1,10 @@
-// Copyright (c) 2018 The Fartcoin developer
-
+// Copyright (c)      2018 The Fartcoin developer
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include <iostream>
+
 using namespace std;
 
-
-// calculate double HeightDevided where nHeight is divided by total coins 
-// We need a double because the awser is always between 0 and 1  
 template <class TblockValue>
 class nHeightDivided {
     private:
@@ -21,9 +20,9 @@ TblockValue nHeightDivided<TblockValue>::devideValue() {
     return (firstValue/secondValue);
 }
 
-// Devide int_64t nSubsidy by double HeightDevided for the final blockreward
 template <class UblockValue, class VblockValue>
 UblockValue SubsidyValue(UblockValue a, VblockValue b) {
     return (a / b);
 }
+
 
