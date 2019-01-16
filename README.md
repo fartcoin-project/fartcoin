@@ -14,6 +14,9 @@ Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as it
 
 With every block mined the reward drops, this means that instead of halving the reward suddenly every 200k blocks Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
 ```
+BlockReward= 100.000.000*COIN / ( height / 10.000.000)
+```
+```
 Calculate the exact reward per Block: 
 https://github.com/fartcoin-project/Calculate_FART_Mining_Reward 
 ```
