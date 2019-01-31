@@ -48,3 +48,9 @@ Fartcoin uses a simplified variant of the scrypt key derivation function as its 
 ### Used ports
 P2P 9339
 
+To Mine the coin you should connect to the Fartcoin mining pool 
+Download the latest miner: https://github.com/pooler/cpuminer/releases
+
+Windows: run the miner in CMD
+minerd.exe -a scrypt -o stratum+tcp://fartcoin-project.com:4444  -O YOUR_FARTCOIN_ADDRESS:x
+
