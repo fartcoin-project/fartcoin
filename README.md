@@ -6,7 +6,13 @@
 
 
 ## What is ƒartcoin? 
-Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Fartcoin, Fartcoin currently employs a simplified variant of scrypt.
+Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Litecoin & Dogecoin, Fartcoin currently employs a simplified variant of scrypt.
+
+This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is in Alpha state and thus the Blockchain might be rebuild / restarted at the official launch.
+
+ The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are not 24/7 online.  
+
+Please do not mine or trade Fartcoins, since you might lose them. 
 
 ## Frequently Asked Questions
 
@@ -40,17 +46,18 @@ After block 10 million a fixed reward of 1 FART per block
 Year20 = 166,953,113 FartCoins = block 10512000 
 ```
 
-
-
 ### How to get ƒartcoins?
-Fartcoin uses a simplified variant of the scrypt key derivation function as its proof of work with a target time of one minute per block and difficulty readjustment after 24 hours. 
+You can mine Fartcoins with your fartcoin-core wallet 
+or you can trade Fartcoin at www.MemesExchange.com 
 
 ### Used ports
 P2P 9339
 
-To Mine the coin you should connect to the Fartcoin mining pool 
+### Mining Fartcoins
 
-Download the latest miner: https://github.com/pooler/cpuminer/releases
+To Mine the coin you should connect to the Fartcoin mining pool
+
+Download a miner: https://github.com/pooler/cpuminer/releases
 
 Windows: run the miner in CMD
 
