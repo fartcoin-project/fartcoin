@@ -1,0 +1,16 @@
+--- 
+name: fartcoin
+urls:
+- http://example.org/fartcoin-latest-linux-gitian.zip
+rss:
+- url: http://sourceforge.net/projects/fartcoin/rss
+  xpath: //item/link/text()
+  pattern: fartcoin-\d+.\d+.\d+-linux-gitian.zip
+signers:
+ 
+  D8BD98EE35F7A990303B4D5420A93DED3979D75C:
+    weight: 120
+    name: "Omar Iskandarani"
+    key: 2F63DD8A002D102A
+  
+minimum_weight: 120
