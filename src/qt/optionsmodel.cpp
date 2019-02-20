@@ -67,6 +67,7 @@ void OptionsModel::Init()
 
     if (!settings.contains("strThirdPartyTxUrls"))
         settings.setValue("strThirdPartyTxUrls", "http://www.fartcoin-project.com:11337/tx/%s");
+
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
