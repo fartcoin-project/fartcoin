@@ -347,7 +347,7 @@ QString TransactionTableModel::lookupAddress(const std::string &address, bool to
     }
     if(label.isEmpty() || walletModel->getOptionsModel()->getDisplayAddresses() || tooltip)
     {
-        description += QString("(") + QString::fromStdString(address) + QString(")");
+        description += QString(" ") + QString::fromStdString(address) + QString(" ");
     }
     return description;
 }
@@ -437,7 +437,7 @@ QString TransactionTableModel::formatTxAmount(const TransactionRecord *wtx, bool
     {
         if(!wtx->status.countsForBalance)
         {
-            str = QString("[") + str + QString("]");
+            str =  str ;
         }
     }
     return QString(str);

@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../bitcoin.qrc">:/images/about</pixmap>
+      <pixmap resource="../fartcoin.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -47,8 +47,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>659</width>
-          <height>348</height>
+          <width>572</width>
+          <height>350</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -89,6 +89,7 @@
   </layout>
  </widget>
  <resources>
+  <include location="../fartcoin.qrc"/>
   <include location="../bitcoin.qrc"/>
  </resources>
  <connections>

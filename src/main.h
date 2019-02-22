@@ -71,9 +71,9 @@ static const int64_t DUST_HARD_LIMIT = 1000000;
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 30;
 /** Coinbase maturity after block 1000 **/
-static const int COINBASE_MATURITY_NEW = 200;
+static const int COINBASE_MATURITY_NEW = 50;
 /** Block at which COINBASE_MATURITY_NEW comes into effect **/
-static const int COINBASE_MATURITY_SWITCH = 1000;
+static const int COINBASE_MATURITY_SWITCH = 1337;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */

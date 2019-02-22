@@ -132,16 +132,14 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
     }
     
     // Fartcoin: load fallback font in case Comic Sans is not availble on the system
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Bold");
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Bold-Oblique");
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Light");
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Light-Oblique");
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Regular");
-    QFontDatabase::addApplicationFont(":fonts/ComicNeue-Regular-Oblique");
-    QFont::insertSubstitution("Comic Sans MS", "Comic Neue");
+    QFontDatabase::addApplicationFont(":fonts/impact");
+    QFontDatabase::addApplicationFont(":fonts/Impacted");
+    QFontDatabase::addApplicationFont(":fonts/unicode.impact");
+
+    QFont::insertSubstitution("Impacted", "impact");
 
     // Fartcoin: Specify Comic Sans as new font.
-    QFont newFont("Comic Sans MS", 10);
+    QFont newFont("Impacted", 14);
 
     // Fartcoin: Set new application font
     QApplication::setFont(newFont);

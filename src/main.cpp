@@ -59,9 +59,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64_t CTransaction::nMinTxFee = 100000000;  // Override with -mintxfee
+int64_t CTransaction::nMinTxFee = 1000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-int64_t CTransaction::nMinRelayTxFee = 100000000;
+int64_t CTransaction::nMinRelayTxFee = 1000000;
 
 struct COrphanBlock {
     uint256 hashBlock;
@@ -1247,61 +1247,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     // After block 10.000.000 block reward stays at 1 FART per block
     int64_t nSubsidy = 1 * COIN;
 
-    if(nHeight < 11)
-    {
-	int64_t minsub = 1000000 * COIN;
-        nHeightDivided <double> obj(nHeight, 10);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    }
-
-    else if(nHeight < 101)
-    {
-	int64_t minsub = 100000 * COIN;
-        nHeightDivided <double> obj(nHeight, 100);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    } 
-
-    else if(nHeight < 1001)
-    {
-	int64_t minsub = 10000 * COIN;
-        nHeightDivided <double> obj(nHeight, 1000);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-		
-    }
-
-    else if(nHeight < 10001)
-    {
-	int64_t minsub = 1000 * COIN;
-        nHeightDivided <double> obj(nHeight, 10000);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    }
-
-    else if(nHeight < 100001)
-    {
-	int64_t minsub = 100 * COIN;
-        nHeightDivided <double> obj(nHeight, 100000);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    }
-
-    else if(nHeight < 1000001)
-    {
-	int64_t minsub = 10 * COIN;
-        nHeightDivided <double> obj(nHeight, 1000000);
-        double heightresult = obj.devideValue();
-        nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    }
-
-    else if(nHeight < 10000001)
+    if(nHeight < 10000001)
     {
 	int64_t minsub = 1 * COIN;
         nHeightDivided <double> obj(nHeight, 10000000);
@@ -1319,9 +1265,9 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan = 12 * 3600 ; // Fartcoin: every 12 hours
-static const int64_t nTargetTimespanNEW = 3600 ; // Fartcoin: every 1 hour
-static const int64_t nTargetSpacing = 30; // Fartcoin: 1 minute per block
+static const int64_t nTargetTimespan =  3600 ; // Fartcoin: every hour
+static const int64_t nTargetTimespanNEW = 1800 ; // Fartcoin: every 30 min
+static const int64_t nTargetSpacing = 60; // Fartcoin: 1 minute per block
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 static const int64_t nDiffChangeTarget = 100000; // Patch effective @ block 100000

@@ -77,7 +77,7 @@ public:
         QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
         if(!confirmed)
         {
-            amountText = QString("[") + amountText + QString("]");
+            amountText = QString(" ") + amountText + QString(" ");
         }
         painter->drawText(amountRect, Qt::AlignRight|Qt::AlignVCenter, amountText);
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
+    <width>1076</width>
     <height>319</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/about</pixmap>
+      <pixmap resource="../fartcoin.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -114,7 +114,13 @@ This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard. Paper wallet art provided by Anacoluthia.</string>
+ The Fartcoin-Project consists of mutiple projects:  
+ www.fartcoin-project.com 
+ www.MemesExchange.com 
+ Fartcoin-Mining-Pool. 
+ Fartcoin Block Explorer 
+ This Fartcoin-Core wallet 
+ www.youtube.com/c/BitcoinDaytrader</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -152,7 +158,7 @@ This product includes software developed by the OpenSSL Project for use in the O
   </layout>
  </widget>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../fartcoin.qrc"/>
  </resources>
  <connections>
   <connection>

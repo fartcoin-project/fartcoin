@@ -19,10 +19,6 @@
    </property>
    <item>
     <widget class="QFrame" name="frameCoinControl">
-<!-- Set the background to 60% with white border -->
-            <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
-            </property>
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -34,6 +30,9 @@
        <width>16777215</width>
        <height>16777215</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -609,25 +608,23 @@
    </item>
    <item>
     <widget class="QScrollArea" name="scrollArea">
-<!-- Set the background to 0% of area with no border -->
-            <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 0%);  border: 0px;  </string>
-            </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: rgba(0, 0, 0, 0%);  border: 0px;  </string>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
      <widget class="QWidget" name="scrollAreaWidgetContents">
-<!-- Set the background to 60% with white border -->
-            <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
-            </property>
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>830</width>
-        <height>178</height>
+        <width>836</width>
+        <height>171</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> background-color: rgba(0, 0, 0, 60%); border-radius: 7px; border: 1px solid #AAAAAA; color: #DDDDDD; </string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
        <property name="leftMargin">
@@ -670,10 +667,6 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="sendButton">
-<!-- Background alpha of text set back to 0% -->
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-              </property>
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -683,11 +676,14 @@
        <property name="toolTip">
         <string>Confirm the send action</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+       </property>
        <property name="text">
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../fartcoin.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="default">
@@ -697,10 +693,6 @@
      </item>
      <item>
       <widget class="QPushButton" name="clearButton">
-<!-- Background alpha of text set back to 0% -->
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-              </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -710,11 +702,14 @@
        <property name="toolTip">
         <string>Clear all fields of the form.</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+       </property>
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../fartcoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -725,21 +720,19 @@
        </property>
       </widget>
      </item>
-
      <item>
       <widget class="QPushButton" name="addButton">
-<!-- Background alpha of text set back to 0% -->
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-              </property>
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
        </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../fartcoin.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -760,7 +753,6 @@
        </property>
       </spacer>
      </item>
-
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <property name="spacing">
@@ -768,15 +760,14 @@
        </property>
        <item>
         <widget class="QLabel" name="label">
-<!-- Background alpha of text set back to 0% -->
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-              </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
          </property>
          <property name="text">
           <string>Balance:</string>
@@ -785,10 +776,6 @@
        </item>
        <item>
         <widget class="QLabel" name="labelBalance">
-<!-- Background alpha of text set back to 0% -->
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-              </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -797,6 +784,9 @@
          </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
          </property>
          <property name="text">
           <string notr="true">123.456 BTC</string>
@@ -808,7 +798,6 @@
        </item>
       </layout>
      </item>
-
     </layout>
    </item>
   </layout>
@@ -821,7 +810,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../fartcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

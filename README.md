@@ -7,18 +7,18 @@
 
 ## What is ƒartcoin? 
 Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Litecoin & Dogecoin, Fartcoin currently employs a simplified variant of scrypt.
+This is the first alpha release of the fartcoin-core wallet. The fartcoin blockchain is implemented in the dogecoin-0.8.3 wallet and got a graphical upgrade to the "Space Police" theme.
 
-# The websites, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are build at home and are not 24/7 online. Please do not mine or trade Fartcoins, since you might lose them. 
+# The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are not 24/7 online.  Please do not mine or trade Fartcoins, since you might lose them. 
 
 This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is in Alpha state and thus the Blockchain might be rebuild / restarted at the official launch.
-
 
 
 ## Frequently Asked Questions
 
 ### How much ƒarticles will ever exist? 
 
-With every block mined the reward drops, this means that instead of halving the reward suddenly every 200k blocks Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
+The mining block reward is different from any other coin, since it is a reciprocal graph (y=1/x) it gradually decreases the mining reward every block. This means that instead of Bitcoin's bitshifting (halving the reward suddenly every 210k blocks) Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
 ```
 BlockReward= 100.000.000*COIN / ( height / 10.000.000)
 ```
@@ -51,7 +51,7 @@ You can mine Fartcoins with your fartcoin-core wallet
 or you can trade Fartcoin at www.MemesExchange.com 
 
 ### Used ports
-P2P 9339
+P2P 13377
 
 ### Mining Fartcoins
 
