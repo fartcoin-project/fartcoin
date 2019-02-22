@@ -8,11 +8,11 @@
 ## What is ƒartcoin? 
 Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Litecoin & Dogecoin, Fartcoin currently employs a simplified variant of scrypt.
 
+# The websites, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are build at home and are not 24/7 online. Please do not mine or trade Fartcoins, since you might lose them. 
+
 This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is in Alpha state and thus the Blockchain might be rebuild / restarted at the official launch.
 
- The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are not 24/7 online.  
 
-Please do not mine or trade Fartcoins, since you might lose them. 
 
 ## Frequently Asked Questions
 
