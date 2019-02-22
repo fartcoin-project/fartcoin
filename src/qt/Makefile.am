@@ -265,7 +265,7 @@ RES_ICONS = \
   res/icons/tx_mined.png
   
 RES_FONTS = \
-  res/fonts/Cunicode.impact.ttf \
+  res/fonts/unicode.impact.ttf \
   res/fonts/Impacted.ttf \
   res/fonts/impact.ttf \
   res/fonts/ComicNeue-Bold.ttf \
