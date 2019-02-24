@@ -13,7 +13,7 @@
 const std::string CLIENT_NAME("Space_Police");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "0.9.2"
+#define CLIENT_VERSION_SUFFIX   "0.9.3"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.

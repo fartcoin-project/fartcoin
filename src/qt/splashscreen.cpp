@@ -32,9 +32,9 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     float fontFactor            = 1.0;
 
     // define text to place
-    QString titleText       = tr("Flatulence");
-    QString versionText     = QString("Version v0.9");
-    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers\n")) + QChar(0xA9)+QString(" 2013-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Dogecoin Core developers\n")) + QChar(0xA9)+QString(" 2018 ") + QString(tr("The Fartcoin Core developer\n"));
+    QString titleText       = tr("Space_Police");
+    QString versionText     = QString("Version v0.9.3");
+    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers\n")) + QChar(0xA9)+QString(" 2013-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Dogecoin Core developers\n")) + QChar(0xA9)+QString(" 2018-%1 ").arg(COPYRIGHT_YEAR)  + QString(tr("The Fartcoin Core developer\n"));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Comic Sans MS";
