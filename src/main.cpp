@@ -1253,19 +1253,19 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
         nHeightDivided <double> obj(nHeight, 10000000);
         double heightresult = obj.devideValue();
         nSubsidy = SubsidyValue(minsub,heightresult);
-	
-    } 
+
+    }
 
     else
     {
         nSubsidy = 1 * COIN;
     }
- 
+
     return nSubsidy + nFees;
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan =  3600 ; // Fartcoin: every hour
+static const int64_t nTargetTimespan =  12 * 3600 ; // Fartcoin: every hour
 static const int64_t nTargetTimespanNEW = 1800 ; // Fartcoin: every 30 min
 static const int64_t nTargetSpacing = 60; // Fartcoin: 1 minute per block
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;

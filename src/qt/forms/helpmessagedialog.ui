@@ -90,7 +90,7 @@
  </widget>
  <resources>
   <include location="../fartcoin.qrc"/>
-  <include location="../bitcoin.qrc"/>
+  <include location="../fartcoin.qrc"/>
  </resources>
  <connections>
   <connection>
