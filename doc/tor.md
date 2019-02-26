@@ -7,21 +7,16 @@ The following directions assume you have a Tor proxy running on port 9050. Many 
 configure Tor.
 
 
-1. Run fartcoin behind a Tor proxy
+1. Run Fartcoin behind a Tor proxy
 ---------------------------------
 
 The first step is running Fartcoin behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
-	-socks=5        SOCKS5 supports connecting-to-hostname, which can be used instead
-	                of doing a (leaking) local DNS lookup. SOCKS5 is the default,
-	                but SOCKS4 does not support this. (SOCKS4a does, but isn't
-	                implemented).
-	
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
 	                server will be used to try to reach .onion addresses as well.
 	
-	-onion=ip:port  Set the proxy server to use for tor hidden services. You do not
+	-onion=ip:port  Set the proxy server to use for Tor hidden services. You do not
 	                need to set this if it's the same as -proxy. You can use -noonion
 	                to explicitly disable access to hidden service.
 	
@@ -39,7 +34,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 	./fartcoin -proxy=127.0.0.1:9050
 
 
-2. Run a fartcoin hidden server
+2. Run a Fartcoin hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -47,17 +42,17 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/fartcoin-service/
-	HiddenServicePort 9338 127.0.0.1:8333
-	HiddenServicePort 19338 127.0.0.1:19338
+	HiddenServicePort 13377 127.0.0.1:13377
+	HiddenServicePort 13373 127.0.0.1:13373
 
 The directory can be different of course, but (both) port numbers should be equal to
-your fartcoind's P2P listen port (9338 by default).
+your fartcoind's P2P listen port (13377 by default).
 
-	-externalip=X   You can tell fartcoin about its publicly reachable address using
+	-externalip=X   You can tell Fartcoin about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
 	                /var/lib/tor/fartcoin-service/hostname. Onion addresses are given
-	                preference for your node to advertize itself with, for connections
+	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
 	
@@ -81,7 +76,7 @@ specify:
 
 	./fartcoind ... -discover
 
-and open port 9338 on your firewall (or use -upnp).
+and open port 13377 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

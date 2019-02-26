@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2014 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "intro.h"
@@ -17,7 +17,7 @@
 
 /* Minimum free space (in bytes) needed for data directory */
 static const uint64_t GB_BYTES = 1000000000LL;
-static const uint64_t BLOCK_CHAIN_SIZE = 5LL * GB_BYTES;
+static const uint64_t BLOCK_CHAIN_SIZE = 20LL * GB_BYTES;
 
 /* Check free space asynchronously to prevent hanging the UI thread.
 
@@ -95,7 +95,7 @@ void FreespaceChecker::check()
                 replyMessage = tr("Path already exists, and is not a directory.");
             }
         }
-    } catch(fs::filesystem_error &e)
+    } catch (const fs::filesystem_error&)
     {
         /* Parent directory does not exist or is not accessible */
         replyStatus = ST_ERROR;
@@ -180,9 +180,9 @@ void Intro::pickDataDirectory()
             try {
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
-            } catch(fs::filesystem_error &e) {
-                QMessageBox::critical(0, tr("Fartcoin"),
-                    tr("Error: Specified data directory \"%1\" can not be created.").arg(dataDir));
+            } catch (const fs::filesystem_error&) {
+                QMessageBox::critical(0, tr("Fartcoin Core"),
+                    tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
         }
@@ -190,8 +190,8 @@ void Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the fartcoin.conf file in the default data directory
-     * (to be consistent with fartcoind behavior)
+     * override -datadir in the bitcoin.conf file in the default data directory
+     * (to be consistent with bitcoind behavior)
      */
     if(dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting
@@ -215,10 +215,10 @@ void Intro::setStatus(int status, const QString &message, quint64 bytesAvailable
     {
         ui->freeSpace->setText("");
     } else {
-        QString freeString = QString::number(bytesAvailable/GB_BYTES) + tr("GB of free space available");
+        QString freeString = tr("%n GB of free space available", "", bytesAvailable/GB_BYTES);
         if(bytesAvailable < BLOCK_CHAIN_SIZE)
         {
-            freeString += " " + tr("(of %1GB needed)").arg(BLOCK_CHAIN_SIZE/GB_BYTES);
+            freeString += " " + tr("(of %n GB needed)", "", BLOCK_CHAIN_SIZE/GB_BYTES);
             ui->freeSpace->setStyleSheet("QLabel { color: #800000 }");
         } else {
             ui->freeSpace->setStyleSheet("");
