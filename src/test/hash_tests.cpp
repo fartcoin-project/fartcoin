@@ -1,9 +1,10 @@
 // Copyright (c) 2013 The Bitcoin Core developers
-// Distributed under the MIT/X11 software license, see the accompanying
+// Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "hash.h"
-#include "util.h"
+#include "utilstrencodings.h"
+#include "test/test_bitcoin.h"
 
 #include <vector>
 
@@ -11,7 +12,7 @@
 
 using namespace std;
 
-BOOST_AUTO_TEST_SUITE(hash_tests)
+BOOST_FIXTURE_TEST_SUITE(hash_tests, BasicTestingSetup)
 
 BOOST_AUTO_TEST_CASE(murmurhash3)
 {
@@ -39,9 +40,9 @@ BOOST_AUTO_TEST_CASE(murmurhash3)
     T(0xb4471bf8, 0x00000000, "00112233");
     T(0xe2301fa8, 0x00000000, "0011223344");
     T(0xfc2e4a15, 0x00000000, "001122334455");
-    T(0xb074502c, 0x00000000, "00112233193386");
-    T(0x8034d2a0, 0x00000000, "0011223319338677");
-    T(0xb4698def, 0x00000000, "001122331933867788");
+    T(0xb074502c, 0x00000000, "00112233133736");
+    T(0x8034d2a0, 0x00000000, "0011223313373677");
+    T(0xb4698def, 0x00000000, "001122331337367788");
 
 #undef T
 }

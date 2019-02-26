@@ -23,7 +23,11 @@ Release Process
 
 * * *
 
-##perform gitian builds
+###update gitian
+
+ In order to take advantage of the new caching features in gitian, be sure to update to a recent version (`e9741525c` or later is recommended)
+
+###perform gitian builds
 
  From a directory containing the fartcoin source, gitian-builder and gitian.sigs
   
@@ -34,116 +38,88 @@ Release Process
 	popd
 	pushd ./gitian-builder
 
- Fetch and build inputs: (first time, or when dependency versions change)
+###fetch and build inputs: (first time, or when dependency versions change)
+ 
+	mkdir -p inputs
+	wget -P inputs https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+	wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
 
-	mkdir -p inputs; cd inputs/
-	wget 'http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20151008.tar.gz' -O miniupnpc-1.9.20151008.tar.gz
-	wget 'https://www.openssl.org/source/openssl-1.0.1l.tar.gz'
-	wget 'http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz'
-	wget 'http://zlib.net/zlib-1.2.8.tar.gz'
-	wget 'https://downloads.sourceforge.net/project/libpng/libpng16/older-releases/1.6.8/libpng-1.6.8.tar.gz'
-	wget 'https://fukuchi.org/works/qrencode/qrencode-3.4.3.tar.bz2'
-	wget 'https://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
-	wget 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O \
-	     boost-mingw-gas-cross-compile-2013-03-03.patch
-	wget 'https://download.qt-project.org/official_releases/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
-	wget 'https://download.qt-project.org/archive/qt/4.6/qt-everywhere-opensource-src-4.6.4.tar.gz'
-	wget 'https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2'
-	cd ..
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/boost-linux.yml
-	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/deps-linux.yml
-	mv build/out/fartcoin-deps-*.zip inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/qt-linux.yml
-	mv build/out/qt-*.tar.gz inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/boost-win.yml
-	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/deps-win.yml
-	mv build/out/fartcoin-deps-*.zip inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/qt-win.yml
-	mv build/out/qt-*.zip inputs/
-	./bin/gbuild ../fartcoin/contrib/gitian-descriptors/protobuf-win.yml
-	mv build/out/protobuf-*.zip inputs/
+ Register and download the Apple SDK: (see OSX Readme for details)
+ 
+ https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg
+ 
+ Using a Mac, create a tarball for the 10.9 SDK and copy it to the inputs directory:
+ 
+	tar -C /Volumes/Xcode/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/ -czf MacOSX10.9.sdk.tar.gz MacOSX10.9.sdk
 
+###Optional: Seed the Gitian sources cache
 
+  By default, gitian will fetch source files as needed. For offline builds, they can be fetched ahead of time:
 
- Build fartcoind and fartcoin-qt on Linux32, Linux64, and Win32:
+	make -C ../fartcoin/depends download SOURCES_PATH=`pwd`/cache/common
+
+  Only missing files will be fetched, so this is safe to re-run for each build.
+
+###Build Fartcoin Core for Linux, Windows, and OS X:
   
 	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
-	pushd build/out
-	zip -r fartcoin-${VERSION}-linux-gitian.zip *
-	mv fartcoin-${VERSION}-linux-gitian.zip ../../../
-	popd
-
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/fartcoin-*.tar.gz build/out/src/fartcoin-*.tar.gz ../
 	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
-	pushd build/out
-	zip -r fartcoin-${VERSION}-win-gitian.zip *
-	mv fartcoin-${VERSION}-win-gitian.zip ../../../
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/fartcoin-*-win-unsigned.tar.gz inputs/fartcoin-win-unsigned.tar.gz
+	mv build/out/fartcoin-*.zip build/out/fartcoin-*.exe ../
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/fartcoin-*-osx-unsigned.tar.gz inputs/fartcoin-osx-unsigned.tar.gz
+	mv build/out/fartcoin-*.tar.gz build/out/fartcoin-*.dmg ../
 	popd
-	popd
-
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (fartcoin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit and 64-bit binaries + installer + source (fartcoin-${VERSION}-win-gitian.zip)
-  3. Gitian signatures (in gitian.sigs/${VERSION}[-win]/(your gitian key)/
-
-repackage gitian builds for release as stand-alone zip/tar/installer exe
-
-**Linux .tar.gz:**
-
-	unzip fartcoin-${VERSION}-linux-gitian.zip -d fartcoin-${VERSION}-linux
-	tar czvf fartcoin-${VERSION}-linux.tar.gz fartcoin-${VERSION}-linux
-	rm -rf fartcoin-${VERSION}-linux
-
-**Windows .zip and setup.exe:**
-
-	unzip fartcoin-${VERSION}-win-gitian.zip -d fartcoin-${VERSION}-win
-	mv fartcoin-${VERSION}-win/fartcoin-*-setup.exe .
-	zip -r fartcoin-${VERSION}-win.zip fartcoin-${VERSION}-win
-	rm -rf fartcoin-${VERSION}-win
-
-**Perform Mac build:**
-
-  OSX binaries are created by Gavin Andresen on a 64-bit, OSX 10.6 machine.
-
-	./autogen.sh
-        SDK=$(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk
-        CXXFLAGS="-mmacosx-version-min=10.6 -isysroot $SDK" ./configure --enable-upnp-default
-	make
-	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
-	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
-        export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: FARTCOIN FOUNDATION, INC., THE"'
-	python2.7 contrib/macdeploy/macdeployqtplus Fartcoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
-
- Build output expected: Fartcoin-Qt.dmg
+  1. source tarball (fartcoin-${VERSION}.tar.gz)
+  2. linux 32-bit and 64-bit dist tarballs (fartcoin-${VERSION}-linux[32|64].tar.gz)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (fartcoin-${VERSION}-win[32|64]-setup-unsigned.exe, fartcoin-${VERSION}-win[32|64].zip)
+  4. OSX unsigned installer and dist tarball (fartcoin-${VERSION}-osx-unsigned.dmg, fartcoin-${VERSION}-osx64.tar.gz)
+  5. Gitian signatures (in gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your gitian key)/
 
 ###Next steps:
-
-* Code-sign Windows -setup.exe (in a Windows virtual machine using signtool)
- Note: only Gavin has the code-signing keys currently.
-
-* upload builds to SourceForge
-
-* create SHA256SUMS for builds, and PGP-sign it
-
-* update fartcoin.com version
-  make sure all OS download links go to the right versions
-  
-* update forum version
-
-* update wiki download links
-
-* update wiki changelog: [https://en.bitcoin.it/wiki/Changelog](https://en.bitcoin.it/wiki/Changelog)
 
 Commit your signature to gitian.sigs:
 
 	pushd gitian.sigs
 	git add ${VERSION}-linux/${SIGNER}
-	git add ${VERSION}-win/${SIGNER}
-	git add ${VERSION}-osx/${SIGNER}
+	git add ${VERSION}-win-unsigned/${SIGNER}
+	git add ${VERSION}-osx-unsigned/${SIGNER}
+	git commit -a
+	git push  # Assuming you can push to the gitian.sigs tree
+	popd
+
+  Wait for Windows/OSX detached signatures:
+	Once the Windows/OSX builds each have 3 matching signatures, they will be signed with their respective release keys.
+	Detached signatures will then be committed to the fartcoin-detached-sigs repository, which can be combined with the unsigned apps to create signed binaries.
+
+  Create the signed OSX binary:
+
+	pushd ./gitian-builder
+	./bin/gbuild -i --commit signature=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	mv build/out/fartcoin-osx-signed.dmg ../fartcoin-${VERSION}-osx.dmg
+	popd
+
+  Create the signed Windows binaries:
+
+	pushd ./gitian-builder
+	./bin/gbuild -i --commit signature=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	mv build/out/fartcoin-*win64-setup.exe ../fartcoin-${VERSION}-win64-setup.exe
+	mv build/out/fartcoin-*win32-setup.exe ../fartcoin-${VERSION}-win32-setup.exe
+	popd
+
+Commit your signature for the signed OSX/Windows binaries:
+
+	pushd gitian.sigs
+	git add ${VERSION}-osx-signed/${SIGNER}
+	git add ${VERSION}-win-signed/${SIGNER}
 	git commit -a
 	git push  # Assuming you can push to the gitian.sigs tree
 	popd
@@ -152,57 +128,29 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built and their results match:
 
-From a directory containing fartcoin source, gitian.sigs and gitian zips
-
-	export VERSION=(new version, e.g. 0.8.0)
-	mkdir fartcoin-${VERSION}-linux-gitian
-	pushd fartcoin-${VERSION}-linux-gitian
-	unzip ../fartcoin-${VERSION}-linux-gitian.zip
-	mkdir gitian
-	cp ../fartcoin/contrib/gitian-downloader/*.pgp ./gitian/
-	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/fartcoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/fartcoin-build.assert.sig ./gitian/${signer}-build.assert.sig
-	done
-	zip -r fartcoin-${VERSION}-linux-gitian.zip *
-	cp fartcoin-${VERSION}-linux-gitian.zip ../
-	popd
-	mkdir fartcoin-${VERSION}-win-gitian
-	pushd fartcoin-${VERSION}-win-gitian
-	unzip ../fartcoin-${VERSION}-win-gitian.zip
-	mkdir gitian
-	cp ../fartcoin/contrib/gitian-downloader/*.pgp ./gitian/
-	for signer in $(ls ../gitian.sigs/${VERSION}-win/); do
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/fartcoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/fartcoin-build.assert.sig ./gitian/${signer}-build.assert.sig
-	done
-	zip -r fartcoin-${VERSION}-win-gitian.zip *
-	cp fartcoin-${VERSION}-win-gitian.zip ../
-	popd
-
-    - Code-sign MacOSX .dmg
-
-  Note: only Gavin has the code-signing keys currently.
-
-- Create `SHA256SUMS.asc` for builds, and PGP-sign it. This is done manually.
-  Include all the files to be uploaded. The file has `sha256sum` format with a
-  simple header at the top:
-
+- Create `SHA256SUMS.asc` for the builds, and GPG-sign it:
+```bash
+sha256sum * > SHA256SUMS
+gpg --digest-algo sha256 --clearsign SHA256SUMS # outputs SHA256SUMS.asc
+rm SHA256SUMS
 ```
-Hash: SHA256
+(the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
+Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-0060f7d38b98113ab912d4c184000291d7f026eaf77ca5830deec15059678f54  bitcoin-x.y.z-linux.tar.gz
-...
-```
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the fartcoin.com Github repo
 
-- Upload gitian zips to SourceForge
+- Update fartcoin.com version - Langerhans to do
 
 - Announce the release:
 
-  - Add the release to fartcoin.com
+  - Release sticky on Fartcoin Forums: http://forum.fartcoin.com/forum/news-community/community-announcements
+
+  - Fartcoin-development mailing list
+
+  - Update title of #fartcoin on Freenode IRC
 
   - Announce on reddit /r/fartcoin, /r/fartcoindev
 
-  - Release sticky on discuss fartcoin: https://discuss.fartcoin.com/categories/announcements
+- Add release notes for the new version to the directory `doc/release-notes` in git master
 
-- Celebrate 
+- To the moon!

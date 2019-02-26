@@ -6,12 +6,12 @@
 
 
 ## What is ƒartcoin? 
-Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Litecoin & Dogecoin, Fartcoin currently employs a simplified variant of scrypt.
-This is the first alpha release of the fartcoin-core wallet. The fartcoin blockchain is implemented in the dogecoin-0.8.3 wallet and got a graphical upgrade to the "Space Police" theme.
+Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 but Fartcoin currently employs a simplified variant of scrypt as its proof of work (POW). We are taking development cues from Bitcoin, Litecoin & Dogecoin.
+This is the first V1.0-Beta release of the fartcoin-core wallet. The Fartcoin blockchain is implemented in the dogecoin-1.14-beta-1 wallet and got a graphical upgrade to the "Space Police" theme.
 
 # The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are not 24/7 online.  Please do not mine or trade Fartcoins, since you might lose them. 
 
-This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is in Alpha state and thus the Blockchain might be rebuild / restarted at the official launch.
+This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is under construction and thus the Blockchain might be rebuild / restarted multiple times before the official launch.
 
 
 ## Frequently Asked Questions
@@ -20,12 +20,9 @@ This Project is currently Under Construction, this means that while you can down
 
 The mining block reward is different from any other coin, since it is a reciprocal graph (y=1/x) it gradually decreases the mining reward every block. This means that instead of Bitcoin's bitshifting (halving the reward suddenly every 210k blocks) Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
 ```
-BlockReward= 100.000.000*COIN / ( height / 10.000.000)
+BlockReward= 1*COIN / ( height / 10000000)
 ```
-```
-Calculate the exact reward per Block: 
-https://github.com/fartcoin-project/Calculate_FART_Mining_Reward 
-```
+
 ## Total Fartcoins at block 10,000,000 (20 Years) = 166,953,103.60862600
 ```
 1 Block per minute = 43800 Blocks per Month = 525600 Blocks per Year 
@@ -48,14 +45,14 @@ Year20 = 166,953,113 FartCoins = block 10512000
 
 ### How to get ƒartcoins?
 You can mine Fartcoins with your fartcoin-core wallet 
-or you can trade Fartcoin at www.MemesExchange.com 
+or you can trade Fartcoins at www.MemesExchange.com 
 
 ### Used ports
 P2P 13377
 
 ### Mining Fartcoins
 
-To Mine the coin you should connect to the Fartcoin mining pool
+To mine the coin you should connect to the Fartcoin mining pool
 
 Download a miner: https://github.com/pooler/cpuminer/releases
 

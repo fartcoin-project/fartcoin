@@ -13,14 +13,15 @@
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <item>
     <widget class="QFrame" name="frame2">
+<!-- Background of top frame -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border-radius: 7px; border: 1px solid #AAAAAA; </string>
+              </property>
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border-radius: 7px; border: 1px solid #AAAAAA; </string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -33,11 +34,12 @@
        <layout class="QGridLayout" name="gridLayout">
         <item row="7" column="2">
          <widget class="QCheckBox" name="reuseAddress">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px; </string>
+              </property>
           <property name="toolTip">
            <string>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</string>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px; </string>
           </property>
           <property name="text">
            <string>R&amp;euse an existing receiving address (not recommended)</string>
@@ -46,9 +48,10 @@
         </item>
         <item row="7" column="0">
          <widget class="QLabel" name="label_4">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;   </string>
-          </property>
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;   </string>
+              </property>
           <property name="text">
            <string/>
           </property>
@@ -56,11 +59,12 @@
         </item>
         <item row="6" column="0">
          <widget class="QLabel" name="label_3">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;   </string>
+              </property>
           <property name="toolTip">
            <string>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fartcoin network.</string>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; border: 0px;   </string>
           </property>
           <property name="text">
            <string>&amp;Message:</string>
@@ -74,6 +78,7 @@
          </widget>
         </item>
         <item row="4" column="2">
+<!--Label Input field  -->
          <widget class="QLineEdit" name="reqLabel">
           <property name="toolTip">
            <string>An optional label to associate with the new receiving address.</string>
@@ -81,6 +86,7 @@
          </widget>
         </item>
         <item row="6" column="2">
+<!--Message Input field  -->
          <widget class="QLineEdit" name="reqMessage">
           <property name="toolTip">
            <string>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fartcoin network.</string>
@@ -89,21 +95,23 @@
         </item>
         <item row="2" column="2">
          <widget class="QLabel" name="label_5">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;   border: 0px; </string>
-          </property>
           <property name="text">
            <string>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</string>
           </property>
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;   border: 0px; </string>
+              </property>
          </widget>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_2">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
+              </property>
           <property name="toolTip">
            <string>An optional label to associate with the new receiving address.</string>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
           </property>
           <property name="text">
            <string>&amp;Label:</string>
@@ -118,11 +126,12 @@
         </item>
         <item row="5" column="0">
          <widget class="QLabel" name="label">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
+              </property>
           <property name="toolTip">
            <string>An optional amount to request. Leave this empty or zero to not request a specific amount.</string>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
           </property>
           <property name="text">
            <string>&amp;Amount:</string>
@@ -152,26 +161,31 @@
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QPushButton" name="receiveButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 50%); color: #CCCCCC; border-radius: 7px; border: 1px solid #4444444;  </string>
+              </property>
             <property name="minimumSize">
              <size>
               <width>150</width>
               <height>0</height>
              </size>
             </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgba(0, 0, 0, 50%); color: #CCCCCC; border-radius: 7px; border: 1px solid #4444444;  </string>
-            </property>
             <property name="text">
              <string>&amp;Request payment</string>
             </property>
             <property name="icon">
-             <iconset>
+             <iconset resource="../bitcoin.qrc">
               <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="clearButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 50%); color: #DDDDDD; border-radius: 7px; border: 1px solid #444444;  </string>
+              </property>
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -181,18 +195,12 @@
             <property name="toolTip">
              <string>Clear all fields of the form.</string>
             </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgba(0, 0, 0, 50%); color: #DDDDDD; border-radius: 7px; border: 1px solid #444444;  </string>
-            </property>
             <property name="text">
              <string>Clear</string>
             </property>
             <property name="icon">
-             <iconset>
+             <iconset resource="../bitcoin.qrc">
               <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
-            </property>
-            <property name="autoRepeatDelay">
-             <number>300</number>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -216,9 +224,10 @@
         </item>
         <item row="8" column="0">
          <widget class="QLabel" name="label_7">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%);   border: 0px; </string>
-          </property>
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%);   border: 0px; </string>
+              </property>
           <property name="text">
            <string/>
           </property>
@@ -244,14 +253,15 @@
    </item>
    <item>
     <widget class="QFrame" name="frame">
+<!-- Background of top frame -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border-radius: 7px; border: 1px solid #AAAAAA; </string>
+              </property>
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 60%); color: #DDDDDD; border-radius: 7px; border: 1px solid #AAAAAA; </string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -262,14 +272,15 @@
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QLabel" name="label_6">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
+              </property>
         <property name="font">
          <font>
           <weight>75</weight>
           <bold>true</bold>
          </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
         </property>
         <property name="text">
          <string>Requested payments history</string>
@@ -278,11 +289,12 @@
       </item>
       <item>
        <widget class="QTableView" name="recentRequestsView">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
+              </property>
         <property name="contextMenuPolicy">
          <enum>Qt::CustomContextMenu</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 0px;  </string>
         </property>
         <property name="tabKeyNavigation">
          <bool>false</bool>
@@ -296,41 +308,49 @@
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QPushButton" name="showRequestButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px; </string>
+              </property>
           <property name="enabled">
            <bool>false</bool>
           </property>
           <property name="toolTip">
            <string>Show the selected request (does the same as double clicking an entry)</string>
           </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px; </string>
-          </property>
           <property name="text">
            <string>Show</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="../bitcoin.qrc">
             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="removeRequestButton">
+<!-- Background alpha of text set back to 0% -->
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
+              </property>
           <property name="enabled">
            <bool>false</bool>
           </property>
           <property name="toolTip">
            <string>Remove the selected entries from the list</string>
           </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD;  border: 1px solid #AAAAAA;  border-radius: 7px;  </string>
-          </property>
           <property name="text">
            <string>Remove</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="../bitcoin.qrc">
             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
           </property>
          </widget>
         </item>
@@ -374,7 +394,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../fartcoin.qrc"/>
+  <include location="../bitcoin.qrc"/>
  </resources>
  <connections/>
 </ui>
