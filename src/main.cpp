@@ -1240,7 +1240,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         nSubsidy = 1 * COIN;
     }
 
-    return nSubsidy
+    return nSubsidy;
 }
 
 bool IsInitialBlockDownload()
