@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2015 The Dogecoin Core developers
 // Copyright (c) 2014-2015 Daniel Kraft
+// Copyright (c) 2018-2019 The Fartcoin Core developer
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +12,7 @@
 #include "alert.h"
 #include "arith_uint256.h"
 #include "auxpow.h"
+#include "blockreward.h" 
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
@@ -1221,15 +1223,24 @@ bool ReadBlockHeaderFromDisk(CBlockHeader& block, const CBlockIndex* pindex)
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+    // After block 10.000.000 block reward stays at 1 FART per block
+    int64_t nSubsidy = 1 * COIN;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
-    return nSubsidy;
+    if(nHeight < 10000001)
+    {
+	int64_t minsub = 1 * COIN;
+        nHeightDivided <double> obj(nHeight, 10000000);
+        double heightresult = obj.devideValue();
+        nSubsidy = SubsidyValue(minsub,heightresult);
+
+    }
+
+    else
+    {
+        nSubsidy = 1 * COIN;
+    }
+
+    return nSubsidy
 }
 
 bool IsInitialBlockDownload()
