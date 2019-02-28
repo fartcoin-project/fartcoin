@@ -2,7 +2,7 @@
 ==========================
                                                                      
     
-![ƒartcoin](https://image.ibb.co/gC3Wcx/bitcoin.png)
+![ƒartcoin](https://avatars3.githubusercontent.com/u/35861169?s=400&u=a744bdd313b4b982995a35cd38c7700ac06f7c86&v=4)
 
 
 ## What is ƒartcoin? 
