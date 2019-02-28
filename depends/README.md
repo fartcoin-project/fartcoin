@@ -49,9 +49,9 @@ Additional targets:
     download-win: run 'make download-win' to fetch all sources needed for win builds
     download-linux: run 'make download-linux' to fetch all sources needed for linux builds
 
-#################################################################################################
-# WINDOWS Cross-compilation notes for Linux Ubuntu-18.04                                        #
-#################################################################################################
+#############################################################################################
+## WINDOWS Cross-compilation notes for Linux Ubuntu-18.04                                  ##
+#############################################################################################
 
 [ First, install the general dependencies: ]
 ```
