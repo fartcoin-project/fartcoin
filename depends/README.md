@@ -57,7 +57,7 @@ Additional targets:
 ```
 sudo apt-get install 
 build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git 
-libboost-all-dev autoconf libssl-dev libminiupnpc-dev libqrencode-dev libqt4-dev 
+libboost-all-dev autoconf libssl1.0-dev libminiupnpc-dev libqrencode-dev libqt4-dev 
 libprotobuf-dev protobuf-compiler libqt5gui5 libqt5dbus5 qttools5-dev qttools5-dev-tools nsis
 ```
 [ Second, make sure Ubuntu's general dependencies are updated and upgraded: ]
