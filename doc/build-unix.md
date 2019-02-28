@@ -12,16 +12,15 @@ compilation will take much longer due to swap thrashing.
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Fartcoind Build requirements:
-
+```bash
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl1.0-dev libboost-all-dev libminiupnpc-dev
-	
-
+```	
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 To build with Graphical User Interface (Fartcoin-QT wallet)
-
+```bash
 sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev libqrencode-dev
-
+```
 Berkeley DB
 -----------
 It is recommended to use Berkeley DB 5.1. Fetch the source and verify that it is not tampered with:
