@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2014 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "receivecoinsdialog.h"
@@ -10,7 +10,6 @@
 #include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
-#include "platformstyle.h"
 #include "receiverequestdialog.h"
 #include "recentrequeststablemodel.h"
 #include "walletmodel.h"
@@ -22,25 +21,19 @@
 #include <QScrollBar>
 #include <QTextDocument>
 
-ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *platformStyle, QWidget *parent) :
+ReceiveCoinsDialog::ReceiveCoinsDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ReceiveCoinsDialog),
-    model(0),
-    platformStyle(platformStyle)
+    model(0)
 {
     ui->setupUi(this);
 
-    if (!platformStyle->getImagesOnButtons()) {
-        ui->clearButton->setIcon(QIcon());
-        ui->receiveButton->setIcon(QIcon());
-        ui->showRequestButton->setIcon(QIcon());
-        ui->removeRequestButton->setIcon(QIcon());
-    } else {
-        ui->clearButton->setIcon(platformStyle->SingleColorIcon(":/icons/remove"));
-        ui->receiveButton->setIcon(platformStyle->SingleColorIcon(":/icons/receiving_addresses"));
-        ui->showRequestButton->setIcon(platformStyle->SingleColorIcon(":/icons/edit"));
-        ui->removeRequestButton->setIcon(platformStyle->SingleColorIcon(":/icons/remove"));
-    }
+#ifdef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
+    ui->clearButton->setIcon(QIcon());
+    ui->receiveButton->setIcon(QIcon());
+    ui->showRequestButton->setIcon(QIcon());
+    ui->removeRequestButton->setIcon(QIcon());
+#endif
 
     // context menu actions
     QAction *copyLabelAction = new QAction(tr("Copy label"), this);
@@ -120,6 +113,8 @@ void ReceiveCoinsDialog::updateDisplayUnit()
     if(model && model->getOptionsModel())
     {
         ui->reqAmount->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
+
+
     }
 }
 
@@ -133,7 +128,7 @@ void ReceiveCoinsDialog::on_receiveButton_clicked()
     if(ui->reuseAddress->isChecked())
     {
         /* Choose existing receiving address */
-        AddressBookPage dlg(platformStyle, AddressBookPage::ForSelection, AddressBookPage::ReceivingTab, this);
+        AddressBookPage dlg(AddressBookPage::ForSelection, AddressBookPage::ReceivingTab, this);
         dlg.setModel(model->getAddressTableModel());
         if(dlg.exec())
         {

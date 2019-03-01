@@ -1,14 +1,12 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "alert.h"
 
-#include "clientversion.h"
+#include "key.h"
 #include "net.h"
-#include "pubkey.h"
-#include "timedata.h"
 #include "ui_interface.h"
 #include "util.h"
 
@@ -19,7 +17,6 @@
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/foreach.hpp>
-#include <boost/thread.hpp>
 
 using namespace std;
 
@@ -81,6 +78,11 @@ std::string CUnsignedAlert::ToString() const
         strStatusBar);
 }
 
+void CUnsignedAlert::print() const
+{
+    LogPrintf("%s", ToString());
+}
+
 void CAlert::SetNull()
 {
     CUnsignedAlert::SetNull();
@@ -127,9 +129,6 @@ bool CAlert::RelayTo(CNode* pnode) const
 {
     if (!IsInEffect())
         return false;
-    // don't relay to nodes which haven't sent their version message
-    if (pnode->nVersion == 0)
-        return false;
     // returns true if wasn't already contained in the set
     if (pnode->setKnown.insert(GetHash()).second)
     {
@@ -144,11 +143,11 @@ bool CAlert::RelayTo(CNode* pnode) const
     return false;
 }
 
-bool CAlert::CheckSignature(const std::vector<unsigned char>& alertKey) const
+bool CAlert::CheckSignature() const
 {
-    CPubKey key(alertKey);
+    CPubKey key(Params().AlertKey());
     if (!key.Verify(Hash(vchMsg.begin(), vchMsg.end()), vchSig))
-        return error("CAlert::CheckSignature(): verify signature failed");
+        return error("CAlert::CheckSignature() : verify signature failed");
 
     // Now unserialize the data
     CDataStream sMsg(vchMsg, SER_NETWORK, PROTOCOL_VERSION);
@@ -168,9 +167,9 @@ CAlert CAlert::getAlertByHash(const uint256 &hash)
     return retval;
 }
 
-bool CAlert::ProcessAlert(const std::vector<unsigned char>& alertKey, bool fThread)
+bool CAlert::ProcessAlert(bool fThread)
 {
-    if (!CheckSignature(alertKey))
+    if (!CheckSignature())
         return false;
     if (!IsInEffect())
         return false;
@@ -236,30 +235,25 @@ bool CAlert::ProcessAlert(const std::vector<unsigned char>& alertKey, bool fThre
         if(AppliesToMe())
         {
             uiInterface.NotifyAlertChanged(GetHash(), CT_NEW);
-            Notify(strStatusBar, fThread);
+            std::string strCmd = GetArg("-alertnotify", "");
+            if (!strCmd.empty())
+            {
+                // Alert text should be plain ascii coming from a trusted source, but to
+                // be safe we first strip anything not in safeChars, then add single quotes around
+                // the whole string before passing it to the shell:
+                std::string singleQuote("'");
+                std::string safeStatus = SanitizeString(strStatusBar);
+                safeStatus = singleQuote+safeStatus+singleQuote;
+                boost::replace_all(strCmd, "%s", safeStatus);
+
+                if (fThread)
+                    boost::thread t(runCommand, strCmd); // thread runs free
+                else
+                    runCommand(strCmd);
+            }
         }
     }
 
     LogPrint("alert", "accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());
     return true;
-}
-
-void
-CAlert::Notify(const std::string& strMessage, bool fThread)
-{
-    std::string strCmd = GetArg("-alertnotify", "");
-    if (strCmd.empty()) return;
-
-    // Alert text should be plain ascii coming from a trusted source, but to
-    // be safe we first strip anything not in safeChars, then add single quotes around
-    // the whole string before passing it to the shell:
-    std::string singleQuote("'");
-    std::string safeStatus = SanitizeString(strMessage);
-    safeStatus = singleQuote+safeStatus+singleQuote;
-    boost::replace_all(strCmd, "%s", safeStatus);
-
-    if (fThread)
-        boost::thread t(runCommand, strCmd); // thread runs free
-    else
-        runCommand(strCmd);
 }

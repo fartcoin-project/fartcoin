@@ -2,7 +2,7 @@
 ==========================
                                                                      
     
-![ƒartcoin](https://avatars3.githubusercontent.com/u/35861169?s=400&u=a744bdd313b4b982995a35cd38c7700ac06f7c86&v=4)
+![ƒartcoin](https://image.ibb.co/gC3Wcx/bitcoin.png)
 
 
 ## What is ƒartcoin? 
@@ -20,7 +20,7 @@ This Project is currently Under Construction, this means that while you can down
 
 The mining block reward is different from any other coin, since it is a reciprocal graph (y=1/x) it gradually decreases the mining reward every block. This means that instead of Bitcoin's bitshifting (halving the reward suddenly every 210k blocks) Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
 ```
-BlockReward= 1*COIN / ( height / 10000000)
+BlockReward= 1 * Fartcoin / ( height / 10000000)
 ```
 
 ## Total Fartcoins at block 10,000,000 (20 Years) = 166,953,103.60862600

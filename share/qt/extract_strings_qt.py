@@ -7,9 +7,8 @@ from subprocess import Popen, PIPE
 import glob
 import operator
 import os
-import sys
 
-OUT_CPP="qt/bitcoinstrings.cpp"
+OUT_CPP="src/qt/bitcoinstrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -48,7 +47,7 @@ def parse_po(text):
 
     return messages
 
-files = sys.argv[1:]
+files = glob.glob('src/*.cpp') + glob.glob('src/*.h') 
 
 # xgettext -n --keyword=_ $FILES
 XGETTEXT=os.getenv('XGETTEXT', 'xgettext')

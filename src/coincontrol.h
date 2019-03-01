@@ -1,11 +1,11 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_COINCONTROL_H
-#define BITCOIN_COINCONTROL_H
+#ifndef COINCONTROL_H
+#define COINCONTROL_H
 
-#include "primitives/transaction.h"
+#include "core.h"
 
 /** Coin Control Features. */
 class CCoinControl
@@ -35,12 +35,12 @@ public:
         return (setSelected.count(outpt) > 0);
     }
 
-    void Select(const COutPoint& output)
+    void Select(COutPoint& output)
     {
         setSelected.insert(output);
     }
 
-    void UnSelect(const COutPoint& output)
+    void UnSelect(COutPoint& output)
     {
         setSelected.erase(output);
     }
@@ -57,6 +57,7 @@ public:
 
 private:
     std::set<COutPoint> setSelected;
+
 };
 
-#endif // BITCOIN_COINCONTROL_H
+#endif // COINCONTROL_H

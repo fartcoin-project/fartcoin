@@ -1,16 +1,13 @@
 // Copyright (c) 2012-2014 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bignum.h"
-#include "script/script.h"
-#include "test/test_bitcoin.h"
-
+#include "script.h"
 #include <boost/test/unit_test.hpp>
 #include <limits.h>
 #include <stdint.h>
-
-BOOST_FIXTURE_TEST_SUITE(scriptnum_tests, BasicTestingSetup)
+BOOST_AUTO_TEST_SUITE(scriptnum_tests)
 
 static const int64_t values[] = \
 { 0, 1, CHAR_MIN, CHAR_MAX, UCHAR_MAX, SHRT_MIN, USHRT_MAX, INT_MIN, INT_MAX, UINT_MAX, LONG_MIN, LONG_MAX };
@@ -28,11 +25,11 @@ static void CheckCreateVch(const int64_t& num)
     BOOST_CHECK(verify(bignum, scriptnum));
 
     CBigNum bignum2(bignum.getvch());
-    CScriptNum scriptnum2(scriptnum.getvch(), false);
+    CScriptNum scriptnum2(scriptnum.getvch());
     BOOST_CHECK(verify(bignum2, scriptnum2));
 
     CBigNum bignum3(scriptnum2.getvch());
-    CScriptNum scriptnum3(bignum2.getvch(), false);
+    CScriptNum scriptnum3(bignum2.getvch());
     BOOST_CHECK(verify(bignum3, scriptnum3));
 }
 

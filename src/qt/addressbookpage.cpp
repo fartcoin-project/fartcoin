@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include "bitcoin-config.h"
 #endif
 
 #include "addressbookpage.h"
@@ -14,14 +14,13 @@
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"
-#include "platformstyle.h"
 
 #include <QIcon>
 #include <QMenu>
 #include <QMessageBox>
 #include <QSortFilterProxyModel>
 
-AddressBookPage::AddressBookPage(const PlatformStyle *platformStyle, Mode mode, Tabs tab, QWidget *parent) :
+AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddressBookPage),
     model(0),
@@ -30,25 +29,20 @@ AddressBookPage::AddressBookPage(const PlatformStyle *platformStyle, Mode mode, 
 {
     ui->setupUi(this);
 
-    if (!platformStyle->getImagesOnButtons()) {
-        ui->newAddress->setIcon(QIcon());
-        ui->copyAddress->setIcon(QIcon());
-        ui->deleteAddress->setIcon(QIcon());
-        ui->exportButton->setIcon(QIcon());
-    } else {
-        ui->newAddress->setIcon(platformStyle->SingleColorIcon(":/icons/add"));
-        ui->copyAddress->setIcon(platformStyle->SingleColorIcon(":/icons/editcopy"));
-        ui->deleteAddress->setIcon(platformStyle->SingleColorIcon(":/icons/remove"));
-        ui->exportButton->setIcon(platformStyle->SingleColorIcon(":/icons/export"));
-    }
+#ifdef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
+    ui->newAddress->setIcon(QIcon());
+    ui->copyAddress->setIcon(QIcon());
+    ui->deleteAddress->setIcon(QIcon());
+    ui->exportButton->setIcon(QIcon());
+#endif
 
     switch(mode)
     {
     case ForSelection:
         switch(tab)
         {
-        case SendingTab: setWindowTitle(tr("Choose the address to send coins to")); break;
-        case ReceivingTab: setWindowTitle(tr("Choose the address to receive coins with")); break;
+        case SendingTab: setWindowTitle(tr("Choose the address to send Farts to")); break;
+        case ReceivingTab: setWindowTitle(tr("Choose the address to receive Farts with")); break;
         }
         connect(ui->tableView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(accept()));
         ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -59,8 +53,8 @@ AddressBookPage::AddressBookPage(const PlatformStyle *platformStyle, Mode mode, 
     case ForEditing:
         switch(tab)
         {
-        case SendingTab: setWindowTitle(tr("Such sending addresses")); break;
-        case ReceivingTab: setWindowTitle(tr("Much receiving addresses")); break;
+        case SendingTab: setWindowTitle(tr("Fart sending addresses")); break;
+        case ReceivingTab: setWindowTitle(tr("Fart receiving addresses")); break;
         }
         break;
     }
@@ -288,7 +282,7 @@ void AddressBookPage::on_exportButton_clicked()
 
     if(!writer.write()) {
         QMessageBox::critical(this, tr("Exporting Failed"),
-            tr("There was an error trying to save the address list to %1. Please try again.").arg(filename));
+            tr("There was an error trying to save the address list to %1.").arg(filename));
     }
 }
 
