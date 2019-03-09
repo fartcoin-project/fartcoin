@@ -1,10 +1,10 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ALERT_H
-#define BITCOIN_ALERT_H
+#ifndef _BITCOINALERT_H_
+#define _BITCOINALERT_H_ 1
 
 #include "serialize.h"
 #include "sync.h"
@@ -46,10 +46,8 @@ public:
     std::string strStatusBar;
     std::string strReserved;
 
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
+    IMPLEMENT_SERIALIZE
+    (
         READWRITE(this->nVersion);
         nVersion = this->nVersion;
         READWRITE(nRelayUntil);
@@ -65,11 +63,12 @@ public:
         READWRITE(LIMITED_STRING(strComment, 65536));
         READWRITE(LIMITED_STRING(strStatusBar, 256));
         READWRITE(LIMITED_STRING(strReserved, 256));
-    }
+    )
 
     void SetNull();
 
     std::string ToString() const;
+    void print() const;
 };
 
 /** An alert is a combination of a serialized CUnsignedAlert and a signature. */
@@ -84,13 +83,11 @@ public:
         SetNull();
     }
 
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
+    IMPLEMENT_SERIALIZE
+    (
         READWRITE(vchMsg);
         READWRITE(vchSig);
-    }
+    )
 
     void SetNull();
     bool IsNull() const;
@@ -100,9 +97,8 @@ public:
     bool AppliesTo(int nVersion, std::string strSubVerIn) const;
     bool AppliesToMe() const;
     bool RelayTo(CNode* pnode) const;
-    bool CheckSignature(const std::vector<unsigned char>& alertKey) const;
-    bool ProcessAlert(const std::vector<unsigned char>& alertKey, bool fThread = true); // fThread means run -alertnotify in a free-running thread
-    static void Notify(const std::string& strMessage, bool fThread);
+    bool CheckSignature() const;
+    bool ProcessAlert(bool fThread = true);
 
     /*
      * Get copy of (active) alert object by hash. Returns a null alert if it is not found.
@@ -110,4 +106,4 @@ public:
     static CAlert getAlertByHash(const uint256 &hash);
 };
 
-#endif // BITCOIN_ALERT_H
+#endif

@@ -1,18 +1,15 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_OPTIONSDIALOG_H
-#define BITCOIN_QT_OPTIONSDIALOG_H
+#ifndef OPTIONSDIALOG_H
+#define OPTIONSDIALOG_H
 
 #include <QDialog>
 
+class MonitoredDataMapper;
 class OptionsModel;
 class QValidatedLineEdit;
-
-QT_BEGIN_NAMESPACE
-class QDataWidgetMapper;
-QT_END_NAMESPACE
 
 namespace Ui {
 class OptionsDialog;
@@ -24,7 +21,7 @@ class OptionsDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit OptionsDialog(QWidget *parent, bool enableWallet);
+    explicit OptionsDialog(QWidget *parent);
     ~OptionsDialog();
 
     void setModel(OptionsModel *model);
@@ -46,6 +43,7 @@ private slots:
 
     void showRestartWarning(bool fPersistent = false);
     void clearStatusLabel();
+    void updateDisplayUnit();
     void doProxyIpChecks(QValidatedLineEdit *pUiProxyIp, int nProxyPort);
 
 signals:
@@ -54,8 +52,8 @@ signals:
 private:
     Ui::OptionsDialog *ui;
     OptionsModel *model;
-    QDataWidgetMapper *mapper;
+    MonitoredDataMapper *mapper;
     bool fProxyIpValid;
 };
 
-#endif // BITCOIN_QT_OPTIONSDIALOG_H
+#endif // OPTIONSDIALOG_H

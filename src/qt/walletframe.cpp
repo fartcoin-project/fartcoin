@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "walletframe.h"
@@ -13,10 +13,9 @@
 #include <QHBoxLayout>
 #include <QLabel>
 
-WalletFrame::WalletFrame(const PlatformStyle *platformStyle, BitcoinGUI *_gui) :
+WalletFrame::WalletFrame(BitcoinGUI *_gui) :
     QFrame(_gui),
-    gui(_gui),
-    platformStyle(platformStyle)
+    gui(_gui)
 {
     // Leave HBox hook for adding a list view later
     QHBoxLayout *walletFrameLayout = new QHBoxLayout(this);
@@ -44,7 +43,7 @@ bool WalletFrame::addWallet(const QString& name, WalletModel *walletModel)
     if (!gui || !clientModel || !walletModel || mapWalletViews.count(name) > 0)
         return false;
 
-    WalletView *walletView = new WalletView(platformStyle, this);
+    WalletView *walletView = new WalletView(this);
     walletView->setBitcoinGUI(gui);
     walletView->setClientModel(clientModel);
     walletView->setWalletModel(walletModel);

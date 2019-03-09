@@ -1,12 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "protocol.h"
 
 #include "util.h"
-#include "utilstrencodings.h"
 
 #ifndef WIN32
 # include <arpa/inet.h>
@@ -20,18 +19,18 @@ static const char* ppszTypeName[] =
     "filtered block"
 };
 
-CMessageHeader::CMessageHeader(const MessageStartChars& pchMessageStartIn)
+CMessageHeader::CMessageHeader()
 {
-    memcpy(pchMessageStart, pchMessageStartIn, MESSAGE_START_SIZE);
+    memcpy(pchMessageStart, Params().MessageStart(), MESSAGE_START_SIZE);
     memset(pchCommand, 0, sizeof(pchCommand));
+    pchCommand[1] = 1;
     nMessageSize = -1;
     nChecksum = 0;
 }
 
-CMessageHeader::CMessageHeader(const MessageStartChars& pchMessageStartIn, const char* pszCommand, unsigned int nMessageSizeIn)
+CMessageHeader::CMessageHeader(const char* pszCommand, unsigned int nMessageSizeIn)
 {
-    memcpy(pchMessageStart, pchMessageStartIn, MESSAGE_START_SIZE);
-    memset(pchCommand, 0, sizeof(pchCommand));
+    memcpy(pchMessageStart, Params().MessageStart(), MESSAGE_START_SIZE);
     strncpy(pchCommand, pszCommand, COMMAND_SIZE);
     nMessageSize = nMessageSizeIn;
     nChecksum = 0;
@@ -39,13 +38,16 @@ CMessageHeader::CMessageHeader(const MessageStartChars& pchMessageStartIn, const
 
 std::string CMessageHeader::GetCommand() const
 {
-    return std::string(pchCommand, pchCommand + strnlen(pchCommand, COMMAND_SIZE));
+    if (pchCommand[COMMAND_SIZE-1] == 0)
+        return std::string(pchCommand, pchCommand + strlen(pchCommand));
+    else
+        return std::string(pchCommand, pchCommand + COMMAND_SIZE);
 }
 
-bool CMessageHeader::IsValid(const MessageStartChars& pchMessageStartIn) const
+bool CMessageHeader::IsValid() const
 {
     // Check start string
-    if (memcmp(pchMessageStart, pchMessageStartIn, MESSAGE_START_SIZE) != 0)
+    if (memcmp(pchMessageStart, Params().MessageStart(), MESSAGE_START_SIZE) != 0)
         return false;
 
     // Check the command string for errors
@@ -65,7 +67,7 @@ bool CMessageHeader::IsValid(const MessageStartChars& pchMessageStartIn) const
     // Message size
     if (nMessageSize > MAX_SIZE)
     {
-        LogPrintf("CMessageHeader::IsValid(): (%s, %u bytes) nMessageSize > MAX_SIZE\n", GetCommand(), nMessageSize);
+        LogPrintf("CMessageHeader::IsValid() : (%s, %u bytes) nMessageSize > MAX_SIZE\n", GetCommand(), nMessageSize);
         return false;
     }
 
@@ -89,12 +91,13 @@ void CAddress::Init()
 {
     nServices = NODE_NETWORK;
     nTime = 100000000;
+    nLastTry = 0;
 }
 
 CInv::CInv()
 {
     type = 0;
-    hash.SetNull();
+    hash = 0;
 }
 
 CInv::CInv(int typeIn, const uint256& hashIn)
@@ -115,7 +118,7 @@ CInv::CInv(const std::string& strType, const uint256& hashIn)
         }
     }
     if (i == ARRAYLEN(ppszTypeName))
-        throw std::out_of_range(strprintf("CInv::CInv(string, uint256): unknown type '%s'", strType));
+        throw std::out_of_range(strprintf("CInv::CInv(string, uint256) : unknown type '%s'", strType));
     hash = hashIn;
 }
 
@@ -132,7 +135,7 @@ bool CInv::IsKnownType() const
 const char* CInv::GetCommand() const
 {
     if (!IsKnownType())
-        throw std::out_of_range(strprintf("CInv::GetCommand(): type=%d unknown type", type));
+        throw std::out_of_range(strprintf("CInv::GetCommand() : type=%d unknown type", type));
     return ppszTypeName[type];
 }
 
@@ -140,3 +143,9 @@ std::string CInv::ToString() const
 {
     return strprintf("%s %s", GetCommand(), hash.ToString());
 }
+
+void CInv::print() const
+{
+    LogPrintf("CInv(%s)\n", ToString());
+}
+
