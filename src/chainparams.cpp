@@ -39,11 +39,11 @@ public:
 
         // Blocks 0 - 1337 are conventional difficulty calculation
         //consensus.nSubsidyHalvingInterval = 100000;
-        consensus.nMajorityEnforceBlockUpgrade = 15000;
-        consensus.nMajorityRejectBlockOutdated = 19000;
-        consensus.nMajorityWindow = 20000;
+        consensus.nMajorityEnforceBlockUpgrade = 150000;
+        consensus.nMajorityRejectBlockOutdated = 190000;
+        consensus.nMajorityWindow = 200000;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
-        consensus.nPowTargetTimespan = 12 * 60 * 60; // pre-digishield: 4 hours
+        consensus.nPowTargetTimespan = 12 * 60 * 60; // pre-digishield: 12 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowAllowDigishieldMinDifficultyBlocks = false;
@@ -58,7 +58,7 @@ public:
 
         // Blocks 1337 - 11337 are Digishield without AuxPoW
         digishieldConsensus = consensus;
-        digishieldConsensus.nHeightEffective = 13337;
+        digishieldConsensus.nHeightEffective = 100000;
         digishieldConsensus.fSimplifiedRewards = true;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
@@ -66,7 +66,7 @@ public:
 
         // Blocks 11337+ are AuxPoW
         auxpowConsensus = digishieldConsensus;
-        auxpowConsensus.nHeightEffective = 113337;
+        auxpowConsensus.nHeightEffective = 100000;
         auxpowConsensus.fAllowLegacyBlocks = false;
         auxpowConsensus.fAllowAuxPow = true;
 
@@ -148,14 +148,14 @@ public:
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
 
-        (      0, uint256S("0x14feca84e18174ba0a1ca55be48f1a14a1dd0bef9be56a7e431da09b1854be75"))
-        (   1337, uint256S("0xb06b7eccbe44a237245c4d4ab5ad0d81ff0b1a8c916c0142f06d542758af88ea"))
-        (   3333, uint256S("0xa955849d8cce94857b33abda065a0ae636c14ed5d812a089757ed8b29ff7ea03")),
-
-            1551724872, // * UNIX timestamp of last checkpoint block
-                3342,   // * total number of transactions between genesis and last checkpoint
+            (      0, uint256S("0x14feca84e18174ba0a1ca55be48f1a14a1dd0bef9be56a7e431da09b1854be75"))
+	    (   1337, uint256S("0xb06b7eccbe44a237245c4d4ab5ad0d81ff0b1a8c916c0142f06d542758af88ea"))
+            (   8888, uint256S("0x402e3bc38e4e1fd472110cc5dcee4b33984a66df18acf5f7abf9adce30c6f737"))
+	    (  22222, uint256S("0x93898c15a6de929cce6157a1e095a44dcc53193dbaa1524794d02e9f329e2c0c")),
+            1552967846, // * UNIX timestamp of last checkpoint block
+                22274,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            24 * 60     // * estimated number of transactions per day after checkpoint
+             24 * 60    // * estimated number of transactions per day after checkpoint
         };
     }
 };
@@ -173,7 +173,7 @@ public:
 
         // Blocks 0 - 144999 are pre-Digishield
         consensus.nHeightEffective = 0;
-        consensus.nPowTargetTimespan = 12 * 60 * 60; // pre-digishield: 4 hours
+        consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.fDigishieldDifficultyCalculation = false;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowAllowDigishieldMinDifficultyBlocks = false;
@@ -257,9 +257,9 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            (      0, uint256S("0x839fa54617adcd582d53030a37455c14a87a806f6615aa8213f13e196230ff7f")),
+            (      0, uint256S("0x8db3d6e7e2ae596ea3336c6a8f37a7c6b144ab6628dbbd0aba35933ece717c4b")),
             1550777778, // * UNIX timestamp of last checkpoint block
-            0,    // * total number of transactions between genesis and last checkpoint
+                  0,    // * total number of transactions between genesis and last checkpoint
             1000        // * estimated number of transactions per day after checkpoint
         };
 
