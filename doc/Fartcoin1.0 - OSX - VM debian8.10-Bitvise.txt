@@ -1,0 +1,222 @@
+#################################################################################################
+#  !!!!This document is not complete!!!!                                                        #
+#  !!!!These are just some personal notes!!!!                                                   #
+#################################################################################################
+
+#################################################################################################
+# Fartcoin 16 Install Guide using VM Linux debian8.10 using Bitvise SSH Client                  # 
+#################################################################################################
+Install Bitvise SSH on Windows
+
+Make new VM -> Settings gitian 
+Network: Advanced Port Forwarding
+add: SSH Hostport 22222 Guestport 22
+
+Run Debian Live -> Install
+Hostname: debian -> Domainname: (empty)
+New Username: gitianuser next,next,next
+
+Use network mirror: YES -> No HTTP proxy
+Software install -> 'SSH server' and 'Standard System Utilities' 
+Uncheck 'Debian Desktop Environment' and 'Print Server'
+
+Install GRUB boot loader on: /dev/sda 
+
+#################################################################################################
+# LOGIN debian8.10 as root and permit root users over (Bitvise) SSH                             #
+#################################################################################################
+
+root@debian:~# sed -i 's/^PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+root@debian:~# /etc/init.d/ssh restart
+
+#################################################################################################
+# Open Bitvise SSH                                                                              #
+#################################################################################################
+
+server: localhost -> port: 22222 -> username: root
+Key for this session
+
+logging in as root over SSH:
+
+adduser gitianuser sudo
+nano /etc/apt/sources.list   #Delete CDrom line
+apt-get install git sudo ruby apt-cacher-ng qemu-utils debootstrap lxc python-cheetah 
+apt-get install parted kpartx bridge-utils make ubuntu-archive-keyring curl firewalld
+
+echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-start" > /etc/sudoers.d/gitian-lxc
+echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-execute" >> /etc/sudoers.d/gitian-lxc
+echo '#!/bin/sh -e' > /etc/rc.local
+echo 'brctl addbr br0' >> /etc/rc.local
+echo 'ip addr add 10.0.3.2/24 broadcast 10.0.3.255 dev br0' >> /etc/rc.local
+echo 'ip link set br0 up' >> /etc/rc.local
+echo 'firewall-cmd --zone=trusted --add-interface=br0' >> /etc/rc.local
+echo 'exit 0' >> /etc/rc.local
+echo 'export USE_LXC=1' >> /home/gitianuser/.profile
+echo 'export GITIAN_HOST_IP=10.0.3.2' >> /home/gitianuser/.profile
+echo 'export LXC_GUEST_IP=10.0.3.5' >> /home/gitianuser/.profile
+reboot
+
+#################################################################################################
+# Login using Bitcvise as gitianuser                                                            #
+#################################################################################################
+
+wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vm-builder/vm-builder_0.12.4+bzr494.orig.tar.gz
+echo "76cbf8c52c391160b2641e7120dbade5afded713afaa6032f733a261f13e6a8e  vm-builder_0.12.4+bzr494.orig.tar.gz" | sha256sum -c
+tar -zxvf vm-builder_0.12.4+bzr494.orig.tar.gz
+cd vm-builder-0.12.4+bzr494
+sudo python setup.py install
+cd ..
+
+sudo apt-get install gcc bison flex build-essential wget patch git autoconf gawk libssl-dev libxml2-dev uuid-dev clang
+
+
+
+git clone https://github.com/mingwandroid/toolchain4.git
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/gcc-4.4-base_4.4.7-2_amd64.deb
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/gcc-4.4_4.4.7-2_amd64.deb
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/cpp-4.4_4.4.7-2_amd64.deb
+sudo dpkg -i gcc-4.4-base_4.4.7-2_amd64.deb
+sudo dpkg -i cpp-4.4_4.4.7-2_amd64.deb
+sudo dpkg -i gcc-4.4_4.4.7-2_amd64.deb
+
+Copy MacOSX.sdk && iPhoneOS.sdk to /toolchain4/sdks/
+cd toolchain4
+	./build-all.sh apple
+    ./toolchain.sh buildsys
+    ./toolchain.sh cctools
+    ./toolchain.sh llvmgcc
+    ./toolchain.sh ldid
+
+	cd /toolchain4/as_driver
+    make
+    cd /usr/bin
+    sudo mv as i686-linux-gnu-as
+    sudo cp -p /home/gitianuser/toolchain4/as_driver/as_driver as
+    sudo ln -s /home/gitianuser/toolchain4/pre/bin/arm-apple-darwin9-as .
+    sudo mv ld i686-linux-gnu-ld
+    sudo cp -p /home/gitianuser/toolchain4/as_driver/as_driver ld
+    sudo ln -s /home/gitianuser/toolchain4/pre/bin/arm-apple-darwin9-ld .
+ 
+
+
+sudo apt-get install curl librsvg2-bin libtiff-tools bsdmainutils cmake imagemagick libcap-dev libz-dev libbz2-dev python-setuptools
+sudo apt-get install librsvg2-dev libtool-bin  binutils-aarch64-linux-gnu  binutils-arm-linux-gnueabihf g++-4.8-multilib gcc-4.8-multilib binutils-gold bsdmainutils
+sudo apt-get install libprotobuf-dev libprotobuf-java libprotoc-dev  protobuf-compiler python-protobuf
+sudo apt-get install build-essential pkg-config libtool autotools-dev autoconf automake libssl1.0-dev libboost-all-dev libminiupnpc-dev libqt4-dev libprotobuf-dev protobuf-compiler libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev libqrencode-dev
+
+ 
+git clone https://github.com/devrandom/gitian-builder.git
+git clone -b 'fartcoin-1.0'  https://github.com/fartcoin-project/fartcoin.git
+git clone -b 'fartcoin-0.9'  https://github.com/fartcoin-project/fartcoin.git fartcoin-0.9
+git clone https://github.com/fartcoin-project/gitian.sigs.git
+sudo chmod -R 777 fartcoin
+sudo chmod -R a+rw gitian-builder
+sudo chmod -R 770 /etc/sudoers.d/gitian-lxc
+
+cd gitian-builder
+
+./bin/make-base-vm --lxc --suite precise --arch amd64
+mkdir -p inputs
+    wget -P inputs https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
+    copy MacOSX10.11.sdk.tar.gz --->also---> fartcoin/depends/SDKs/
+	tar -zxvf MacOSX10.11.sdk.tar.gz
+popd
+	
+PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')	
+cd fartcoin/depends
+make HOST=x86_64-apple-darwin11
+
+sudo apt install libtool-bin
+libtool --finish /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib
+
+./autogen.sh
+
+ 
+#################################################################################################
+#  -std=c++11 Build                                                                             # 
+################################################################################################# 
+unset LD_LIBRARY_PATH
+unset CPLUS_INCLUDE_PATH
+unset C_INCLUDE_PATH
+export PACKAGES_DIR=/home/gitianuser/PACKAGES
+export STACK_SRC=`mktemp -d /tmp/moose_stack_src.XXXXXX`
+umask 022
+ 
+ 
+ cd $STACK_SRC
+curl -L -O http://mirrors.concertpass.com/gcc/releases/gcc-7.3.0/gcc-7.3.0.tar.gz
+tar -xf gcc-7.3.0.tar.gz -C .
+cd $STACK_SRC/gcc-7.3.0
+./contrib/download_prerequisites
+
+../gcc-7.3.0/configure --prefix=$PACKAGES_DIR/gcc-7.3.0 \
+--disable-multilib \
+--enable-languages=c,c++,fortran,jit \
+--enable-checking=release \
+--enable-host-shared \
+--with-pic
+ 
+make
+make install
+
+
+export PATH=/home/gitianuser/PACKAGES/gcc-7.3.0/bin:$PATH
+export LD_LIBRARY_PATH=/home/gitianuser/PACKAGES/gcc-7.3.0/lib64:/home/gitianuser/PACKAGES/gcc-7.3.0/lib:/home/gitianuser/PACKAGES/gcc-7.3.0/lib/gcc/x86_64-unknown-linux-gnu/7.3.0:/home/gitianuser/PACKAGES/gcc-7.3.0/libexec/gcc/x86_64-unknown-linux-gnu/7.3.0:$LD_LIBRARY_PATH
+ 
+
+
+
+
+
+
+libtool --finish /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib
+export PACKAGES_DIR=/home/gitianuser/PACKAGES
+export BDB_PREFIX=/home/gitianuser/fartcoin/db5
+CONFIG_SITE=$PWD/depends/x86_64-apple-darwin11/share/config.site ./configure CXXFLAGS="-std=gnu++11" LDFLAGS="-L${BDB_PREFIX}/lib -L${PACKAGES_DIR}/gcc-7.3.0/lib64 -L${PACKAGES_DIR}/gcc-7.3.0/lib -L/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib"  CPPFLAGS="-I${BDB_PREFIX}/include -I$/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/include"  PKG_CONFIG_LIBDIR="/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib/pkgconfig"
+./configure CXXFLAGS="-std=gnu++11" BDB_LIBS="-L${BDB_PREFIX}/lib" BDB_CFLAGS="-I${BDB_PREFIX}/include" LDFLAGS="-L${PACKAGES_DIR}/gcc-7.3.0/lib64 -L${PACKAGES_DIR}/gcc-7.3.0/lib -L${PACKAGES_DIR}/gcc-7.3.0/lib/gcc/x86_64-unknown-linux-gnu/7.3.0 -L${PACKAGES_DIR}/gcc-7.3.0/libexec/gcc/x86_64-unknown-linux-gnu/7.3.0"  CPPFLAGS="-I$/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/include"  PKG_CONFIG_LIBDIR="/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib/pkgconfig" 
+
+
+
+
+	make
+	sudo make install DESTDIR=/home/gitianuser/OSX64	
+	sudo apt-get install librsvg2-dev
+	sudo make deploy DESTDIR=/home/gitianuser/OSX64
+	
+#################################################################################################
+#  Windows Build                                                                                # 
+#################################################################################################
+
+export SIGNER=20A93DED3979D75C
+export VERSION=1.0
+
+pushd ./gitian-builder
+    make -C ../fartcoin/depends download SOURCES_PATH=`pwd`/cache/common
+popd
+ 
+ 
+ pushd ./fartcoin
+git checkout v${VERSION}
+popd
+
+./fartcoin/contrib/gitian-build.sh --setup $SIGNER $VERSION
+./fartcoin/contrib/gitian-build.sh --build --detach-sign --os x --no-commit $SIGNER $VERSION
+ 
+ 
+ ###Build Fartcoin Core for Linux, Windows, and OS X:
+  
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/fartcoin-*.tar.gz build/out/src/fartcoin-*.tar.gz ../
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/fartcoin-*-win-unsigned.tar.gz inputs/fartcoin-win-unsigned.tar.gz
+	mv build/out/fartcoin-*.zip build/out/fartcoin-*.exe ../
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/fartcoin-*-osx-unsigned.tar.gz inputs/fartcoin-osx-unsigned.tar.gz
+	mv build/out/fartcoin-*.tar.gz build/out/fartcoin-*.dmg ../
+ 
+ 
+ 
