@@ -1,5 +1,5 @@
 ---
-name: "fartcoin-linux-0.16"
+name: "fartcoin-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"

@@ -1,5 +1,5 @@
 ---
-name: "fartcoin-osx-0.16"
+name: "fartcoin-osx-1.0"
 enable_cache: true
 suites:
 - "trusty"
