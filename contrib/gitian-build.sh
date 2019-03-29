@@ -17,8 +17,8 @@ SIGNER=
 VERSION=
 commit=false
 url=https://github.com/fartcoin-project/fartcoin
-proc=6
-mem=8000
+proc=4
+mem=4096
 lxc=true
 osslTarUrl=http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
 osslPatchUrl=https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
@@ -181,7 +181,7 @@ then
 fi
 
 # Check for OSX SDK
-if [[ ! -e "gitian-builder/inputs/MacOSX10.11.sdk.tar.gz" && $osx == true ]]
+if [[ ! -e "gitian-builder/inputs/MacOSX10.10.sdk.tar.gz" && $osx == true ]]
 then
     echo "Cannot build for OSX, SDK does not exist. Will build for other OSes"
     osx=false
