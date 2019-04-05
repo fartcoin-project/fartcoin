@@ -4,10 +4,10 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 if [ -d "$1" ]; then
-  cd "$1" || exit 1
+  cd "$1"
 else
   echo "Usage: $0 <datadir>" >&2
-  echo "Removes obsolete Fartcoin database files" >&2
+  echo "Removes obsolete Bitcoin database files" >&2
   exit 1
 fi
 
@@ -19,22 +19,22 @@ if [ -f wallet.dat -a -f peers.dat -a -f chainstate/CURRENT -a -f blocks/index/C
 
 case $LEVEL in
   0)
-    echo "Error: no Fartcoin datadir detected."
+    echo "Error: no Bitcoin datadir detected."
     exit 1
     ;;
   1)
-    echo "Detected old Fartcoin datadir (before 0.7)."
+    echo "Detected old Bitcoin datadir (before 0.7)."
     echo "Nothing to do."
     exit 0
     ;;
   2)
-    echo "Detected Fartcoin 0.7 datadir."
+    echo "Detected Bitcoin 0.7 datadir."
     ;;
   3)
-    echo "Detected Fartcoin pre-0.8 datadir."
+    echo "Detected Bitcoin pre-0.8 datadir."
     ;;
   4)
-    echo "Detected Fartcoin 0.8 datadir."
+    echo "Detected Bitcoin 0.8 datadir."
     ;;
 esac
 

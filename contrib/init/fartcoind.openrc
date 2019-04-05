@@ -3,36 +3,40 @@
 # backward compatibility for existing gentoo layout 
 #
 if [ -d "/var/lib/fartcoin/.fartcoin" ]; then
-	FARTCOIND_DEFAULT_DATADIR="/var/lib/fartcoin/.fartcoin"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/fartcoin/.fartcoin"
 else
-	FARTCOIND_DEFAULT_DATADIR="/var/lib/fartcoind"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/fartcoind"
 fi
 
-FARTCOIND_CONFIGFILE=${FARTCOIND_CONFIGFILE:-/etc/fartcoin/fartcoin.conf}
-FARTCOIND_PIDDIR=${FARTCOIND_PIDDIR:-/var/run/fartcoind}
-FARTCOIND_PIDFILE=${FARTCOIND_PIDFILE:-${FARTCOIND_PIDDIR}/fartcoind.pid}
-FARTCOIND_DATADIR=${FARTCOIND_DATADIR:-${FARTCOIND_DEFAULT_DATADIR}}
-FARTCOIND_USER=${FARTCOIND_USER:-${FARTCOIN_USER:-fartcoin}}
-FARTCOIND_GROUP=${FARTCOIND_GROUP:-fartcoin}
-FARTCOIND_BIN=${FARTCOIND_BIN:-/usr/bin/fartcoind}
-FARTCOIND_NICE=${FARTCOIND_NICE:-${NICELEVEL:-0}}
-FARTCOIND_OPTS="${FARTCOIND_OPTS:-${FARTCOIN_OPTS}}"
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/fartcoin/fartcoin.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/fartcoind}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/fartcoind.pid}
+BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-fartcoin}}
+BITCOIND_GROUP=${BITCOIND_GROUP:-fartcoin}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/fartcoind}
+BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
+BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
-name="Fartcoin Core Daemon"
-description="Fartcoin cryptocurrency P2P network daemon"
+name="Bitcoin Core Daemon"
+description="Bitcoin cryptocurrency P2P network daemon"
 
 command="/usr/bin/fartcoind"
-command_args="-pid=\"${FARTCOIND_PIDFILE}\" \
-		-conf=\"${FARTCOIND_CONFIGFILE}\" \
-		-datadir=\"${FARTCOIND_DATADIR}\" \
+command_args="-pid=\"${BITCOIND_PIDFILE}\" \
+		-conf=\"${BITCOIND_CONFIGFILE}\" \
+		-datadir=\"${BITCOIND_DATADIR}\" \
 		-daemon \
-		${FARTCOIND_OPTS}"
+		${BITCOIND_OPTS}"
 
-required_files="${FARTCOIND_CONFIGFILE}"
-start_stop_daemon_args="-u ${FARTCOIND_USER} \
-			-N ${FARTCOIND_NICE} -w 2000"
-pidfile="${FARTCOIND_PIDFILE}"
-retry=60
+required_files="${BITCOIND_CONFIGFILE}"
+start_stop_daemon_args="-u ${BITCOIND_USER} \
+			-N ${BITCOIND_NICE} -w 2000"
+pidfile="${BITCOIND_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${BITCOIND_SIGTERM_TIMEOUT}"
 
 depend() {
 	need localmount net
@@ -46,29 +50,29 @@ start_pre() {
 	checkpath \
 	-d \
 	--mode 0750 \
-	--owner "${FARTCOIND_USER}:${FARTCOIND_GROUP}" \
-	"${FARTCOIND_DATADIR}"
+	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
+	"${BITCOIND_DATADIR}"
 
 	checkpath \
 	-d \
 	--mode 0755 \
-	--owner "${FARTCOIND_USER}:${FARTCOIND_GROUP}" \
-	"${FARTCOIND_PIDDIR}"
+	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
+	"${BITCOIND_PIDDIR}"
 
 	checkpath -f \
-	-o ${FARTCOIND_USER}:${FARTCOIND_GROUP} \
+	-o ${BITCOIND_USER}:${BITCOIND_GROUP} \
 	-m 0660 \
-	${FARTCOIND_CONFIGFILE}
+	${BITCOIND_CONFIGFILE}
 
 	checkconfig || return 1
 }
 
 checkconfig()
 {
-	if ! grep -qs '^rpcpassword=' "${FARTCOIND_CONFIGFILE}" ; then
+	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
 		eerror "ERROR: You must set a secure rpcpassword to run fartcoind."
-		eerror "The setting must appear in ${FARTCOIND_CONFIGFILE}"
+		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."
@@ -80,7 +84,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Fartcoin Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Bitcoin Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1
