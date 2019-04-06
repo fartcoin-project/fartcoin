@@ -1,10 +1,12 @@
 Mac OS X Build Instructions and Notes
 ====================================
+
 This guide will show you how to build fartcoin-qt for OSX.
 Tested on OSX 10.9 on 64-bit Intel processors only.
 
 All of the commands should be executed in a Terminal application.
 (cmd+space) then type terminal.
+
 
 Preparation
 -----------
@@ -16,7 +18,6 @@ While downloading you can already install Homebrew www.brew.sh
 After Xcode is installed you can install MacPorts www.macports.com
 We need this in order to install library dependencies. 
 Installing the dependencies using MacPorts and Brew is very straightforward.
-
 
 The installation of the actual dependencies is covered in the Instructions
 sections below.

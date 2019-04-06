@@ -16,7 +16,9 @@ Fartcoin is a cryptocurrency like Bitcoin, we are taking development cues from B
 
 The mining block reward is different from any other coin, since it is a reciprocal graph (y=1/x) it gradually decreases the mining reward every block. This means that instead of Bitcoin's bitshifting (halving the reward suddenly every 210k blocks) Fartcoin mining reward drops constant until block 10.000.000 where it stays at a constant 1 FART per block + miningfee.
 ```
+
 BlockReward= 1 * Fartcoin / (height / 10000000)
+
 ```
 
 ## Total Fartcoins at block 10,000,000 (20 Years) = 166,953,103.60862600
