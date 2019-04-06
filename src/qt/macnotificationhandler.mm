@@ -6,7 +6,7 @@
 
 #undef slots
 #import <objc/runtime.h>
-#include <Cocoa/Cocoa.h>
+#include <Foundation/Foundation.h>
 
 // Add an obj-c category (extension) to return the expected bundle identifier
 @implementation NSBundle(returnCorrectIdentifier)

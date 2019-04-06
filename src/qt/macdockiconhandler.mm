@@ -10,7 +10,7 @@
 #include <QWidget>
 
 #undef slots
-#include <Cocoa/Cocoa.h>
+#include <Foundation/Foundation.h>
 #include <objc/objc.h>
 #include <objc/message.h>
 
@@ -130,5 +130,5 @@ void MacDockIconHandler::handleDockIconClickEvent()
         this->mainWindow->show();
     }
 
-    emit this->dockIconClicked();
+    Q_EMIT this->dockIconClicked();
 }
