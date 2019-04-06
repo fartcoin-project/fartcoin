@@ -1,40 +1,23 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build fartcoind(headless client) for OSX.
 
-Notes
------
+This guide will show you how to build fartcoin-qt for OSX.
+Tested on OSX 10.9 on 64-bit Intel processors only.
 
-* Tested on OS X 10.6 through 10.9 on 64-bit Intel processors only.
-Older OSX releases or 32-bit processors are no longer supported.
+All of the commands should be executed in a Terminal application.
+(cmd+space) then type terminal.
 
-* All of the commands should be executed in a Terminal application. The
-built-in one is located in `/Applications/Utilities`.
 
 Preparation
 -----------
 
-You need to install XCode with all the options checked so that the compiler
-and everything is available in /usr not just /Developer. XCode should be
-available on your OS X installation media, but if not, you can get the
-current version from https://developer.apple.com/xcode/. If you install
-Xcode 4.3 or later, you'll need to install its command line tools. This can
-be done in `Xcode > Preferences > Downloads > Components` and generally must
-be re-done or updated every time Xcode is updated.
+You need to install Xcode, when you type “git” in Terminal an installation popup will appear. 
+The installation for Xcode will be done in the AppStore, and needs to download at least 5 GB.
 
-There's an assumption that you already have `git` installed, as well. If
-not, it's the path of least resistance to install [Github for Mac](https://mac.github.com/)
-(OS X 10.7+) or
-[Git for OS X](https://code.google.com/p/git-osx-installer/). It is also
-available via Homebrew or MacPorts.
-
-You will also need to install [Homebrew](http://brew.sh)
-or [MacPorts](https://www.macports.org/) in order to install library
-dependencies. It's largely a religious decision which to choose, but, as of
-December 2012, MacPorts is a little easier because you can just install the
-dependencies immediately - no other work required. If you're unsure, read
-the instructions through first in order to assess what you want to do.
-Homebrew is a little more popular among those newer to OS X.
+While downloading you can already install Homebrew www.brew.sh
+After Xcode is installed you can install MacPorts www.macports.com
+We need this in order to install library dependencies. 
+Installing the dependencies using MacPorts and Brew is very straightforward.
 
 The installation of the actual dependencies is covered in the Instructions
 sections below.
@@ -42,56 +25,49 @@ sections below.
 Instructions: MacPorts
 ----------------------
 
-### Install dependencies
-
-Installing the dependencies using MacPorts is very straightforward.
-
-    sudo port install boost db51@+no_java openssl miniupnpc autoconf pkgconfig automake
-
-Optional: install Qt4
-
-    sudo port install qt4-mac qrencode protobuf-cpp
-
-### Building `fartcoind`
-
-1. Clone the github tree to get the source code and go into the directory.
-
-        git clone git@github.com:fartcoin/fartcoin.git fartcoin
-        cd fartcoin
-
-2.  Build fartcoind (and Fartcoin-Qt, if configured):
-
-        ./autogen.sh
-        ./configure
-        make
-
-3.  It is a good idea to build and run the unit tests, too:
-
-        make check
+    sudo port install boost openssl miniupnpc autoconf pkgconfig automake qt4-mac qrencode protobuf-cpp
 
 Instructions: Homebrew
 ----------------------
 
-#### Install dependencies using Homebrew
+    brew install autoconf automake berkeley-db boost miniupnpc openssl pkg-config protobuf qt
 
-        brew install autoconf automake berkeley-db boost miniupnpc openssl pkg-config protobuf qt
+Instructions: Building Fartcoin-Core
+----------------------
 
-### Building `fartcoind`
+Clone the github tree to get the source code and go into the directory.
+    git clone https://github.com/fartcoin/fartcoin.git 
+    cd fartcoin
 
-1. Clone the github tree to get the source code and go into the directory.
+Build Berkeley-db-5.1.29.NC in /Users/OSX_USER/fartcoin/:
 
-        git clone https://github.com/fartcoin/fartcoin.git
-        cd fartcoin
+    Download berkeley-db from oracle, 
+    http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz
+    and extract it into /fartcoin/
 
-2.  Build fartcoind:
+In the fartcoin folder type:
 
-        ./autogen.sh
-        ./configure
-        make
+    BITCOIN_ROOT=$(pwd)
+    BDB_PREFIX=”${BITCOIN_ROOT}/db5″
+    mkdir -p $BDB_PREFIX
+    cd db-5.1.29.NC/
+    curl -OL https://raw.github.com/narkoleptik/os-x-berkeleydb-patch/master/atomic.patch
+    patch src/dbinc/atomic.h < atomic.patch
+    cd build_unix/
+    ../dist/configure –enable-cxx –disable-shared –with-pic –prefix=$BDB_PREFIX
+    make install
+    cd $BITCOIN_ROOT
+    
+Build fartcoin-core:
 
-3.  It is a good idea to build and run the unit tests, too:
+    ./autogen.sh
+    ./configure LDFLAGS=”-L$(pwd)/db5/lib/ -L/opt/local/libexec/qt4/lib” CPPFLAGS=”-I$(pwd)/db5/include/ -I/opt/local/libexec/qt4/include” PKG_CONFIG_PATH=”/opt/local/libexec/qt4/lib/pkgconfig”
+    make
+    make deploy
+    
+It is a good idea to build and run the unit tests, too:
 
-        make check
+    make check
 
 Creating a release build
 ------------------------
@@ -122,27 +98,3 @@ for a fix.
 
 Once dependencies are compiled, see release-process.md for how the Fartcoin-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
-
-Running
--------
-
-It's now available at `./fartcoind`, provided that you are still in the `src`
-directory. We have to first create the RPC configuration file, though.
-
-Run `./fartcoind` to get the filename where it should be put, or just try these
-commands:
-
-    echo -e "rpcuser=fartcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Fartcoin/fartcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Fartcoin/fartcoin.conf"
-
-When next you run it, it will start downloading the blockchain, but it won't
-output anything while it's doing this. This process may take several hours;
-you can monitor its process by looking at the debug.log file, like this:
-
-    tail -f $HOME/Library/Application\ Support/Fartcoin/debug.log
-
-Other commands:
-
-    ./fartcoind -daemon # to start the fartcoin daemon.
-    ./fartcoin-cli --help  # for a list of command-line options.
-    ./fartcoin-cli help    # When the daemon is running, to get a list of RPC commands
