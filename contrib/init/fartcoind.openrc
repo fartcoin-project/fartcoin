@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/fartcoin/.fartcoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/fartcoin/.fartcoin"
+if [ -d "/var/lib/fartcoincore/.fartcoincore" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/fartcoincore/.fartcoincore"
 else
 	BITCOIND_DEFAULT_DATADIR="/var/lib/fartcoind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/fartcoin/fartcoin.conf}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/fartcoincore/fartcoin.conf}
 BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/fartcoind}
 BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/fartcoind.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-fartcoin}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-fartcoin}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-fartcoincore}}
+BITCOIND_GROUP=${BITCOIND_GROUP:-fartcoincore}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/fartcoind}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
-name="Bitcoin Core Daemon"
-description="Bitcoin cryptocurrency P2P network daemon"
+name="Fartcoin Core Daemon"
+description="Fartcoin cryptocurrency P2P network daemon"
 
 command="/usr/bin/fartcoind"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Bitcoin Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Fartcoin Core Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

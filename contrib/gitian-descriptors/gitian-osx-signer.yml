@@ -1,7 +1,7 @@
 ---
 name: "fartcoin-dmg-signer"
 suites:
-- "trusty"
+- "bionic"
 architectures:
 - "amd64"
 packages:
@@ -10,7 +10,7 @@ remotes:
 - "url": "https://github.com/fartcoin-project/fartcoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "fartcoin-osx-unsigned.tar.gz"
+- "fartcoincore-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=fartcoin-osx-unsigned.tar.gz
-  SIGNED=fartcoin-osx-signed.dmg
+  UNSIGNED=fartcoincore-osx-unsigned.tar.gz
+  SIGNED=fartcoincore-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  fartcoind The fartcoin core server.
+#  fartcoind The Fartcoin Core server.
 #
 #
 # chkconfig: 345 80 20
@@ -19,14 +19,14 @@ fi
 RETVAL=0
 
 prog=fartcoind
-# you can override the lockfile via FARTCOIND_LOCKFILE in /etc/sysconfig/fartcoind
-lockfile=${FARTCOIND_LOCKFILE-/var/lock/subsys/fartcoind}
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/fartcoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/fartcoind}
 
-# fartcoind defaults to /usr/bin/fartcoind, override with FARTCOIND_BIN
-fartcoind=${FARTCOIND_BIN-/usr/bin/fartcoind}
+# fartcoind defaults to /usr/bin/fartcoind, override with BITCOIND_BIN
+fartcoind=${BITCOIND_BIN-/usr/bin/fartcoind}
 
-# fartcoind opts default to -disablewallet, override with FARTCOIND_OPTS
-fartcoind_opts=${FARTCOIND_OPTS--disablewallet}
+# fartcoind opts default to -disablewallet, override with BITCOIND_OPTS
+fartcoind_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "

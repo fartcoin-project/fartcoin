@@ -3,13 +3,13 @@ Description=Fartcoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=fartcoin
-Group=fartcoin
+User=fartcoincore
+Group=fartcoincore
 
 Type=forking
 PIDFile=/var/lib/fartcoind/fartcoind.pid
 ExecStart=/usr/bin/fartcoind -daemon -pid=/var/lib/fartcoind/fartcoind.pid \
--conf=/etc/fartcoin/fartcoin.conf -datadir=/var/lib/fartcoind -disablewallet
+-conf=/etc/fartcoincore/fartcoin.conf -datadir=/var/lib/fartcoind -disablewallet
 
 Restart=always
 PrivateTmp=true
