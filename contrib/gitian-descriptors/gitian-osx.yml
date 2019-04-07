@@ -2,7 +2,7 @@
 name: "fartcoin-osx-0.13"
 enable_cache: true
 suites:
-- "bionic"
+- "trusty"
 architectures:
 - "amd64"
 packages:
