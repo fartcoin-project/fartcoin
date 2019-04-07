@@ -237,12 +237,12 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>50</x>
-     <y>50</y>
+     <x>20</x>
+     <y>20</y>
     </hint>
     <hint type="destinationlabel">
-     <x>50</x>
-     <y>50</y>
+     <x>20</x>
+     <y>20</y>
     </hint>
    </hints>
   </connection>
@@ -253,12 +253,12 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>50</x>
-     <y>50</y>
+     <x>20</x>
+     <y>20</y>
     </hint>
     <hint type="destinationlabel">
-     <x>50</x>
-     <y>50</y>
+     <x>20</x>
+     <y>20</y>
     </hint>
    </hints>
   </connection>

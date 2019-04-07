@@ -3,6 +3,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <iostream>
+#include <cstdint>
+#include <cinttypes>
 
 using namespace std;
 
@@ -28,7 +30,7 @@ UblockValue SubsidyValue(UblockValue a, VblockValue b) {
 
 /**************** Explanation of this BlockReward.h *************************
  *                                                                          *
- *            GetBlockValue expects an int64_t to be returned.              *
+ *          GetBlockSubsidy expects an int64_t to be returned.              *
  *     Because of this we can't make nSubsidy a Floating Point Number.      *
  *    We also can't devide two integers (i.e. 1/5) and return the result,   *
  *   1/5 = 0.2 which is not an int64_t but a float, double or long double.  *
@@ -51,13 +53,13 @@ UblockValue SubsidyValue(UblockValue a, VblockValue b) {
  *          to return an int64_t to nSubsidy as the result of (a / b)       *
  *                               nSubsidy = SubsidyValue(int64_t / double)  *
  *                                                                          *
- *  The GetBlockValue code in main.cpp does not work without blockreward.h  *
+ *    GetBlockSubsidy in main.cpp does not work without blockreward.h       *
  *                                                                          *
  ////////////////////////////////////////////////////////////////////////////
- /////////////// GetBlockValue from main.cpp  @ line: 1245 //////////////////
+ /////////////// GetBlockSubsidy from main.cpp  @ line: 1245 ////////////////
  ////////////////////////////////////////////////////////////////////////////
  //                                                                        //
- //    int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash) //
+ // GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams) //
  //    {                                                                   //
  //       int64_t nSubsidy = 1 * COIN;                                     //
  //       if(nHeight < 10000001)                                           //
@@ -71,11 +73,11 @@ UblockValue SubsidyValue(UblockValue a, VblockValue b) {
  //        {                                                               //
  //            nSubsidy = 1 * COIN;                                        //
  //        }                                                               //
- //        return nSubsidy + nFees;                                        //
+ //        return nSubsidy ;                                               //
  //    }                                                                   //
  ////////////////////////////////////////////////////////////////////////////
  *                                                                          *
- *   For most cryptocurrencies the GetBlockValue is written as follows:     *
+ *  For most cryptocurrencies the GetBlockSubsidy is written as follows:    *
  *   where >>= is Bit-Shifting the "int64 nSubsidy" every 210000 blocks     *
  *                                                                          *
  *        int64 nSubsidy = 50 * COIN;                                       *
@@ -113,7 +115,7 @@ UblockValue SubsidyValue(UblockValue a, VblockValue b) {
  *                                                                          *
  * If we would Bit-Shift every 4 years we almost get the same end result.   *
  *            2020 the reward approximately equals 20                       *
- *           2024 the reward approximately equals 10                        *
+ *            2024 the reward approximately equals 10                       *
  *            2028 the reward approximately equals  5                       *
  *            2032 the reward approximately equals  2.5                     *
  *            2036 the reward approximately equals  1.25                    *

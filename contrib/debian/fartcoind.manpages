@@ -1,2 +1,3 @@
 debian/manpages/fartcoind.1
 debian/manpages/fartcoin.conf.5
+debian/manpages/fartcoin-cli.1

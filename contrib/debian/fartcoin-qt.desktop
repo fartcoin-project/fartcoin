@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fartcoin
+Comment=Fartcoin P2P Cryptocurrency
+Comment[fr]=Fartcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Fartcoin, eşten eşe kriptografik sanal para birimi
+Exec=fartcoin-qt %u
+Terminal=false
+Type=Application
+Icon=fartcoin128
+MimeType=x-scheme-handler/fartcoin;
+Categories=Office;Finance;

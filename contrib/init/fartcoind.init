@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  fartcoind The fartcoin core server.
+#
+#
+# chkconfig: 345 80 20
+# description: fartcoind
+# processname: fartcoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/fartcoind, see below
+if [ -f /etc/sysconfig/fartcoind ]; then
+        . /etc/sysconfig/fartcoind
+fi
+
+RETVAL=0
+
+prog=fartcoind
+# you can override the lockfile via FARTCOIND_LOCKFILE in /etc/sysconfig/fartcoind
+lockfile=${FARTCOIND_LOCKFILE-/var/lock/subsys/fartcoind}
+
+# fartcoind defaults to /usr/bin/fartcoind, override with FARTCOIND_BIN
+fartcoind=${FARTCOIND_BIN-/usr/bin/fartcoind}
+
+# fartcoind opts default to -disablewallet, override with FARTCOIND_OPTS
+fartcoind_opts=${FARTCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $fartcoind $fartcoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
