@@ -10,7 +10,7 @@
 #include <QWidget>
 
 #undef slots
-#include <Foundation/Foundation.h>
+#include <Cocoa/Cocoa.h>
 #include <objc/objc.h>
 #include <objc/message.h>
 
