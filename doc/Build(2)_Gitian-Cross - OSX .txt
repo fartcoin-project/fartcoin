@@ -1,0 +1,292 @@
+#################################################################################################
+#  !!!!This document is FAR FROM complete!!!!                                                   #
+#  !!!!These are just some personal notes!!!!                                                   #
+#  !!!!You might find some dependencies or tricks to compile in this document!!!!               #
+#################################################################################################
+
+#################################################################################################
+# Login using Bitvise as gitianuser                                                             #
+#################################################################################################
+
+sudo apt-get install bison flex build-essential wget patch autoconf gawk libssl-dev libxml2-dev uuid-dev clang gcc gobjc++ 
+sudo apt-get install librsvg2-bin libtiff-tools bsdmainutils imagemagick libcap-dev libz-dev libbz2-dev python-setuptools 
+sudo apt-get install librsvg2-dev libtool-bin  binutils-aarch64-linux-gnu  binutils-arm-linux-gnueabihf g++-4.8-multilib gcc-4.8-multilib binutils-gold bsdmainutils
+sudo apt-get install libprotobuf-dev libprotobuf-java libprotoc-dev  protobuf-compiler python-protobuf
+sudo apt-get install build-essential pkg-config libtool autotools-dev autoconf automake libssl1.0-dev libboost-all-dev libminiupnpc-dev libqt4-dev libprotobuf-dev protobuf-compiler libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev libqrencode-dev
+sudo apt-get install gnustep gnustep-devel unzip debootstrap
+
+sudo apt-get build-dep qt5-default
+sudo apt-get install libxcb-xinerama0-dev 
+sudo apt-get install build-essential perl python git
+sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev	
+sudo apt-get install flex bison gperf libicu-dev libxslt-dev ruby
+sudo apt-get install libssl-dev libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libdbus-1-dev libfontconfig1-dev libcap-dev libxtst-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libxss-dev libegl1-mesa-dev gperf bison
+sudo apt-get install libasound2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+sudo apt install libclang-6.0-dev llvm-6.0
+ 
+wget "https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-Linux-x86_64.sh"
+copy /bin/ & /share/ into a PATH directory
+
+
+wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vm-builder/vm-builder_0.12.4+bzr494.orig.tar.gz
+echo "76cbf8c52c391160b2641e7120dbade5afded713afaa6032f733a261f13e6a8e  vm-builder_0.12.4+bzr494.orig.tar.gz" | sha256sum -c
+tar -zxvf vm-builder_0.12.4+bzr494.orig.tar.gz
+cd vm-builder-0.12.4+bzr494
+sudo python setup.py install
+cd ..
+ 
+git clone https://github.com/devrandom/gitian-builder.git
+git clone -b 'fartcoin-1.0'  https://github.com/fartcoin-project/fartcoin.git 
+git clone -b 'fartcoin-0.9'  https://github.com/fartcoin-project/fartcoin.git fartcoin-0.9
+git clone https://github.com/fartcoin-project/gitian.sigs.git
+sudo chmod -R 777 fartcoin
+sudo chmod -R 777 gitian-builder
+sudo chmod -R 770 /etc/sudoers.d/gitian-lxc
+
+cd gitian-builder
+
+./bin/make-base-vm --lxc --suite precise --arch amd64
+mkdir -p inputs
+    wget https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
+    copy MacOSX10.11.sdk.tar.gz --->also---> fartcoin/depends/SDKs/ --SEE DOWN Build MaxOSX10.11.sdk.tar.gz with osxcross 
+	tar -zxvf MacOSX10.11.sdk.tar.gz
+
+#################################################################################################
+#  Adjusting Environmental Varables on Debian                                                   # 
+#################################################################################################
+
+sudo nano /etc/profile
+ 
+  PATH="/home/gitianuser/osxcross/target/bin:/home/gitianuser/PACKAGES/gcc-7.3.0/bin:/usr/local/bin:/usr/bin:/bin:/share:/usr/local/games:/usr/games"
+  LD_LIBRARY_PATH="/home/gitianuser/PACKAGES/gcc-7.3.0/lib64:/home/gitianuser/PACKAGES/gcc-7.3.0/lib:/home/gitianuser/PACKAGES/gcc-7.3.0/lib/gcc/x86_64-unknown-linux-gnu/7.3.0:/home/gitianuser/PACKAGES/gcc-7.3.0/libexec/gcc/x86_64-unknown-linux-gnu/7.3.0"
+  BITCOIN_ROOT="/home/gitianuser/fartcoin"
+  BDB_PREFIX="/home/gitianuser/fartcoin/db5"
+  PACKAGES_DIR="/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11"
+  SIGNER="3979D75C"
+  VERSION="1.0"
+
+export PATH
+export LD_LIBRARY_PATH
+export BITCOIN_ROOT
+export BDB_PREFIX
+export PACKAGES_DIR
+export SIGNER
+export VERSION 
+
+#################################################################################################
+#  Gitian  Build                                                                                # 
+#################################################################################################
+
+export SIGNER=3979D75C
+export VERSION=1.0
+
+pushd ./gitian-builder
+    make -C ../fartcoin/depends download SOURCES_PATH=`pwd`/cache/common
+popd
+ 
+pushd ./fartcoin
+git checkout v${VERSION}
+popd
+
+ ###Build Fartcoin Core for Linux, Windows, and OS X:
+  
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/fartcoin-*.tar.gz build/out/src/fartcoin-*.tar.gz ../
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/fartcoin-*-win-unsigned.tar.gz inputs/fartcoin-win-unsigned.tar.gz
+	mv build/out/fartcoin-*.zip build/out/fartcoin-*.exe ../
+	./bin/gbuild --commit fartcoin=v${VERSION} ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../fartcoin/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/fartcoin-*-osx-unsigned.tar.gz inputs/fartcoin-osx-unsigned.tar.gz
+	mv build/out/fartcoin-*.tar.gz build/out/fartcoin-*.dmg ../
+ 
+./fartcoin/contrib/gitian-build.sh --setup --detach-sign --os x --no-commit $SIGNER $VERSION
+./fartcoin/contrib/gitian-build.sh --build --detach-sign --os x --no-commit $SIGNER $VERSION
+
+#################################################################################################
+#  depends build                                                                                # 
+#################################################################################################
+
+PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')	
+cd fartcoin/depends
+make HOST=x86_64-apple-darwin11
+libtool --finish /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib
+libtool --finish /home/mr/fartcoin/depends/x86_64-pc-linux-gnu/lib
+./autogen.sh
+
+CONFIG_SITE=$PWD/depends/x86_64-apple-darwin11/share/config.site 
+./configure CXXFLAGS="-std=c++11" LDFLAGS="-L${BDB_PREFIX}/lib -L${PACKAGES_DIR}/gcc-7.3.0/lib64 -L${PACKAGES_DIR}/gcc-7.3.0/lib -L${PWD}/depends/x86_64-apple-darwin11/lib"  CPPFLAGS="-I${BDB_PREFIX}/include -I${PWD}/depends/x86_64-apple-darwin11/include"  PKG_CONFIG_LIBDIR="${PWD}/depends/x86_64-apple-darwin11/lib/pkgconfig"
+
+./configure CXXFLAGS="-std=gnu++11" BDB_LIBS="-L${BDB_PREFIX}/lib" BDB_CFLAGS="-I${BDB_PREFIX}/include" LDFLAGS="-L${PACKAGES_DIR}/gcc-7.3.0/lib64 -L${PACKAGES_DIR}/gcc-7.3.0/lib -L${PACKAGES_DIR}/gcc-7.3.0/lib/gcc/x86_64-unknown-linux-gnu/7.3.0 -L${PACKAGES_DIR}/gcc-7.3.0/libexec/gcc/x86_64-unknown-linux-gnu/7.3.0"  CPPFLAGS="-I${PWD}/depends/x86_64-apple-darwin11/include"  PKG_CONFIG_LIBDIR="${PWD}/depends/x86_64-apple-darwin11/lib/pkgconfig" 
+
+	make
+	sudo make install DESTDIR=/home/gitianuser/OSX64	
+	sudo apt-get install librsvg2-dev
+	sudo make deploy DESTDIR=/home/gitianuser/OSX64
+
+#################################################################################################
+# Build MacOSX10.11.sdk.tar.gz with osxcross                                                    # 
+################################################################################################# 
+
+git clone https://github.com/tpoechtrager/osxcross.git
+
+You may want to package your SDK using osxcross 'tools/gen_sdk_package.sh' on OS X
+COPY MacOSX10.11.sdk.tar.gz to /osxcross/tarball
+sudo ./tools/get_dependencies.sh
+./build.sh
+
+
+/usr/local/bin/clang
+/usr/local/bin/llvm-config
+
+Example usage:
+
+Example 1: CC=o32-clang ./configure --host=i386-apple-darwin15
+Example 2: CC=x86_64-apple-darwin15 ./configure --host=x86_64-apple-darwin15
+Example 3: o64-clang -Wall test.c -o test
+Example 4: x86_64-apple-darwin15-strip -x test
+
+
+mkdir /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/clang
+INSTALLPREFIX=/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11 ./build_clang.sh
+cd /home/gitianuser/osxcross/build/llvm-3.9.1.src/build_stage2
+sudo make install
+
+Do not forget to add to your PATH variable:
+PATH="$HOME/osxcross/target/bin:$PATH"
+sudo apt install python-pip python3-pip cmake libcap-dev
+pip install setuptools gitpython
+pip3 install setuptools gitpython
+pip install ez_setup
+pip3 install ez_setup
+
+
+/home/gitianuser/osxcross/target/bin
+
+libtool --finish /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib
+libtool --finish /home/gitianuser/osxcross/target/bin/
+
+export TARGET_DIR="/home/gitianuser/osxcross/target"
+CONFIG_SITE=$PWD/depends/x86_64-apple-darwin11/share/config.site 
+./configure 
+CXXFLAGS="-std=c++11" 
+LDFLAGS="-L${PWD}/db5/lib"  -L${TARGET_DIR}/bin -L${TARGET_DIR}/lib64 -L${TARGET_DIR}/lib -L${PACKAGES_DIR}/gcc-7.3.0/lib64 -L${PACKAGES_DIR}/gcc-7.3.0/lib -L${PWD}/depends/x86_64-apple-darwin11/lib"  
+CPPFLAGS="-I${PWD}/db5/include"  -I${TARGET_DIR}/include -I${PWD}/depends/x86_64-apple-darwin11/include"  
+PKG_CONFIG_LIBDIR="${PWD}/depends/x86_64-apple-darwin11/lib/pkgconfig"
+
+#################################################################################################
+# Toolchain 4 with MaxOSX10.11.sdk & iPhoneOS4.3.sdk                                            # 
+################################################################################################# 
+
+git clone https://github.com/mingwandroid/toolchain4.git
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/gcc-4.4-base_4.4.7-2_amd64.deb
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/gcc-4.4_4.4.7-2_amd64.deb
+wget http://ftp.nl.debian.org/debian/pool/main/g/gcc-4.4/cpp-4.4_4.4.7-2_amd64.deb
+sudo dpkg -i gcc-4.4-base_4.4.7-2_amd64.deb
+sudo dpkg -i cpp-4.4_4.4.7-2_amd64.deb
+sudo dpkg -i gcc-4.4_4.4.7-2_amd64.deb
+
+Copy MacOSX.sdk && iPhoneOS4.3.sdk to /toolchain4/sdks/
+cd toolchain4
+	./build-all.sh apple intel
+    ./toolchain.sh buildsys intel
+    ./toolchain.sh cctools intel
+	make depend
+    ./toolchain.sh llvmgcc intel
+    ./toolchain.sh ldid intel
+
+	cd /toolchain4/as_driver
+    make
+    cd /usr/bin
+    sudo mv as i686-linux-gnu-as
+    sudo cp -p /home/gitianuser/toolchain4/as_driver/as_driver as
+    sudo ln -s /home/gitianuser/toolchain4/pre/bin/arm-apple-darwin9-as .
+    sudo mv ld i686-linux-gnu-ld
+    sudo cp -p /home/gitianuser/toolchain4/as_driver/as_driver ld
+    sudo ln -s /home/gitianuser/toolchain4/pre/bin/arm-apple-darwin9-ld .
+
+#################################################################################################
+# GCC-7.3 -std=c++11                                                                            # 
+################################################################################################# 
+unset LD_LIBRARY_PATH
+unset CPLUS_INCLUDE_PATH
+unset C_INCLUDE_PATH
+export PACKAGES_DIR=/home/gitianuser/PACKAGES
+export STACK_SRC=`mktemp -d /tmp/moose_stack_src.XXXXXX`
+umask 022
+ 
+ cd $STACK_SRC
+curl -L -O http://mirrors.concertpass.com/gcc/releases/gcc-7.3.0/gcc-7.3.0.tar.gz
+tar -xf gcc-7.3.0.tar.gz -C .
+cd $STACK_SRC/gcc-7.3.0
+./contrib/download_prerequisites
+
+../gcc-7.3.0/configure --prefix=$PACKAGES_DIR/gcc-7.3.0 \
+--disable-multilib \
+--enable-languages=c,c++,fortran,jit \
+--enable-checking=release \
+--enable-host-shared \
+--with-pic
+ 
+make
+make install
+
+#################################################################################################
+# Boost                                                                                         # 
+################################################################################################# 
+If you need to build Boost yourself:
+
+	sudo su
+	./bootstrap.sh toolset=clang
+	./b2  ./bjam install
+	toolset=clang cxxflags="-stdlib=libc++ -std=c++11" linkflags="-stdlib=libc++ -std=c++11" --build-dir=/home/gitianuser/build --prefix=/home/gitianuser/fartcoin/depends/x86_64-apple-darwin11
+	
+	libtool --finish /home/gitianuser/fartcoin/depends/x86_64-apple-darwin11/lib
+The following directory should be added to compiler include paths:
+
+    /home/gitianuser/boost_1_64_0
+
+The following directory should be added to linker library paths:
+
+    /home/gitianuser/boost_1_64_0/stage/lib
+
+
+#################################################################################################
+# Patch                                                                                         # 
+#################################################################################################
+Setting up the gitian image
+Gitian needs a virtual image of the operating system to build in. Currently this is Ubuntu Precise x86_64. This image will be copied and used every time that a build is started to make sure that the build is deterministic. Creating the image will take a while, but only has to be done once.
+
+IMPORTANT: The default bin/make-base-vm will fail with Debian Jessie.
+Fixing it is easy, just add sudo before the mkfs.ext4 at line 114:
+Code:
+$ git diff
+diff --git a/bin/make-base-vm b/bin/make-base-vm
+index 7fc7818..e51b1a2 100755
+--- a/bin/make-base-vm
++++ b/bin/make-base-vm
+@@ -114,7 +114,7 @@ if [ $LXC = "1" ]; then
+   # Need universe for lxc in lucid
+   env -i LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 sudo debootstrap --arch=$ARCH --include=$addpkg --exclude=$removepkg --components=main,universe $SUITE $OUT-bootstrap $MIRROR
+   dd if=/dev/zero of=$OUT-lxc bs=1M count=1 seek=10240
+-  mkfs.ext4 -F $OUT-lxc
++  sudo mkfs.ext4 -F $OUT-lxc
+   t=`mktemp -d gitian.XXXXXXXX`
+   sudo mount $OUT-lxc $t
+   sudo cp -a $OUT-bootstrap/* $t
+Execute the following as user debian:
+
+Code:
+cd gitian-builder
+bin/make-base-vm --lxc --arch amd64 --suite precise
+There will be a lot of warnings printed during build of the image. These can be ignored.
+
+Note: When sudo asks for a password, enter the password for the user gitian not for root.
+
+#################################################################################################
+#  !!!!This document is not complete!!!!                                                        #
+#  !!!!These are just some personal notes!!!!                                                   #
+#################################################################################################
