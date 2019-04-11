@@ -1,0 +1,64 @@
+#################################################################################################
+#  !!!!This document is not complete!!!!                                                        #
+#  !!!!These are just some personal notes!!!!                                                   #
+#################################################################################################
+
+#################################################################################################
+# Fartcoin Install Guide using VM Linux debian8.10 using Bitvise SSH Client                     # 
+#################################################################################################
+Install Bitvise SSH on Windows
+
+Make new VM -> Settings gitian 
+Network: Advanced Port Forwarding
+add: SSH Hostport 22222 Guestport 22
+
+Run Debian Live -> Install
+Hostname: debian -> Domainname: (empty)
+New Username: debian 
+next,next,next
+
+Use network mirror: YES -> No HTTP proxy
+Software install -> 'SSH server' and 'Standard System Utilities' 
+Uncheck 'Debian Desktop Environment' and 'Print Server'
+
+Install GRUB boot loader on: /dev/sda 
+
+#################################################################################################
+# LOGIN debian8.10 as root and permit root users over (Bitvise) SSH                             #
+#################################################################################################
+
+root@debian:~# sed -i 's/^PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+root@debian:~# /etc/init.d/ssh restart
+
+#################################################################################################
+# Open Bitvise SSH Client                                                                       #
+#################################################################################################
+
+server: localhost -> port: 22222 -> username: root
+Key for this session
+
+logging in as root over Bitvise SSH:
+
+adduser debian sudo
+apt-get install git sudo ruby apt-cacher-ng qemu-utils debootstrap lxc python-cheetah 
+apt-get install parted kpartx bridge-utils make ubuntu-archive-keyring curl firewalld
+
+echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-start" > /etc/sudoers.d/gitian-lxc
+echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-execute" >> /etc/sudoers.d/gitian-lxc
+echo '#!/bin/sh -e' > /etc/rc.local
+echo 'brctl addbr br0' >> /etc/rc.local
+echo 'ip addr add 10.0.3.2/24 broadcast 10.0.3.255 dev br0' >> /etc/rc.local
+echo 'ip link set br0 up' >> /etc/rc.local
+echo 'firewall-cmd --zone=trusted --add-interface=br0' >> /etc/rc.local
+echo 'exit 0' >> /etc/rc.local
+echo 'export USE_LXC=1' >> /home/debian/.profile
+echo 'export GITIAN_HOST_IP=10.0.3.2' >> /home/debian/.profile
+echo 'export LXC_GUEST_IP=10.0.3.5' >> /home/debian/.profile
+reboot
+
+Logout Root on Bitvise SSH.
+You can now Login on account debian
+#################################################################################################
+#  !!!!This document is not complete!!!!                                                        #
+#  !!!!These are just some personal notes!!!!                                                   #
+#################################################################################################
