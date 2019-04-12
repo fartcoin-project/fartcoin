@@ -1,62 +1,68 @@
 Mac OS X Build Instructions and Notes
-====================================
-This guide will show you how to build fartcoind (headless client) for OSX.
+This guide will show you how to build fartcoin-qt for OSX. Tested on OSX 10.9 on 64-bit Intel processors only.
 
-Notes
------
-
-* Tested on OS X 10.7 through 10.10 on 64-bit Intel processors only.
-
-* All of the commands should be executed in a Terminal application. The
-built-in one is located in `/Applications/Utilities`.
+All of the commands should be executed in a Terminal application. (cmd+space) then type terminal.
 
 Preparation
------------
+You need to install Xcode, when you type “git” in Terminal an installation popup will appear. The installation for Xcode will be done in the AppStore, and needs to download at least 5 GB.
 
-You need to install XCode with all the options checked so that the compiler
-and everything is available in /usr not just /Developer. XCode should be
-available on your OS X installation media, but if not, you can get the
-current version from https://developer.apple.com/xcode/. If you install
-Xcode 4.3 or later, you'll need to install its command line tools. This can
-be done in `Xcode > Preferences > Downloads > Components` and generally must
-be re-done or updated every time Xcode is updated.
+While downloading you can already install Homebrew www.brew.sh After Xcode is installed you can install MacPorts www.macports.com We need this in order to install library dependencies. Installing the dependencies using MacPorts and Brew is very straightforward.
 
-You will also need to install [Homebrew](http://brew.sh) in order to install library
-dependencies.
+The installation of the actual dependencies is covered in the Instructions sections below.
 
-The installation of the actual dependencies is covered in the Instructions
-sections below.
-
+Instructions: MacPorts
+sudo port install boost openssl miniupnpc autoconf pkgconfig automake qt4-mac qrencode protobuf-cpp
 Instructions: Homebrew
-----------------------
+brew install autoconf automake berkeley-db boost miniupnpc openssl pkg-config protobuf qt
+Instructions: Building Fartcoin-Core
+Clone the github tree to get the source code and go into the directory. git clone https://github.com/fartcoin/fartcoin.git cd fartcoin
 
-#### Install dependencies using Homebrew
+Build Berkeley-db-5.1.29.NC in /Users/OSX_USER/fartcoin/:
 
-        brew install autoconf automake libtool boost miniupnpc openssl pkg-config protobuf qt5
-        brew install berkeley-db # You need to make sure you install a version >= 5.1.29, but as close to 5.1.29 as possible. Check the homebrew docs to find out how to install older versions.
+Download berkeley-db from oracle, 
+http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz
+and extract it into /fartcoin/
+In the fartcoin folder type:
 
-NOTE: Building with Qt4 is still supported, however, could result in a broken UI. As such, building with Qt5 is recommended.
+BITCOIN_ROOT=$(pwd)
+BDB_PREFIX=”${BITCOIN_ROOT}/db5″
+mkdir -p $BDB_PREFIX
+cd db-5.1.29.NC/
+curl -OL https://raw.github.com/narkoleptik/os-x-berkeleydb-patch/master/atomic.patch
+patch src/dbinc/atomic.h < atomic.patch
+cd build_unix/
+../dist/configure –enable-cxx –disable-shared –with-pic –prefix=$BDB_PREFIX
+make install
+cd $BITCOIN_ROOT
+Build fartcoin-core:
 
-### Building `fartcoind`
+./autogen.sh
+./configure LDFLAGS=”-L$(pwd)/db5/lib/ -L/opt/local/libexec/qt4/lib” CPPFLAGS=”-I$(pwd)/db5/include/ -I/opt/local/libexec/qt4/include” PKG_CONFIG_PATH=”/opt/local/libexec/qt4/lib/pkgconfig”
+make
+make deploy
+It is a good idea to build and run the unit tests, too:
 
-1. Clone the github tree to get the source code and go into the directory.
+make check
+Creating a release build
+You can ignore this section if you are building fartcoind for your own use.
 
-        git clone https://github.com/fartcoin/fartcoin.git
-        cd fartcoin
+fartcoind/fartcoin-cli binaries are not included in the Fartcoin-Qt.app bundle.
 
-2.  Build fartcoind:
+If you are building fartcoind or Fartcoin-Qt for others, your build machine should be set up as follows for maximum compatibility:
 
-        ./autogen.sh
-        ./configure --with-gui=qt5
-        make
+All dependencies should be compiled with these flags:
 
-3.  It is also a good idea to build and run the unit tests:
+-mmacosx-version-min=10.6 -arch x86_64 -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk
 
-        make check
+For MacPorts, that means editing your macports.conf and setting macosx_deployment_target and build_arch:
 
-4.  (Optional) You can also install fartcoind to your path:
+macosx_deployment_target=10.6
+build_arch=x86_64
+... and then uninstalling and re-installing, or simply rebuilding, all ports.
 
-        make install
+As of December 2012, the boost port does not obey macosx_deployment_target. Download http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip for a fix.
+
+Once dependencies are compiled, see release-process.md for how the Fartcoin-Qt.app bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Use Qt Creator as IDE
 ------------------------
