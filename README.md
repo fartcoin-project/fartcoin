@@ -9,10 +9,7 @@
 Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 but Fartcoin currently employs a simplified variant of scrypt as its proof of work (POW). We are taking development cues from Bitcoin, Litecoin & Dogecoin.
 This is the first V1.0-Beta release of the fartcoin-core wallet. The Fartcoin blockchain is implemented in the dogecoin-1.14-beta-1 wallet and got a graphical upgrade to the "Space Police" theme.
 
-# The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are not 24/7 online.  Please do not mine or trade Fartcoins, since you might lose them. 
-
-This Project is currently Under Construction, this means that while you can download the Fartcoin-Core wallet and play around with it if interested. Keep in mind that this project is under construction and thus the Blockchain might be rebuild / restarted multiple times before the official launch.
-
+# The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are 24/7 online.
 
 ## Frequently Asked Questions
 
@@ -27,12 +24,6 @@ BlockReward= 1*COIN / ( height / 10000000)
 ```
 1 Block per minute = 43800 Blocks per Month = 525600 Blocks per Year 
 * Month1 = 112.6 Million FartCoins 
-* Month2 = 119.6 
-* Month3 = 123.6
-* Month4 = 126.5
-* Month5 = 128.7
-* Month6 = 130.6
-
 * Year1  = 137.5 
 * Year2  = 143.9
 * Year3  = 147.9 
