@@ -1265,13 +1265,13 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan =  12 * 3600 ; // Fartcoin: every hour
-static const int64_t nTargetTimespanNEW = 1800 ; // Fartcoin: every 30 min
+static const int64_t nTargetTimespan =  12 * 3600 ; // Fartcoin: every 12 hours
+static const int64_t nTargetTimespanNEW = 60 ; // Fartcoin: change dificulty every 1 min
 static const int64_t nTargetSpacing = 60; // Fartcoin: 1 minute per block
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
-static const int64_t nDiffChangeTarget = 100000; // Patch effective @ block 100000
-static const int64_t nTestnetResetTargetFix = 100000; // Testnet enables target reset at block 100000
+static const int64_t nDiffChangeTarget = 55555; // Patch effective @ block 100000
+static const int64_t nTestnetResetTargetFix = 55555; // Testnet enables target reset at block 100000
 
 //
 // minimum amount of work that could possibly be required nTime after
