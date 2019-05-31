@@ -7,7 +7,6 @@ src/fartcoin-cli
 src/test/test_fartcoin
 src/qt/test/test_fartcoin-qt
 
-Makefile.in
 aclocal.m4
 autom4te.cache/
 config.log
@@ -55,7 +54,6 @@ fartcoin-seeder/*
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 fartcoin-qt
 Fartcoin-Qt.app
 

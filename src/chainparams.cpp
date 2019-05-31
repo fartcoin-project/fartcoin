@@ -56,9 +56,9 @@ public:
         consensus.fDigishieldDifficultyCalculation = false;
         consensus.nCoinbaseMaturity = 30;
 
-        // Blocks 1337 - 11337 are Digishield without AuxPoW
+        // Blocks 55555 - 100000 are Digishield without AuxPoW
         digishieldConsensus = consensus;
-        digishieldConsensus.nHeightEffective = 100000;
+        digishieldConsensus.nHeightEffective = 55555;
         digishieldConsensus.fSimplifiedRewards = true;
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
@@ -152,9 +152,10 @@ public:
 	    (   1337, uint256S("0xb06b7eccbe44a237245c4d4ab5ad0d81ff0b1a8c916c0142f06d542758af88ea"))
             (   8888, uint256S("0x402e3bc38e4e1fd472110cc5dcee4b33984a66df18acf5f7abf9adce30c6f737"))
 	    (  22222, uint256S("0x93898c15a6de929cce6157a1e095a44dcc53193dbaa1524794d02e9f329e2c0c"))
-	    (  33333, uint256S("0xda3117a2800de5e871c8d7a5282e849c819a66afe76caae183c36ba009458cd9")),
-            1556209104, // * UNIX timestamp of last checkpoint block
-                 33387, // * total number of transactions between genesis and last checkpoint
+	    (  33333, uint256S("0xda3117a2800de5e871c8d7a5282e849c819a66afe76caae183c36ba009458cd9"))
+	    (  44444, uint256S("0xcbc6e9cd9cd517594fae59059f2af48f58f3b7aa6abf4e135235f81c5c5ad2e2")),
+            1558445691, // * UNIX timestamp of last checkpoint block
+                 44508, // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
              24 * 60    // * estimated number of transactions per day after checkpoint
         };
