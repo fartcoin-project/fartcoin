@@ -1,4 +1,5 @@
-// Copyright (c) 2012-2014 The Bitcoin Core developers
+// Copyright (c) 2009-2014 The Bitcoin Core developers
+// Copyright (c) 2015 The Dogecoin Core developers
 // Copyright (c) 2018-2019 The Fartcoin Core developer
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +15,7 @@
  * for both bitcoind and bitcoin-core, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Space_Police_1.0");
+const std::string CLIENT_NAME("Space_Police");
 
 /**
  * Client version number
