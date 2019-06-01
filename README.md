@@ -41,13 +41,15 @@ or you can trade Fartcoins at www.MemesExchange.com
 ### Used ports
 P2P 13377
 
-### Mining Fartcoins
+### Mining Fartcoins - solo or pool.
+SOLO MINING: 
+In the Fartcoin-core wallet go to Help->Debug Window->Console
+To start type: setgenerate true 
+To stop  type: setgenerate false 
 
-To mine the coin you should connect to the Fartcoin mining pool
-
+POOL MINING:
+When the mining pool is finished you can also connect to the Fartcoin mining pool.
 Download a miner: https://github.com/pooler/cpuminer/releases
-
 Windows: run the miner in CMD
-
 ### minerd.exe -a scrypt -o stratum+tcp://fartcoin-project.com:4444  -O YOUR_FARTCOIN_ADDRESS:x
-
+### !!!!! The Mining Pool is not yet finished/online !!!!!
