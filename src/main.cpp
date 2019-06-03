@@ -1226,7 +1226,12 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     // After block 10.000.000 block reward stays at 1 FART per block
     int64_t nSubsidy = 1 * COIN;
 
-    if(nHeight < 10000001)
+        if(nHeight == 0)
+    {
+	int64_t nSubsidy = 100 * COIN;
+    }
+	
+    else if(nHeight < 10000001)
     {
 	int64_t minsub = 1 * COIN;
         nHeightDivided <double> obj(nHeight, 10000000);
