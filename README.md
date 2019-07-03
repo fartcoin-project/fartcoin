@@ -23,7 +23,6 @@ BlockReward= 1*COIN / ( height / 10000000)
 ## Total Fartcoins at block 10,000,000 (20 Years) = 166,953,103.60862600
 ```
 1 Block per minute = 43800 Blocks per Month = 525600 Blocks per Year 
-* Month1 = 112.6 Million FartCoins 
 * Year1  = 137.5 
 * Year2  = 143.9
 * Year3  = 147.9 
@@ -35,8 +34,8 @@ Year20 = 166,953,113 FartCoins = block 10512000
 ```
 
 ### How to get ƒartcoins?
-You can mine Fartcoins with your fartcoin-core wallet 
-or you can trade Fartcoins at www.MemesExchange.com 
+You can mine Fartcoins with your fartcoin-core wallet,
+the mining pool or you can trade Fartcoins at MemesExchange.com 
 
 ### Used ports
 P2P 13377
@@ -52,4 +51,4 @@ When the mining pool is finished you can also connect to the Fartcoin mining poo
 Download a miner: https://github.com/pooler/cpuminer/releases
 Windows: run the miner in CMD
 ### minerd.exe -a scrypt -o stratum+tcp://fartcoin-project.com:4444  -O YOUR_FARTCOIN_ADDRESS:x
-### !!!!! The Mining Pool is not yet finished/online !!!!!
+
