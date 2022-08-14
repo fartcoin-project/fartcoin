@@ -363,8 +363,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Permintaan pembayaran (membangkitkan kode QR dan fartcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Permintaan pembayaran (membangkitkan kode QR dan URIs)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -379,8 +379,8 @@
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Buka URI fartcoin: atau permintaan pembayaran</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Buka URI atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -497,12 +497,12 @@
         <translation>Biaya:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Dengan Biaya:</translation>
+        <source>After </source>
+        <translation>Dengan </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Uang Kembali:</translation>
+        <translation>Uang </translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -777,8 +777,8 @@
         <translation>Menggunakan direktori untuk data yang biasa.</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Menggunakan direktori data yang dipilih Anda:</translation>
+        <source>Use a custom data </source>
+        <translation>Menggunakan direktori data yang dipilih </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -839,7 +839,7 @@
         <translation>Transaksi URLs pihak ketiga</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>pilihan perintah-baris aktif menimpa atas pilihan-pilihan: </translation>
     </message>
     <message>
@@ -884,7 +884,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>IP Proxy:</translation>
+        <translation>IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -916,11 +916,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Bahasa Antarmuka Pengguna:</translation>
+        <translation>&amp;Bahasa Antarmuka </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unit untuk menunjukkan nilai:</translation>
+        <translation>&amp;Unit untuk menunjukkan </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -991,7 +991,7 @@
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Terlalu Muda:</translation>
+        <translation>Terlalu </translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -1413,12 +1413,12 @@
         <translation>Biaya:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Dengan Biaya:</translation>
+        <source>After </source>
+        <translation>Dengan </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Uang Kembali:</translation>
+        <translation>Uang </translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -1584,12 +1584,12 @@
         <translation>Masukkan label untuk alamat ini untuk dimasukan dalam daftar alamat yang pernah digunakan</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Kirim Ke:</translation>
+        <source>Pay </source>
+        <translation>Kirim </translation>
     </message>
     <message>
         <source>Memo:</source>
-        <translation>Catatan Peringatan:</translation>
+        <translation>Catatan </translation>
     </message>
 </context>
 <context>
@@ -2224,23 +2224,23 @@
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(pengaturan awal: 1)</translation>
+        <translation>(pengaturan 1)</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Coba memulihkan kunci-kunci pribadi dari wallet.dat yang rusak</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Pilihan pembuatan blok:</translation>
+        <source>Block creation </source>
+        <translation>Pilihan pembuatan </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Jangan menghubungkan node(-node) selain yang di daftar</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Pilih koneksi:</translation>
+        <source>Connection </source>
+        <translation>Pilih </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2284,7 +2284,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Alamat -onion salah: '%s'</translation>
+        <translation>Alamat -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2311,8 +2311,8 @@
         <translation>Dompet %s ada diluar direktori data %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opsi dompet:</translation>
+        <source>Wallet </source>
+        <translation>Opsi </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2339,8 +2339,8 @@
         <translation>Nilai yang salah untuk -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opsi server RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opsi server </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2435,19 +2435,19 @@
         <translation>Gagal memuat wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Alamat -proxy salah: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Alamat -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Jaringan tidak diketahui yang ditentukan dalam -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Tidak dapat menyelesaikan alamat -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Tidak dapat menyelesaikan alamat -externalip: '%s'</translation>
     </message>
     <message>

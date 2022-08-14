@@ -367,7 +367,7 @@
         <translation>Kerno de Bitmono</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso fartcoin:)</translation>
     </message>
     <message>
@@ -383,8 +383,8 @@
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Malfermi fartcoin:-URI-on aŭ pagpeton</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Malfermi -URI-on aŭ pagpeton</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -477,8 +477,8 @@
         <translation>Krompago:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Post krompago:</translation>
+        <source>After </source>
+        <translation>Post </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -769,8 +769,8 @@
         <translation>Uzi la defaŭltan dosierujon por datumoj</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Uzi alian dosierujon por datumoj:</translation>
+        <source>Use a custom data </source>
+        <translation>Uzi alian dosierujon por </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -876,11 +876,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Lingvo de la fasado:</translation>
+        <translation>&amp;Lingvo de la </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unuo por vidigi sumojn:</translation>
+        <translation>&amp;Unuo por vidigi </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -969,7 +969,7 @@
         <translation>Eraro dum pagopeto</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation>Ne eblas lanĉi la ilon 'klaki-por-pagi'</translation>
     </message>
     <message>
@@ -1333,8 +1333,8 @@
         <translation>Krompago:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Post krompago:</translation>
+        <source>After </source>
+        <translation>Post </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1496,8 +1496,8 @@
         <translation>Tajpu etikedon por tiu ĉi adreso por aldoni ĝin al la listo de uzitaj adresoj</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagi Al:</translation>
+        <source>Pay </source>
+        <translation>Pagi </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2099,16 +2099,16 @@
         <translation>Averto: via wallet.dat estas difektita, sed la datumoj sukcese saviĝis! La originala wallet.dat estas nun konservita kiel wallet.{timestamp}.bak en %s; se via saldo aŭ transakcioj estas malĝustaj vi devus restaŭri per alia sekurkopio.</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; povas esti:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; povas </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Provo ripari privatajn ŝlosilojn el difektita wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Blok-kreaj agordaĵoj:</translation>
+        <source>Block creation </source>
+        <translation>Blok-kreaj </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -2175,8 +2175,8 @@
         <translation>Monujo %s troviĝas ekster la dosierujo por datumoj %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Monujaj opcioj:</translation>
+        <source>Wallet </source>
+        <translation>Monujaj </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2303,7 +2303,7 @@
         <translation>Eraro dum ŝargado de wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Nevalid adreso -proxy: '%s'</translation>
     </message>
     <message>
@@ -2311,11 +2311,11 @@
         <translation>Nekonata reto specifita en -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Ne eblas trovi la adreson -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Ne eblas trovi la adreson -externalip: '%s'</translation>
     </message>
     <message>

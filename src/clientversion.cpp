@@ -14,7 +14,7 @@
  * for both bitcoind and bitcoin-core, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Space_Police_1.0");
+const std::string CLIENT_NAME("Fartcoin_OSX");
 
 /**
  * Client version number

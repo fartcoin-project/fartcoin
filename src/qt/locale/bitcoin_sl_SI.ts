@@ -383,7 +383,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Ustvarjanje zahtevka za plačilo (izdelava QR kode in fartcoin: URI naslova)</translation>
     </message>
     <message>
@@ -403,7 +403,7 @@
         <translation>Prikaže seznam naslovov, na katere ste prejeli plačila</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Odpre "fartcoin:" URI ali zahtevo o plačilu</translation>
     </message>
     <message>
@@ -544,7 +544,7 @@
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prednostno mesto:</translation>
+        <translation>Prednostno </translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -555,8 +555,8 @@
         <translation>Prah:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po proviziji:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -875,8 +875,8 @@
         <translation>Uporabi privzeto mapo za shranjevanje podatkov.</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Uporabi to mapo za shranjevanje podatkov:</translation>
+        <source>Use a custom data </source>
+        <translation>Uporabi to mapo za shranjevanje </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -950,7 +950,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP naslov proxy strežnika (npr. IPv4: 127.0.0.1 ali IPv6: ::1)</translation>
+        <translation>IP naslov proxy strežnika (npr. IPv4: 127.0.0.1 ali ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -969,8 +969,8 @@
         <translation>URL nakazila tretjih oseb</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktivne opcije iz ukazne vrstice, ki preglasijo zgornje opcije:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktivne opcije iz ukazne vrstice, ki preglasijo zgornje </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1030,11 +1030,11 @@
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>Povezava v omrežje s pomočjo SOCKS5 posrednika:</translation>
+        <translation>Povezava v omrežje s pomočjo SOCKS5 </translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP posredniškega strežnika:</translation>
+        <translation>&amp;IP posredniškega </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1066,11 +1066,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Jezik uporabniškega vmesnika:</translation>
+        <translation>&amp;Jezik uporabniškega </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Enota za prikaz zneskov:</translation>
+        <translation>&amp;Enota za prikaz </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1223,7 +1223,7 @@
         <translation>Napaka pri zahtevi plačila</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation>Ni mogoče zagnati upravitelja plačil na klik tipa fartcoin:.</translation>
     </message>
     <message>
@@ -1232,7 +1232,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Fartcoin address or malformed URI parameters.</source>
-        <translation>Naslov URL je neprepoznaven! Razloga sta lahko: neveljaven Fartcoin naslov ali napačni parametri v URI.</translation>
+        <translation>Naslov URL je neprepoznaven! Razloga sta neveljaven Fartcoin naslov ali napačni parametri v URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1796,15 +1796,15 @@
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prednostno mesto:</translation>
+        <translation>Prednostno </translation>
     </message>
     <message>
         <source>Fee:</source>
         <translation>Provizija:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po proviziji:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1819,7 +1819,7 @@
         <translation>Naslov za vračilo drobiža po meri</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Provizija:</translation>
     </message>
     <message>
@@ -1860,15 +1860,15 @@
     </message>
     <message>
         <source>Custom:</source>
-        <translation>Po meri:</translation>
+        <translation>Po </translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Samodejni obračun provizije še ni pripravljen. Po navadi izračun traja nekaj blokov...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Čas do potrditve:</translation>
+        <source>Confirmation </source>
+        <translation>Čas do </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1999,7 +1999,7 @@
         <translation>Naslov prejemnika je neveljaven. Prosimo, preverite.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>Naslov je že bil uporabljen. Vsak naslov naj bi se uporabil samo enkrat.</translation>
     </message>
     <message>
@@ -2098,11 +2098,11 @@
         <translation>Vnesite oznako za ta naslov, da ga shranite v seznam uporabljenih naslovov</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Sporočilo, ki ste ga pripeli na URI fartcoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Prejemnik:</translation>
     </message>
     <message>
@@ -2677,12 +2677,12 @@
         <translation>(privzeto: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; je lahko:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; je </translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Možnosti ustvarjanja blokov:</translation>
+        <source>Block creation </source>
+        <translation>Možnosti ustvarjanja </translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -2789,20 +2789,20 @@
         <translation>Napaka pri nalaganju wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neveljaven -proxy naslov: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Neveljaven -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Neznano omrežje določeno v -onlynet: '%s'.</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Nemogoče rešiti -bind naslova: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Nemogoče rešiti -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Nemogoče rešiti -externalip naslova: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Nemogoče rešiti -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

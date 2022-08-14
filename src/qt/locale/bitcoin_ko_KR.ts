@@ -371,7 +371,7 @@
         <translation>도지코인 코어</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>지불 요청하기 (QR코드와 도지코인 URI 생성)</translation>
     </message>
     <message>
@@ -387,7 +387,7 @@
         <translation>한번 이상 사용된 받는 주소와 주소 제목의 목록을 보여줍니다.</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>도지코인 URI 또는 지불 요청을 엽니다</translation>
     </message>
     <message>
@@ -501,8 +501,8 @@
         <translation>더스트:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>수수료 이후:</translation>
+        <source>After </source>
+        <translation>수수료 </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -781,8 +781,8 @@
         <translation>기본 데이터 폴더를 사용하기</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>커스텀 데이터 폴더 사용:</translation>
+        <source>Use a custom data </source>
+        <translation>커스텀 데이터 폴더 </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -855,7 +855,7 @@
         <translation>제 3자 거래 URLs</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>명령어 라인 옵션을 활성화해서 옵션을 우회하시오</translation>
     </message>
     <message>
@@ -987,7 +987,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>모니터링 지갑:</translation>
+        <translation>모니터링 </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1007,7 +1007,7 @@
     </message>
     <message>
         <source>Immature:</source>
-        <translation>아직 사용 불가능:</translation>
+        <translation>아직 사용 </translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -1045,8 +1045,8 @@
         <translation>지불 요청 애러</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>도지코인을 시작할 수 없습니다: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>도지코인을 시작할 수 click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1425,8 +1425,8 @@
         <translation>수수료:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>수수료 이후:</translation>
+        <source>After </source>
+        <translation>수수료 </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1600,12 +1600,12 @@
         <translation>사용된 주소 목록에 새 주소를 추가하기 위해 제목을 입력합니다. </translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>도지코인 URI에 첨부된 메시지는 사용자 참고를 위해 거래기록과 함께 보관될 것입니다. 참고: 이 메시지는 도지코인 네트워크를 통해 보내지 않을 것입니다.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>송금할 대상 : </translation>
+        <source>Pay </source>
+        <translation>송금할 </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2263,23 +2263,23 @@
         <translation>손상된 wallet.dat에서 개인키 복원을 시도합니다</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>블록 생성 옵션:</translation>
+        <source>Block creation </source>
+        <translation>블록 생성 </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>지정된 노드에만 연결하기</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>연결 설정 : </translation>
+        <source>Connection </source>
+        <translation>연결 </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>손상된 블록 데이터베이스가 감지되었습니다</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>디버그 및 테스트 설정</translation>
     </message>
     <message>
@@ -2324,7 +2324,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>잘못된 -onion 주소입니다: '%s'</translation>
+        <translation>잘못된 -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2355,8 +2355,8 @@
         <translation>지갑 %s는 데이터 디렉토리 %s 밖에 위치합니다.</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>지갑 옵션:</translation>
+        <source>Wallet </source>
+        <translation>지갑 </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2395,11 +2395,11 @@
         <translation>최저 거래 수수료가 부족합니다. -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL 옵션: (비트코인 위키의 SSL 설정 설명서 참고)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (비트코인 위키의 SSL 설정 설명서 참고)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>RPC 서버 설정</translation>
     </message>
     <message>
@@ -2504,31 +2504,31 @@
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat 불러오기 에러: 지갑 오류</translation>
+        <translation>wallet.dat 불러오기 지갑 오류</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>wallet.dat 불러오기 에러</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>잘못된 -proxy 주소입니다: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>잘못된 -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet에 지정한 네트워크를 알 수 없습니다: '%s'</translation>
+        <translation>-onlynet에 지정한 네트워크를 알 수 '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>-bind 주소를 확인할 수 없습니다: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>-bind 주소를 확인할 수 '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>-externalip 주소를 확인할 수 없습니다: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>-externalip 주소를 확인할 수 '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-paytxfee=&lt;amount&gt;에 대한 양이 잘못되었습니다: '%s'</translation>
+        <translation>-paytxfee=&lt;amount&gt;에 대한 양이 '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

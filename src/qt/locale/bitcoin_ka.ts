@@ -363,8 +363,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და fartcoin: ბმულები)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და ბმულები)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -379,7 +379,7 @@
         <translation>გამოყენებული მიღების მისამართებისა და ნიშნულების სიის ჩვენება</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>fartcoin: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
     </message>
     <message>
@@ -477,8 +477,8 @@
         <translation>საკომისიო:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>დამატებითი საკომისიო:</translation>
+        <source>After </source>
+        <translation>დამატებითი </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -765,8 +765,8 @@
         <translation>ნაგულისხმევი კატალოგის გამოყენება</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>მითითებული კატალოგის გამოყენება:</translation>
+        <source>Use a custom data </source>
+        <translation>მითითებული კატალოგის </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -824,11 +824,11 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>პროქსის IP-მისამართი (მაგ.: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>პროქსის IP-მისამართი (მაგ.: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>საკომანდო სტრიქონის აქტიური ოპციები, რომლებიც გადაფარავენ ზემოთნაჩვენებს:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>საკომანდო სტრიქონის აქტიური ოპციები, რომლებიც გადაფარავენ </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -892,7 +892,7 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>სამომხმარებ&amp;ლო ენა:</translation>
+        <translation>სამომხმარებ&amp;ლო </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1001,8 +1001,8 @@
         <translation>გადახდის მოთხოვნის შეცდომა</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>ვერ გაიშვა fartcoin: click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>ვერ გაიშვა click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1413,8 +1413,8 @@
         <translation>საკომისიო:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>დამატებითი საკომისიო:</translation>
+        <source>After </source>
+        <translation>დამატებითი </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1588,11 +1588,11 @@
         <translation>შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>მესიჯი, რომელიც თან ერთვის URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>ადრესატი:</translation>
     </message>
     <message>
@@ -2243,16 +2243,16 @@
         <translation>ყურადღება: wallet.dat დაზიანებულია! ორიგინალური wallet.dat შენახულია როგორც wallet.{timestamp}.bak %s-ში; თუ შეამჩნიეთ უზუსტობა ნაშთში ან ტრანსაქციებში, აღადგინეთ არქივიდან.</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; შეიძლება იყოს:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; შეიძლება </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>პირადი გასაღებების აღდგენის მცდელობა wallet.dat-იდან</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>ბლოკის შექმნის ოპციები:</translation>
+        <source>Block creation </source>
+        <translation>ბლოკის შექმნის </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -2331,8 +2331,8 @@
         <translation>საფულე %s მდებარეობს მონაცემთა კატალოგის %s გარეთ</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>სფულის ოპციები:</translation>
+        <source>Wallet </source>
+        <translation>სფულის </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2463,20 +2463,20 @@
         <translation>არ იტვირთება wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>არასწორია მისამართი -proxy: '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet-ში მითითებულია უცნობი ქსელი: '%s'</translation>
+        <translation>-onlynet-ში მითითებულია უცნობი '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>ვერ ხერხდება -bind მისამართის გარკვევა: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>ვერ ხერხდება -bind მისამართის '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>ვერ ხერხდება -externalip მისამართის გარკვევა: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>ვერ ხერხდება -externalip მისამართის '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

@@ -516,7 +516,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP Proxy:</translation>
+        <translation>&amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -549,7 +549,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unidad en la que mostrar cantitades:</translation>
+        <translation>&amp;Unidad en la que mostrar </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -819,7 +819,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Pagar a:</translation>
+        <translation>&amp;Pagar </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1386,8 +1386,8 @@
         <translation>Error cargando wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Dirección -proxy invalida: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Dirección -proxy '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

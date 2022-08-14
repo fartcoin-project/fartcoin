@@ -391,7 +391,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Zahlungen anfordern (erzeugt QR-Codes und "fartcoin:"-URIs)</translation>
     </message>
     <message>
@@ -411,7 +411,7 @@
         <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Eine "fartcoin:"-URI oder Zahlungsanforderung öffnen</translation>
     </message>
     <message>
@@ -571,8 +571,8 @@
         <translation>"Dust":</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Abzüglich Gebühr:</translation>
+        <source>After </source>
+        <translation>Abzüglich </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -895,8 +895,8 @@
         <translation>Standard-Datenverzeichnis verwenden</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
+        <source>Use a custom data </source>
+        <translation>Ein benutzerdefiniertes Datenverzeichnis </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -993,8 +993,8 @@
         <translation>Externe Transaktions-URLs</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktive Kommandozeilenoptionen, die obige Konfiguration überschreiben:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktive Kommandozeilenoptionen, die obige Konfiguration </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1090,11 +1090,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Sprache der Benutzeroberfläche:</translation>
+        <translation>&amp;Sprache der </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Einheit der Beträge:</translation>
+        <translation>&amp;Einheit der </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1247,7 +1247,7 @@
         <translation>fehlerhafte Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation>"fartcoin: Klicken-zum-Bezahlen"-Handler konnte nicht gestartet werden</translation>
     </message>
     <message>
@@ -1827,8 +1827,8 @@
         <translation>Gebühr:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Abzüglich Gebühr:</translation>
+        <source>After </source>
+        <translation>Abzüglich </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1843,7 +1843,7 @@
         <translation>Benutzerdefinierte Wechselgeld-Adresse</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Transaktionsgebühr:</translation>
     </message>
     <message>
@@ -1891,7 +1891,7 @@
         <translation>(Intelligente Gebührenlogik ist noch nicht verfügbar. Normalerweise dauert dies einige Blöcke lang...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>Bestätigungszeit:</translation>
     </message>
     <message>
@@ -2027,8 +2027,8 @@
         <translation>Die Zahlungsadresse ist ungültig, bitte nochmals überprüfen.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Doppelte Adresse entdeckt: Adressen dürfen jeweils nur einmal vorkommen.</translation>
+        <source>Duplicate address addresses should only be used once each.</source>
+        <translation>Doppelte Adresse Adressen dürfen jeweils nur einmal vorkommen.</translation>
     </message>
     <message>
         <source>Warning: Invalid Fartcoin address</source>
@@ -2126,11 +2126,11 @@
         <translation>Adressbezeichnung eingeben, die dann zusammen mit der Adresse der Liste bereits verwendeter Adressen hinzugefügt wird.</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Eine an die "fartcoin:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Fartcoin-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Empfänger:</translation>
     </message>
     <message>
@@ -2877,15 +2877,15 @@
         <translation>(Standard: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; kann sein:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; kann </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Versuchen, private Schlüssel aus einer beschädigten wallet.dat wiederherzustellen</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>Blockerzeugungsoptionen:</translation>
     </message>
     <message>
@@ -2893,7 +2893,7 @@
         <translation>Mit nur dem oder den angegebenen Knoten verbinden</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>Verbindungsoptionen:</translation>
     </message>
     <message>
@@ -2901,7 +2901,7 @@
         <translation>Beschädigte Blockdatenbank erkannt</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Debugging-/Testoptionen:</translation>
     </message>
     <message>
@@ -3001,7 +3001,7 @@
         <translation>Wallet %s liegt außerhalb des Datenverzeichnisses %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>Wallet-Optionen:</translation>
     </message>
     <message>
@@ -3103,8 +3103,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3157,8 +3156,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Eine Wallet kann im Kürzungsmodus nicht verwendet werden.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kann Adresse in -whitebind nicht auflösen: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>Kann Adresse in -whitebind nicht '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3233,15 +3232,15 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Angabe eines Ports benötigt für -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>Knoten-Weiterleitungsoptionen:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>RPC-SSL-Optionen (siehe Bitcoin-Wiki für SSL-Einrichtung):</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>RPC-Serveroptionen:</translation>
     </message>
     <message>
@@ -3313,7 +3312,7 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Transaktion zu groß</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>Benutzeroberflächenoptionen:</translation>
     </message>
     <message>
@@ -3329,8 +3328,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: starten Sie Fartcoin Core zur Fertigstellung neu</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Wallet musste neu geschrieben starten Sie Fartcoin Core zur Fertigstellung neu</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3445,7 +3444,7 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>IP-Adressen in Debugausgabe einschließen (Standard: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Ungültige Adresse in -proxy: '%s'</translation>
     </message>
     <message>
@@ -3522,15 +3521,15 @@ Beispiel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Unbekannter Netztyp in -onlynet angegeben: '%s'</translation>
+        <translation>Unbekannter Netztyp in -onlynet '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kann Adresse in -bind nicht auflösen: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Kann Adresse in -bind nicht '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kann Adresse in -externalip nicht auflösen: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Kann Adresse in -externalip nicht '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

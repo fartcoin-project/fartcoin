@@ -392,7 +392,7 @@ Var vänlig och försök igen.</translation>
         <translation>Fartcoin Kärna</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Begär betalning (genererar QR-koder och fartcoin-URI)</translation>
     </message>
     <message>
@@ -412,8 +412,8 @@ Var vänlig och försök igen.</translation>
         <translation>Visa listan av använda mottagningsadresser och etiketter</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Öppna en fartcoin: URI eller betalningsbegäran</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Öppna en URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -553,7 +553,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Antal Byte:</translation>
+        <translation>Antal </translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -572,8 +572,8 @@ Var vänlig och försök igen.</translation>
         <translation>Damm:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter avgift:</translation>
+        <source>After </source>
+        <translation>Efter </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -892,8 +892,8 @@ Var vänlig och försök igen.</translation>
         <translation>Använd den förvalda datakatalogen</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Använd en anpassad datakatalog:</translation>
+        <source>Use a custom data </source>
+        <translation>Använd en anpassad </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -983,15 +983,15 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Tredjeparts URL:er (t.ex. en block utforskare) som finns i transaktionstabben som ett menyval i sammanhanget. %s i URL:en ersätts med tansaktionshashen. Flera URL:er är separerade med vertikala streck |.</translation>
+        <translation>Tredjeparts er (t.ex. en block utforskare) som finns i transaktionstabben som ett menyval i sammanhanget. %s i en ersätts med tansaktionshashen. Flera er är separerade med vertikala streck |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
         <translation>Tredjeparts transaktions-URL:er</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktiva kommandoradsalternativ som överrider alternativen ovan:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktiva kommandoradsalternativ som överrider alternativen </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1091,7 +1091,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Måttenhet att visa belopp i: </translation>
+        <translation>&amp;Måttenhet att visa belopp </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1244,8 +1244,8 @@ Var vänlig och försök igen.</translation>
         <translation>Fel vid betalningsbegäran</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Kan inte starta fartcoin: klicka-och-betala handhavare</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Kan inte starta klicka-och-betala handhavare</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1805,7 +1805,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Antal Byte:</translation>
+        <translation>Antal </translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -1820,8 +1820,8 @@ Var vänlig och försök igen.</translation>
         <translation>Avgift:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter avgift:</translation>
+        <source>After </source>
+        <translation>Efter </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1836,7 +1836,7 @@ Var vänlig och försök igen.</translation>
         <translation>Specialväxeladress</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Transaktionsavgift:</translation>
     </message>
     <message>
@@ -1884,7 +1884,7 @@ Var vänlig och försök igen.</translation>
         <translation>(Smartavgiften är inte initierad än. Detta tar vanligen några block...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>Bekräftelsetid:</translation>
     </message>
     <message>
@@ -2020,8 +2020,8 @@ Var vänlig och försök igen.</translation>
         <translation>Mottagarens adress är ogiltig. Kontrollera igen.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Duplicerad adress upptäckt: adresser skall endast användas en gång var.</translation>
+        <source>Duplicate address addresses should only be used once each.</source>
+        <translation>Duplicerad adress adresser skall endast användas en gång var.</translation>
     </message>
     <message>
         <source>Warning: Invalid Fartcoin address</source>
@@ -2115,12 +2115,12 @@ Var vänlig och försök igen.</translation>
         <translation>Ange en etikett för denna adress att adderas till listan över använda adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Ett meddelande som bifogades fartcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Fartcoinnätverket.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Betala Till:</translation>
+        <source>Pay </source>
+        <translation>Betala </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2874,23 +2874,23 @@ Var vänlig och försök igen.</translation>
         <translation>(förvalt: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; Kan vara:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; Kan </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Försök att rädda de privata nycklarna från en korrupt wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Block skapande inställningar:</translation>
+        <source>Block creation </source>
+        <translation>Block skapande </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Koppla enbart upp till den/de specificerade noden/noder</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>Anslutningsoptioner:</translation>
     </message>
     <message>
@@ -2898,8 +2898,8 @@ Var vänlig och försök igen.</translation>
         <translation>Korrupt blockdatabas har upptäckts</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Avlusnings/Testnings optioner:</translation>
+        <source>Debugging/Testing </source>
+        <translation>Avlusnings/Testnings </translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2951,7 +2951,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Ogiltig -onion adress:'%s'</translation>
+        <translation>Ogiltig -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2998,7 +2998,7 @@ Var vänlig och försök igen.</translation>
         <translation>Plånbok %s ligger utanför datakatalogen %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>Plånboksinställningar:</translation>
     </message>
     <message>
@@ -3096,8 +3096,7 @@ Var vänlig och försök igen.</translation>
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3107,14 +3106,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>För att använda bitconid,eller -server optionen till fartcoin-qt så mäste du sätta ett rpclösensord i konfigurationsfilen:
 %s
-Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=fartcoinrpc
+Det är rekommenderat att använda följande slumpade rpcuser=fartcoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg lösenordet)
 Användarnamnet och lösenordet FÅR INTE vara detsamma.
 Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
 Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
+till alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3150,8 +3148,8 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Kan inte köra med en plånbok i beskärningsläge.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kan inte matcha -whitebind adress: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>Kan inte matcha -whitebind '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3226,16 +3224,16 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Port måste anges med -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>Nodreläoptioner:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL optioner: (se Bitcoin Wiki för SSL inställningsinstruktioner)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (se Bitcoin Wiki för SSL inställningsinstruktioner)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC serveroptioner:</translation>
+        <source>RPC server </source>
+        <translation>RPC </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3306,8 +3304,8 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Transaktionen är för stor</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>UI Alternativ:</translation>
+        <source>UI </source>
+        <translation>UI </translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3322,8 +3320,8 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Användarnamn för JSON-RPC-anslutningar</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Kontot behöver sparas om: Starta om Fartcoin Core för att fullfölja</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Kontot behöver sparas Starta om Fartcoin Core för att fullfölja</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3438,8 +3436,8 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Inkludera IP-adresser i debugutskrift (förvalt: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ogiltig -proxy adress: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Ogiltig -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3522,12 +3520,12 @@ till exempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Okänt nätverk som anges i -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kan inte matcha -bind adress: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Kan inte matcha -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kan inte matcha -externalip adress: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Kan inte matcha -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

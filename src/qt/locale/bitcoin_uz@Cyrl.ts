@@ -379,8 +379,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва fartcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Тўловлар (QR кодлари ва fartcoin ёрдамида URI’лар) сўраш</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -395,8 +395,8 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Fartcoin’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Fartcoin’ни URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -514,11 +514,11 @@
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Ахлат қутиси:</translation>
+        <translation>Ахлат </translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Солиқдан сўнг:</translation>
+        <source>After </source>
+        <translation>Солиқдан </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -817,8 +817,8 @@
         <translation>Стандарт маълумотлар директориясидан фойдаланиш</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
+        <source>Use a custom data </source>
+        <translation>Бошқа маълумотлар директориясида </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -888,7 +888,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Прокси IP манзили (масалан: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>Прокси IP манзили (масалан: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
@@ -896,7 +896,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Прокси &amp;IP рақами:</translation>
+        <translation>Прокси &amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -999,7 +999,7 @@
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Тайёр эмас:</translation>
+        <translation>Тайёр </translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -1401,8 +1401,8 @@
         <translation>Солиқ:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Солиқдан сўнг:</translation>
+        <source>After </source>
+        <translation>Солиқдан </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1426,7 +1426,7 @@
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Ахлат қутиси:</translation>
+        <translation>Ахлат </translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -1505,7 +1505,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Тўлов олувчи:</translation>
+        <translation>&amp;Тўлов </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>

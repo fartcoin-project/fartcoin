@@ -359,15 +359,15 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un fartcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un URIs)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
         <translation>Par &amp;Fartcoin Core</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Atvērt fartcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
@@ -457,8 +457,8 @@
         <translation>Maksa:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Pēc Maksas:</translation>
+        <source>After </source>
+        <translation>Pēc </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -717,8 +717,8 @@
         <translation>Izmantot noklusēto datu mapi</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Izmantot pielāgotu datu mapi:</translation>
+        <source>Use a custom data </source>
+        <translation>Izmantot pielāgotu datu </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -783,8 +783,8 @@
         <translation>Trešo personu transakciju URLs</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktīvās komandrindas opcijas, kuras pārspēko šos iestatījumus:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktīvās komandrindas opcijas, kuras pārspēko šos </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -860,7 +860,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Vienības, kurās attēlot daudzumus:</translation>
+        <translation>&amp;Vienības, kurās attēlot </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -949,8 +949,8 @@
         <translation>Maksājumu pieprasījuma kļūda</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Nevar palaist Fartcoin: nospied-lai-maksātu apstrādātāju</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Nevar palaist nospied-lai-maksātu apstrādātāju</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1321,8 +1321,8 @@
         <translation>Maksa:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Pēc Maksas:</translation>
+        <source>After </source>
+        <translation>Pēc </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1484,7 +1484,7 @@
         <translation>Ziņojums:</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Maksāt:</translation>
     </message>
     <message>
@@ -2083,7 +2083,7 @@
         <translation>(noklusējums: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation>&lt;category&gt; var būt:</translation>
     </message>
     <message>
@@ -2091,20 +2091,20 @@
         <translation>Mēģināt atgūt privātās atslēgas no bojāta wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Bloka izveidošanas iestatījumi:</translation>
+        <source>Block creation </source>
+        <translation>Bloka izveidošanas </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Savienoties tikai ar norādītajām nodēm.</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Savienojuma iestatījumi:</translation>
+        <source>Connection </source>
+        <translation>Savienojuma </translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Atkļūdošanas/Testēšanas iestatījumi:</translation>
+        <source>Debugging/Testing </source>
+        <translation>Atkļūdošanas/Testēšanas </translation>
     </message>
     <message>
         <source>Error loading block database</source>
@@ -2131,8 +2131,8 @@
         <translation>Pārbauda maciņu...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Maciņa iespējas:</translation>
+        <source>Wallet </source>
+        <translation>Maciņa </translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
@@ -2143,8 +2143,8 @@
         <translation>Informācija</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC servera iestatījumi:</translation>
+        <source>RPC server </source>
+        <translation>RPC servera </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2152,11 +2152,11 @@
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Uzstādiet valodu, piemēram "de_DE" (pēc noklusēšanas: sistēmas lokāle)</translation>
+        <translation>Uzstādiet valodu, piemēram "de_DE" (pēc sistēmas lokāle)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Uzsākot, parādīt programmas informācijas logu (pēc noklusēšanas: 1)</translation>
+        <translation>Uzsākot, parādīt programmas informācijas logu (pēc 1)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2235,20 +2235,20 @@
         <translation>Kļūda ielādējot wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Nederīga -proxy adrese: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Nederīga -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet komandā norādīts nepazīstams tīkls: '%s'</translation>
+        <translation>-onlynet komandā norādīts nepazīstams '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Nevar uzmeklēt -bind adresi: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Nevar uzmeklēt -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Nevar atrisināt -externalip adresi: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Nevar atrisināt -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

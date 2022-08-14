@@ -379,8 +379,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Запросить платежи (создаёт QR-коды и fartcoin: ссылки)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Запросить платежи (создаёт QR-коды и ссылки)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -395,8 +395,8 @@
         <translation>Показать список использованных адресов и меток получения</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Открыть fartcoin: URI или запрос платежа</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Открыть URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -501,8 +501,8 @@
         <translation>Пыль:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После комиссии:</translation>
+        <source>After </source>
+        <translation>После </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -813,8 +813,8 @@
         <translation>Использовать каталог данных по умолчанию</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Использовать другой каталог данных:</translation>
+        <source>Use a custom data </source>
+        <translation>Использовать другой каталог </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -884,7 +884,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP-адрес прокси (например IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>IP-адрес прокси (например 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -895,8 +895,8 @@
         <translation>Сторонние URL транзакций.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Активные опции командной строки, которые перекрывают вышеуказанные опции:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Активные опции командной строки, которые перекрывают вышеуказанные </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -952,7 +952,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP Прокси: </translation>
+        <translation>&amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -984,11 +984,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Язык интерфейса:</translation>
+        <translation>&amp;Язык </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Отображать суммы в единицах: </translation>
+        <translation>&amp;Отображать суммы в </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1043,7 +1043,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Только наблюдение:</translation>
+        <translation>Только </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1055,7 +1055,7 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>В ожидании:</translation>
+        <translation>В </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1137,8 +1137,8 @@
         <translation>Ошибка запроса платежа</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Не удаётся запустить fartcoin: обработчик click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Не удаётся запустить обработчик click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1693,8 +1693,8 @@
         <translation>Комиссия:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После комиссии:</translation>
+        <source>After </source>
+        <translation>После </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1709,7 +1709,7 @@
         <translation>Свой адрес для сдачи</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Комиссия</translation>
     </message>
     <message>
@@ -1753,8 +1753,8 @@
         <translation>(Умная комиссия пока не инициализирована. Обычно для этого требуется несколько блоков...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Время подтверждения:</translation>
+        <source>Confirmation </source>
+        <translation>Время </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1952,11 +1952,11 @@
         <translation>Введите метку для этого адреса, чтобы добавить его в список использованных</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>К fartcoin: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Fartcoin.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>К URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Получатель:</translation>
     </message>
     <message>
@@ -2509,7 +2509,7 @@
     </message>
     <message>
         <source>Range:</source>
-        <translation>Промежуток от:</translation>
+        <translation>Промежуток </translation>
     </message>
     <message>
         <source>to</source>
@@ -2604,7 +2604,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Принимать подключения извне (по умолчанию: 1, если не используется -proxy или -connect)</translation>
+        <translation>Принимать подключения извне (по 1, если не используется -proxy или -connect)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -2660,34 +2660,34 @@
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(по умолчанию: 1)</translation>
+        <translation>(по 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; может быть:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; может </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Попытаться восстановить приватные ключи из повреждённого wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Параметры создания блоков:</translation>
+        <source>Block creation </source>
+        <translation>Параметры создания </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Подключаться только к указанному узлу(ам)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Параметры подключения:</translation>
+        <source>Connection </source>
+        <translation>Параметры </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>БД блоков повреждена</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Параметры отладки/тестирования:</translation>
     </message>
     <message>
@@ -2740,7 +2740,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Неверный -onion адрес: '%s'</translation>
+        <translation>Неверный -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2779,8 +2779,8 @@
         <translation>Бумажник %s располагается вне каталога данных %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Настройки бумажника:</translation>
+        <source>Wallet </source>
+        <translation>Настройки </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2804,7 +2804,7 @@
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Привязаться к указанному адресу для прослушивания JSON-RPC подключений. Используйте запись [хост]:порт для IPv6. Эту опцию можно использовать многократно (по умолчанию: привязываться ко всем интерфейсам)</translation>
+        <translation>Привязаться к указанному адресу для прослушивания JSON-RPC подключений. Используйте запись [хост]:порт для IPv6. Эту опцию можно использовать многократно (по привязываться ко всем интерфейсам)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Fartcoin Core is probably already running.</source>
@@ -2844,7 +2844,7 @@
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Запрашивать адреса участников с помощью DNS, если адресов мало (по умолчанию: 1, если не указан -connect)</translation>
+        <translation>Запрашивать адреса участников с помощью DNS, если адресов мало (по 1, если не указан -connect)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
@@ -2861,8 +2861,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2872,14 +2871,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>Для использования fartcoind или опции fartcoin-qt -server, вы должны установить опцию rpcpassword в конфигурационном файле:
  %s
-Рекомендуется использовать следующий случайный пароль:
-rpcuser=fartcoinrpc
+Рекомендуется использовать следующий случайный rpcuser=fartcoinrpc
 rpcpassword=%s
 (вам не нужно запоминать этот пароль)
 Имя и пароль ДОЛЖНЫ различаться.
 Если файл не существует, создайте его и установите право доступа только для чтения только для владельца.
 Также рекомендуется включить alertnotify для оповещения о проблемах;
-Например: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
+alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -2899,12 +2897,12 @@ rpcpassword=%s
         <translation>Принимать публичные REST-запросы (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>Не удаётся разрешить адрес в параметре -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Выбрать каталог данных при запуске (по умолчанию: 0)</translation>
+        <translation>Выбрать каталог данных при запуске (по 0)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -2975,16 +2973,16 @@ rpcpassword=%s
         <translation>Необходимо указать порт с помощью -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Параметры трансляции узла:</translation>
+        <source>Node relay </source>
+        <translation>Параметры трансляции </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Параметры RPC SSL: (см. Fartcoin вики для инструкций по настройке SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Параметры RPC (см. Fartcoin вики для инструкций по настройке SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Параметры сервера RPC:</translation>
+        <source>RPC server </source>
+        <translation>Параметры сервера </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3000,11 +2998,11 @@ rpcpassword=%s
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Указать корневые SSL-сертификаты для запроса платежа (по умолчанию: -system-)</translation>
+        <translation>Указать корневые SSL-сертификаты для запроса платежа (по -system-)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Выберите язык, например "de_DE" (по умолчанию: как в системе)</translation>
+        <translation>Выберите язык, например "de_DE" (по как в системе)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3012,11 +3010,11 @@ rpcpassword=%s
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Показывать сплэш при запуске (по умолчанию: 1)</translation>
+        <translation>Показывать сплэш при запуске (по 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Сжимать файл debug.log при запуске клиента (по умолчанию: 1, если нет -debug)</translation>
+        <translation>Сжимать файл debug.log при запуске клиента (по 1, если нет -debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -3052,14 +3050,14 @@ rpcpassword=%s
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Использовать UPnP для проброса порта (по умолчанию: 1, если используется прослушивание)</translation>
+        <translation>Использовать UPnP для проброса порта (по 1, если используется прослушивание)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Имя для подключений JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation>Необходимо перезаписать бумажник, перезапустите Fartcoin Core для завершения операции.</translation>
     </message>
     <message>
@@ -3124,7 +3122,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = сохранять метаданные транзакции: например, владельца аккаунта и информацию запроса платежа; 2 = отбросить метаданные)</translation>
+        <translation>(1 = сохранять метаданные например, владельца аккаунта и информацию запроса платежа; 2 = отбросить метаданные)</translation>
     </message>
     <message>
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
@@ -3175,7 +3173,7 @@ rpcpassword=%s
         <translation>Включить IP-адреса в отладочный вывод (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Неверный адрес -proxy: '%s'</translation>
     </message>
     <message>
@@ -3248,14 +3246,14 @@ rpcpassword=%s
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>В параметре -onlynet указана неизвестная сеть: '%s'</translation>
+        <translation>В параметре -onlynet указана неизвестная '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Не удаётся разрешить адрес в параметре -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Не удаётся разрешить адрес в параметре -externalip: '%s'</translation>
     </message>
     <message>

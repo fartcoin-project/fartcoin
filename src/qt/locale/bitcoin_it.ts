@@ -391,8 +391,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e fartcoin: URI)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e URI)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -411,7 +411,7 @@
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Apri un URI o una richiesta di pagamento</translation>
     </message>
     <message>
@@ -571,8 +571,8 @@
         <translation>Trascurabile:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Dopo Commissione:</translation>
+        <source>After </source>
+        <translation>Dopo </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -895,8 +895,8 @@
         <translation>Usa la cartella dati predefinita</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Usa una cartella dati personalizzata:</translation>
+        <source>Use a custom data </source>
+        <translation>Usa una cartella dati </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -986,8 +986,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>URL di transazione di terze parti</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Opzioni della riga di comando attive che sostituiscono i settaggi sopra elencati:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Opzioni della riga di comando attive che sostituiscono i settaggi sopra </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1051,7 +1051,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP del proxy:</translation>
+        <translation>&amp;IP del </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1083,11 +1083,11 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Lingua Interfaccia Utente:</translation>
+        <translation>&amp;Lingua Interfaccia </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unità di misura con cui visualizzare gli importi:</translation>
+        <translation>&amp;Unità di misura con cui visualizzare gli </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1146,7 +1146,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Sola lettura:</translation>
+        <translation>Sola </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1158,7 +1158,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>In attesa:</translation>
+        <translation>In </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1240,8 +1240,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Impossibile avviare fartcoin: gestore click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Impossibile avviare gestore click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1820,8 +1820,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Commissione:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Dopo Commissione:</translation>
+        <source>After </source>
+        <translation>Dopo </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1836,8 +1836,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Personalizza indirizzo di resto</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Commissione di Transazione:</translation>
+        <source>Transaction </source>
+        <translation>Commissione di </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1884,8 +1884,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>(Commissione intelligente non ancora inizializzata. Normalmente richiede un'attesa di alcuni blocchi...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Tempo di conferma:</translation>
+        <source>Confirmation </source>
+        <translation>Tempo di </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2016,7 +2016,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>L'indirizzo del beneficiario non è valido. Si prega di ricontrollare.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>Rilevato un indirizzo duplicato Ciascun indirizzo dovrebbe essere utilizzato una sola volta.</translation>
     </message>
     <message>
@@ -2115,12 +2115,12 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Inserisci un'etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Messaggio incluso nel fartcoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagare a:</translation>
+        <source>Pay </source>
+        <translation>Pagare </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2866,7 +2866,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>(predefinito: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation>Valori possibili per &lt;category&gt;:</translation>
     </message>
     <message>
@@ -2874,23 +2874,23 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Tenta di recuperare le chiavi private da un wallet.dat corrotto</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opzioni creazione blocco:</translation>
+        <source>Block creation </source>
+        <translation>Opzioni creazione </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Connessione ai soli nodi specificati</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opzioni di connessione:</translation>
+        <source>Connection </source>
+        <translation>Opzioni di </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Rilevato database blocchi corrotto</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Opzioni di Debug/Test:</translation>
     </message>
     <message>
@@ -2942,8 +2942,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Blocco genesi non corretto o non trovato. È possibile che la cartella dati appartenga ad un'altra rete.</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Indirizzo -onion non valido: '%s'</translation>
+        <source>Invalid -onion '%s'</source>
+        <translation>Indirizzo -onion non '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2990,8 +2990,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Il portamonete %s si trova al di fuori dalla cartella dati %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opzioni portamonete:</translation>
+        <source>Wallet </source>
+        <translation>Opzioni </translation>
     </message>
     <message>
         <source>Warning: This version is obsolete; upgrade required!</source>
@@ -3088,8 +3088,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3099,8 +3098,7 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>Per utilizzare fartcoind o l'opzione -server in Fartcoin Core è necessario specificare una rpcpassword nel file di configurazione:
 %s
-Si raccomanda di utilizzare la seguente password casuale:
-rpcuser=fartcoinrpc
+Si raccomanda di utilizzare la seguente password rpcuser=fartcoinrpc
 rpcpassword=%s
 (non è necessario ricordare questa password)
 Il nome utente e la password NON DEVONO corrispondere.
@@ -3141,7 +3139,7 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>Impossibile operare con un portamonete in modalità prune.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>Impossibile risolvere indirizzo -whitebind: '%s'</translation>
     </message>
     <message>
@@ -3217,16 +3215,16 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>È necessario specificare una porta con -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Opzioni trasmissione nodo:</translation>
+        <source>Node relay </source>
+        <translation>Opzioni trasmissione </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opzioni RPC SSL: (consulta la Bitcoin Wiki per le istruzioni relative alla configurazione SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opzioni RPC (consulta la Bitcoin Wiki per le istruzioni relative alla configurazione SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opzioni server RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opzioni server </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3297,8 +3295,8 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>Transazione troppo grande</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>Opzioni Interfaccia Utente:</translation>
+        <source>UI </source>
+        <translation>Opzioni Interfaccia </translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3313,8 +3311,8 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Il portamonete necessitava di essere riscritto: riavviare Fartcoin Core per completare l'operazione</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Il portamonete necessitava di essere riavviare Fartcoin Core per completare l'operazione</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3429,8 +3427,8 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>Include gli indirizzi IP nell'output del debug (predefinito: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Indirizzo -proxy non valido: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Indirizzo -proxy non '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3513,11 +3511,11 @@ Si raccomanda inoltre di configurare alertnotify in modo da ricevere notifiche d
         <translation>Rete sconosciuta specificata in -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Impossibile risolvere indirizzo -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Impossibile risolvere indirizzo -externalip: '%s'</translation>
     </message>
     <message>

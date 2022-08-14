@@ -391,7 +391,7 @@
         <translation>位元幣核心</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>要求付款(產生 QR Code 和位元幣付款協議的 URI)</translation>
     </message>
     <message>
@@ -411,7 +411,7 @@
         <translation>顯示已使用過的收款位址和標記的清單</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>開啓 fartcoin 協議的 URI 或付款要求</translation>
     </message>
     <message>
@@ -571,7 +571,7 @@
         <translation>零散錢:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>計費後金額:</translation>
     </message>
     <message>
@@ -895,7 +895,7 @@
         <translation>使用預設的資料目錄</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>使用自定的資料目錄:</translation>
     </message>
     <message>
@@ -993,7 +993,7 @@
         <translation>交易的第三方網址連結</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>從命令列取代掉以上設定的選項有:</translation>
     </message>
     <message>
@@ -1247,7 +1247,7 @@
         <translation>要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation>沒辦法啟動 fartcoin 協議的按就付處理器</translation>
     </message>
     <message>
@@ -1639,7 +1639,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fartcoin network.</source>
-        <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到位元幣網路上。</translation>
+        <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。這個訊息不會隨著付款送到位元幣網路上。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1827,7 +1827,7 @@
         <translation>手續費:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>計費後金額:</translation>
     </message>
     <message>
@@ -1843,7 +1843,7 @@
         <translation>自定找零位址</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>交易手續費:</translation>
     </message>
     <message>
@@ -1891,7 +1891,7 @@
         <translation>(手續費智慧演算法還沒準備好。通常都要等幾個區塊才行...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>確認時間:</translation>
     </message>
     <message>
@@ -2023,7 +2023,7 @@
         <translation>收款位址無效。請再檢查看看。</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>發現有重複的位址: 每個位址只能出現一次。</translation>
     </message>
     <message>
@@ -2122,11 +2122,11 @@
         <translation>請輸入這個位址的標記，來把它加進去已使用過位址的清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>附加在位元幣付款協議 URI 中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到位元幣網路上。</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>附加在位元幣付款協議 URI 中的訊息，會和交易內容一起存起來，給你自己做參考。這個訊息不會送到位元幣網路上。</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>付給:</translation>
     </message>
     <message>
@@ -2819,7 +2819,7 @@
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>這套軟體是依據 MIT 軟體授權條款散布，詳情請見附帶的 COPYING 檔案，或是以下網站:  &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+        <translation>這套軟體是依據 MIT 軟體授權條款散布，詳情請見附帶的 COPYING 檔案，&lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2831,7 +2831,7 @@
     </message>
     <message>
         <source>Reduce storage requirements by pruning (deleting) old blocks. This mode disables wallet support and is incompatible with -txindex. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
-        <translation>修剪(刪除)掉老舊區塊來減少儲存空間的需求。這種模式會關閉錢包功能，並且和 -txindex 參數不相容。警告: 從這種模式還原會需要重新下載一整個區塊鏈。(預設值: 0 表示不修剪區塊，&gt;%u 表示為區塊檔案的目標大小，單位是百萬位元組 MiB)</translation>
+        <translation>修剪(刪除)掉老舊區塊來減少儲存空間的需求。這種模式會關閉錢包功能，並且和 -txindex 參數不相容。從這種模式還原會需要重新下載一整個區塊鏈。(預設值: 0 表示不修剪區塊，&gt;%u 表示為區塊檔案的目標大小，單位是百萬位元組 MiB)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -2882,7 +2882,7 @@
         <translation>(預設值: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation>&lt;category&gt; 可以是:</translation>
     </message>
     <message>
@@ -2890,7 +2890,7 @@
         <translation>嘗試從壞掉的錢包檔 wallet.dat 復原密鑰</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>區塊製造選項:</translation>
     </message>
     <message>
@@ -2898,7 +2898,7 @@
         <translation>只連線到指定節點(可多個)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>連線選項:</translation>
     </message>
     <message>
@@ -2906,7 +2906,7 @@
         <translation>發現區塊資料庫壞掉了</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>除錯與測試選項</translation>
     </message>
     <message>
@@ -2958,8 +2958,8 @@
         <translation>創世區塊不正確或找不到。資料目錄錯了嗎？</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>無效的 -onion 位址: '%s'</translation>
+        <source>Invalid -onion '%s'</source>
+        <translation>無效的 -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -3002,7 +3002,7 @@
         <translation>錢包檔 %s 沒有在資料目錄 %s 裡面</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>錢包選項:</translation>
     </message>
     <message>
@@ -3104,8 +3104,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3115,14 +3114,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>要使用 fartcoind, 或是對 fartcoin-qt 指定 -server 選項，你必須要在以下設定檔中設定 RPC 密碼(選項: rpcpassword):
 %s
-建議你使用以下隨機產生的密碼:
 rpcuser=fartcoinrpc
 rpcpassword=%s
 (你不用記住這個密碼)
 注意使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同！
 如果設定檔還不存在，請在新增時，設定檔案權限為"只有主人才能讀取"。
 也建議你設定警示通知，這樣發生問題時你才會被通知到；
-比如說設定: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
+alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3158,8 +3156,8 @@ rpcpassword=%s
         <translation>不能在有錢包時執行修剪模式。</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>沒辦法解析 -whitebind 指定的位址: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>沒辦法解析 -whitebind '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3179,7 +3177,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Fartcoin Core</source>
-        <translation>載入 wallet.dat 檔案時發生錯誤: 這個錢包需要新版的位元幣核心</translation>
+        <translation>載入 wallet.dat 這個錢包需要新版的位元幣核心</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3219,7 +3217,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>指定在 -whitelist 的網段無效: '%s'</translation>
+        <translation>指定在 -whitelist '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -3227,19 +3225,19 @@ rpcpassword=%s
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>指定 -whitebind 時必須包含通訊埠: '%s'</translation>
+        <translation>指定 -whitebind '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>節點轉發選項:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL 選項: (SSL 設定程序請見 Bitcoin Wiki)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (SSL 設定程序請見 Bitcoin Wiki)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC 伺服器選項:</translation>
+        <source>RPC server </source>
+        <translation>RPC </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3310,7 +3308,7 @@ rpcpassword=%s
         <translation>交易位元量太大</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>使用介面選項:</translation>
     </message>
     <message>
@@ -3326,7 +3324,7 @@ rpcpassword=%s
         <translation>JSON-RPC 連線使用者名稱</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation>錢包需要重寫: 請重新啓動位元幣核心來完成</translation>
     </message>
     <message>
@@ -3387,7 +3385,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>載入檔案 wallet.dat 時發生錯誤: 錢包損毀了</translation>
+        <translation>載入檔案 wallet.dat 錢包損毀了</translation>
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3442,8 +3440,8 @@ rpcpassword=%s
         <translation>在除錯輸出內容中包含網際網路位址(預設值: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>無效的 -proxy 位址: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>無效的 -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3523,15 +3521,15 @@ rpcpassword=%s
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>在 -onlynet 指定了不明的網路別: '%s'</translation>
+        <translation>在 -onlynet '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>沒辦法解析 -bind 位址: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>沒辦法解析 -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>沒辦法解析 -externalip 位址: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>沒辦法解析 -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

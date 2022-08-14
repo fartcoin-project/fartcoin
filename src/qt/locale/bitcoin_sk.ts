@@ -383,8 +383,8 @@
         <translation>Jadro Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Vyžiadať platbu (vygeneruje QR kód a fartcoin: URI)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Vyžiadať platbu (vygeneruje QR kód a URI)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -399,7 +399,7 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Otvoriť fartcoin URI alebo výzvu k platbe</translation>
     </message>
     <message>
@@ -505,8 +505,8 @@
         <translation>Prach:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po poplatku:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -817,8 +817,8 @@
         <translation>Použiť predvolený dátový adresár</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Použiť vlastný dátový adresár:</translation>
+        <source>Use a custom data </source>
+        <translation>Použiť vlastný dátový </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -895,8 +895,8 @@
         <translation>URL transakcií s tretími stranami</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktévne možnosti príkazového riadku ktoré prepíšu možnosti vyššie:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktévne možnosti príkazového riadku ktoré prepíšu možnosti </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -984,11 +984,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Jazyk užívateľského rozhrania:</translation>
+        <translation>Jazyk užívateľského </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Zobrazovať hodnoty v jednotkách:</translation>
+        <translation>&amp;Zobrazovať hodnoty v </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1051,7 +1051,7 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>Čakajúce potvrdenie:</translation>
+        <translation>Čakajúce </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1101,8 +1101,8 @@
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Nedá sa spustiť obslužný program fartcoin: click-to-pay zaplatiť kliknutím</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Nedá sa spustiť obslužný program click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1593,8 +1593,8 @@
         <translation>Poplatok:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po poplatku:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1609,8 +1609,8 @@
         <translation>Vlastná adresa zmeny</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Poplatok za transakciu:</translation>
+        <source>Transaction </source>
+        <translation>Poplatok za </translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
@@ -1649,8 +1649,8 @@
         <translation>(Automatický poplatok ešte nebol aktivovaný. Toto zvyčajne trvá niekoľko blokov...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Čas potvrdenia:</translation>
+        <source>Confirmation </source>
+        <translation>Čas </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1844,12 +1844,12 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Správa ktorá bola pripojená k fartcoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Fartcoin.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Správa ktorá bola pripojená k URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Platba pre:</translation>
+        <source>Pay </source>
+        <translation>Platba </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2206,7 +2206,7 @@
     </message>
     <message>
         <source>Received from</source>
-        <translation>Prijaté od:</translation>
+        <translation>Prijaté </translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2513,31 +2513,31 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>(predvolené: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; môže byť:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; môže </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Pokus zachrániť súkromné kľúče z poškodeného wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Voľby vytvorenia bloku:</translation>
+        <source>Block creation </source>
+        <translation>Voľby vytvorenia </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Pripojiť sa len k určenej nóde</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Možnosti pripojenia:</translation>
+        <source>Connection </source>
+        <translation>Možnosti </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Zistená poškodená databáza blokov</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Možnosti ladenia/testovania:</translation>
     </message>
     <message>
@@ -2586,7 +2586,7 @@ The network does not appear to fully agree! Some miners appear to be experiencin
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Neplatná -onion adresa:  '%s'</translation>
+        <translation>Neplatná -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2617,8 +2617,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Peňaženka %s sa nachádza mimo dátového priečinka %s </translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Voľby peňaženky:</translation>
+        <source>Wallet </source>
+        <translation>Voľby </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2677,12 +2677,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Neplatná suma pre -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Možnosti RPC SSL: (Pozri v Bitcoin Wiki pokyny pre SSL nastavenie)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Možnosti RPC (Pozri v Bitcoin Wiki pokyny pre SSL nastavenie)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Možnosti servra RPC:</translation>
+        <source>RPC server </source>
+        <translation>Možnosti servra </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2809,8 +2809,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Chyba načítania wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neplatná adresa proxy: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Neplatná adresa '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -2821,12 +2821,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Neznáma sieť upresnená v -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Nemožno rozriešiť -bind adress: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Nemožno rozriešiť -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Nemožno rozriešiť -externalip address: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Nemožno rozriešiť -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

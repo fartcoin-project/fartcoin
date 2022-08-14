@@ -391,7 +391,7 @@
         <translation>Nucleul Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Cereţi plăţi (generează coduri QR şi fartcoin-uri: URls)</translation>
     </message>
     <message>
@@ -411,8 +411,8 @@
         <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Deschidere fartcoin: o adresa URI sau o cerere de plată</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Deschidere o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -571,8 +571,8 @@
         <translation>Praf:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>După taxă:</translation>
+        <source>After </source>
+        <translation>După </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -883,8 +883,8 @@
         <translation>Foloseşte dosarul de date implicit</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Foloseşte un dosar de date personalizat:</translation>
+        <source>Use a custom data </source>
+        <translation>Foloseşte un dosar de date </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -962,7 +962,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Adresa IP a serverului proxy (de exemplu: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>Adresa IP a serverului proxy (de 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -981,8 +981,8 @@
         <translation>URL-uri tranzacţii terţe părţi</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Opţiuni linie de comandă active care oprimă opţiunile de mai sus:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Opţiuni linie de comandă active care oprimă opţiunile de mai </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1050,7 +1050,7 @@
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Portul proxy (de exemplu: 9050)</translation>
+        <translation>Portul proxy (de 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1078,7 +1078,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unitatea de măsură pentru afişarea sumelor:</translation>
+        <translation>&amp;Unitatea de măsură pentru afişarea </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1149,7 +1149,7 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>În aşteptare:</translation>
+        <translation>În </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1231,8 +1231,8 @@
         <translation>Eroare la cererea de plată</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Nu poate porni fartcoin: manipulator clic-pentru-plată</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Nu poate porni manipulator clic-pentru-plată</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1787,8 +1787,8 @@
         <translation>Taxă:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>După taxă:</translation>
+        <source>After </source>
+        <translation>După </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1803,8 +1803,8 @@
         <translation>Adresă personalizată de rest</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Taxă tranzacţie:</translation>
+        <source>Transaction </source>
+        <translation>Taxă </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1831,8 +1831,8 @@
         <translation>Personalizat:</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Timp confirmare:</translation>
+        <source>Confirmation </source>
+        <translation>Timp </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2038,12 +2038,12 @@
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>un mesaj a fost ataşat la fartcoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua fartcoin.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>un mesaj a fost ataşat la URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Plăteşte către:</translation>
+        <source>Pay </source>
+        <translation>Plăteşte </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2753,31 +2753,31 @@
         <translation>(iniţial: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; poate fi:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; poate </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Încercare de recuperare a cheilor private dintr-un wallet.dat corupt</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opţiuni creare bloc:</translation>
+        <source>Block creation </source>
+        <translation>Opţiuni creare </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Conectare doar la nod(urile) specificate</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opţiuni conexiune:</translation>
+        <source>Connection </source>
+        <translation>Opţiuni </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Bloc defect din baza de date detectat</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Opţiuni Depanare/Test:</translation>
     </message>
     <message>
@@ -2826,7 +2826,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Adresa -onion nevalidă: '%s'</translation>
+        <translation>Adresa -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2865,8 +2865,8 @@
         <translation>Portofelul %s se află în afara dosarului de date %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opţiuni portofel:</translation>
+        <source>Wallet </source>
+        <translation>Opţiuni </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2965,12 +2965,12 @@
         <translation>Trebuie să specificaţi un port cu -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opţiuni RPC SSL: (vedeţi Wiki Bitcoin pentru intrucţiunile de setare SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opţiuni RPC (vedeţi Wiki Bitcoin pentru intrucţiunile de setare SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opţiuni server RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opţiuni server </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -2990,7 +2990,7 @@
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Setează limba, de exemplu: "de_DE" (implicit: sistem local)</translation>
+        <translation>Setează limba, de "de_DE" (implicit: sistem local)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3045,8 +3045,8 @@
         <translation>Utilizator pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Portofelul necesită rescrierea: reporniţi Nucleul Fartcoin pentru completare</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Portofelul necesită reporniţi Nucleul Fartcoin pentru completare</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3133,8 +3133,8 @@
         <translation>Cîte blocuri verifică la pornire (implicit: %u, 0 = toate)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Adresa -proxy nevalidă: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Adresa -proxy '%s'</translation>
     </message>
     <message>
         <source>Server certificate file (default: %s)</source>
@@ -3158,14 +3158,14 @@
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Reţeaua specificată în -onlynet este necunoscută: '%s'</translation>
+        <translation>Reţeaua specificată în -onlynet este '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Nu se poate rezolva adresa -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Nu se poate rezolva adresa -externalip: '%s'</translation>
     </message>
     <message>

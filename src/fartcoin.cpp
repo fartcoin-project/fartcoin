@@ -125,12 +125,17 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
 CAmount GetFartcoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    //int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
 
     // After block 10.000.000 block reward stays at 1 FART per block
     int64_t nSubsidy = 1 * COIN;
 
-    if(nHeight < 10000001)
+    if(nHeight == 0)
+    {
+	int64_t nSubsidy = 100 * COIN;
+    }
+	
+    else if(nHeight < 10000001)
     {
 	int64_t minsub = 1 * COIN;
         nHeightDivided <double> obj(nHeight, 10000000);

@@ -383,8 +383,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Požaduj platby (generuje QR kódy a fartcoin: URI)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Požaduj platby (generuje QR kódy a URI)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -399,8 +399,8 @@
         <translation>Ukaž seznam použitých přijímacích adres a jejich označení</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Načti fartcoin: URI nebo platební požadavek</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Načti URI nebo platební požadavek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -525,8 +525,8 @@
         <translation>Prach:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Čistá částka:</translation>
+        <source>After </source>
+        <translation>Čistá </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -837,8 +837,8 @@
         <translation>Použij výchozí adresář pro data</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Použij tento adresář pro data:</translation>
+        <source>Use a custom data </source>
+        <translation>Použij tento adresář pro </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -927,8 +927,8 @@
         <translation>URL transakcí třetích stran</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktivní argumenty z příkazové řádky, které přetloukly tato nastavení:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktivní argumenty z příkazové řádky, které přetloukly tato </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -984,7 +984,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP adresa proxy:</translation>
+        <translation>&amp;IP adresa </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1016,11 +1016,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Jazyk uživatelského rozhraní:</translation>
+        <translation>&amp;Jazyk uživatelského </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>J&amp;ednotka pro částky:</translation>
+        <translation>J&amp;ednotka pro </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1079,7 +1079,7 @@
     </message>
     <message>
         <source>Available:</source>
-        <translation>K dispozici:</translation>
+        <translation>K </translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1169,8 +1169,8 @@
         <translation>Chyba platebního požadavku</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Nemůžu spustit fartcoin: obsluha click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Nemůžu spustit obsluha click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1725,8 +1725,8 @@
         <translation>Poplatek:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Čistá částka:</translation>
+        <source>After </source>
+        <translation>Čistá </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1741,8 +1741,8 @@
         <translation>Vlastní adresa pro drobné</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Transakční poplatek:</translation>
+        <source>Transaction </source>
+        <translation>Transakční </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1785,8 +1785,8 @@
         <translation>(Inteligentní poplatek ještě není inicializovaný. Obvykle mu to tak pár bloků trvá...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Rychlost potvrzení:</translation>
+        <source>Confirmation </source>
+        <translation>Rychlost </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1826,7 +1826,7 @@
     </message>
     <message>
         <source>Balance:</source>
-        <translation>Stav účtu:</translation>
+        <translation>Stav </translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -1984,11 +1984,11 @@
         <translation>Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Zpráva, která byla připojena k fartcoin: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po Fartcoinové síti.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Zpráva, která byla připojena k URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po Fartcoinové síti.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Komu:</translation>
     </message>
     <message>
@@ -2715,31 +2715,31 @@
         <translation>(výchozí: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; může být:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; může </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Pokusit se zachránit soukromé klíče z poškozeného souboru wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Možnosti vytvoření bloku:</translation>
+        <source>Block creation </source>
+        <translation>Možnosti vytvoření </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Připojit se pouze k zadanému uzlu (příp. zadaným uzlům)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Možnosti připojení:</translation>
+        <source>Connection </source>
+        <translation>Možnosti </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Bylo zjištěno poškození databáze bloků</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Možnosti ladění/testování:</translation>
     </message>
     <message>
@@ -2792,7 +2792,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Neplatná -onion adresa: '%s'</translation>
+        <translation>Neplatná -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2831,8 +2831,8 @@
         <translation>Peněženka %s se nachází mimo datový adresář %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Možnosti peněženky:</translation>
+        <source>Wallet </source>
+        <translation>Možnosti </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2915,8 +2915,8 @@
         <translation>Na protějšky na bílé listině se nevztahuje DoS klatba a jejich transakce jsou vždy přeposílány, i když už třeba jsou v mempoolu, což je užitečné např. pro bránu</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Nemohu přeložit -whitebind adresu: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>Nemohu přeložit -whitebind '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -2976,7 +2976,7 @@
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Ve -whitelist byla zadána neplatná podsíť: '%s'</translation>
+        <translation>Ve -whitelist byla zadána neplatná '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -2984,19 +2984,19 @@
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>V rámci -whitebind je třeba specifikovat i port: '%s'</translation>
+        <translation>V rámci -whitebind je třeba specifikovat i '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Možnosti přeposílání:</translation>
+        <source>Node relay </source>
+        <translation>Možnosti </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Možnosti SSL pro RPC: (viz instrukce nastavení SSL na Bitcoin Wiki)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Možnosti SSL pro (viz instrukce nastavení SSL na Bitcoin Wiki)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Možnosti RPC serveru:</translation>
+        <source>RPC server </source>
+        <translation>Možnosti RPC </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -3067,8 +3067,8 @@
         <translation>Uživatelské jméno pro JSON-RPC spojení</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Fartcoin Core, aby se operace dokončila</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Soubor s peněženkou potřeboval restartuj Fartcoin Core, aby se operace dokončila</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3183,8 +3183,8 @@
         <translation>Zaznamenávat do ladicích výstupů i IP adresy (výchozí: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neplatná -proxy adresa: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Neplatná -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3256,15 +3256,15 @@
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>V -onlynet byla uvedena neznámá síť: '%s'</translation>
+        <translation>V -onlynet byla uvedena neznámá '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Nemohu přeložit -bind adresu: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Nemohu přeložit -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Nemohu přeložit -externalip adresu: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Nemohu přeložit -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

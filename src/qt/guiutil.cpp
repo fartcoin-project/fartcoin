@@ -103,7 +103,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Fartcoin address (e.g. %1)").arg("DEaT9KZM6b6oDZMr8pj7pWTLZSdtYZFAx8"));
+    widget->setPlaceholderText(QObject::tr("Enter a Fartcoin address (e.g. %1)").arg("FUsHwxfxdw8HNrTMpuc3vBZHibne3EhEpc"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));

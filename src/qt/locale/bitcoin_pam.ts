@@ -540,7 +540,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Ing &amp;Unit a ipakit king alaga ning:</translation>
+        <translation>Ing &amp;Unit a ipakit king alaga </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1154,7 +1154,7 @@
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Status ning Transaksion: Itapat me babo na ning field a ini ban ipakit dala reng bilang dareng me-kumpirma na</translation>
+        <translation>Status ning Itapat me babo na ning field a ini ban ipakit dala reng bilang dareng me-kumpirma na</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
@@ -1339,8 +1339,8 @@
         <translation>Kapabaluan: Sobra ya katas ing makalage king -paytxfee. Ini ing maging bayad mu para king bayad na ning transaksion istung pepadala me ing transaksion a ini.</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Pipamilian king pamag-gawang block:</translation>
+        <source>Block creation </source>
+        <translation>Pipamilian king pamag-gawang </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -1443,20 +1443,20 @@
         <translation>Me-mali ya ing pamag-load king wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ali katanggap-tanggap a -proxy addresss: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Ali katanggap-tanggap a -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>E kilalang network ing mepili king -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Eya me-resolve ing -bind address: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Eya me-resolve ing -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Eya me-resolve ing -externalip address: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Eya me-resolve ing -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

@@ -360,7 +360,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>проксигийн IP хаяг (жишээ нь: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>проксигийн IP хаяг (жишээ 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -375,7 +375,7 @@
     <name>OverviewPage</name>
     <message>
         <source>Available:</source>
-        <translation>Хэрэглэж болох хэмжээ:</translation>
+        <translation>Хэрэглэж болох </translation>
     </message>
     </context>
 <context>
@@ -967,8 +967,8 @@
         <translation>Сонголтууд:</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Түрүйвчийн сонголтууд:</translation>
+        <source>Wallet </source>
+        <translation>Түрүйвчийн </translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -980,15 +980,15 @@
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat-ыг ачааллахад алдаа гарлаа: Түрүйвч эвдэрсэн байна</translation>
+        <translation>wallet.dat-ыг ачааллахад алдаа Түрүйвч эвдэрсэн байна</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>wallet.dat-ыг ачааллахад алдаа гарлаа</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Эдгээр прокси хаягнууд буруу байна: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Эдгээр прокси хаягнууд буруу '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

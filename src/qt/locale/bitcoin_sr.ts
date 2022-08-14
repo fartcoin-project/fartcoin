@@ -336,7 +336,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Јединица за приказивање износа:</translation>
+        <translation>&amp;Јединица за приказивање </translation>
     </message>
     <message>
         <source>&amp;OK</source>

@@ -363,7 +363,7 @@
         <translation>Núcleo de Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Solicitar pagos (genera codigo QR y URL's de Fartcoin)</translation>
     </message>
     <message>
@@ -379,8 +379,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Abrir un fartcoin: URI o petición de pago</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Abrir un URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -469,8 +469,8 @@
         <translation>Tasa:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Después de tasas:</translation>
+        <source>After </source>
+        <translation>Después de </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -761,8 +761,8 @@
         <translation>Utilizar el directorio de datos predeterminado</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Utilice un directorio de datos personalizado:</translation>
+        <source>Use a custom data </source>
+        <translation>Utilice un directorio de datos </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -840,7 +840,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Dirección &amp;IP del proxy:</translation>
+        <translation>Dirección &amp;IP del </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -939,7 +939,7 @@
     </message>
     <message>
         <source>Immature:</source>
-        <translation>No disponible:</translation>
+        <translation>No </translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -973,8 +973,8 @@
         <translation>Error en petición de pago</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>No se pudo iniciar fartcoin: manejador de pago-al-clic</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>No se pudo iniciar manejador de pago-al-clic</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -1349,8 +1349,8 @@
         <translation>Tasa:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Después de tasas:</translation>
+        <source>After </source>
+        <translation>Después de </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1485,7 +1485,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Pagar a:</translation>
+        <translation>&amp;Pagar </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1524,8 +1524,8 @@
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Paga a:</translation>
+        <source>Pay </source>
+        <translation>Paga </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2147,16 +2147,16 @@
         <translation>Aviso: ¡Recuperados datos de wallet.dat corrupto! El wallet.dat original se ha guardado como wallet.{timestamp}.bak en %s; si hubiera errores en su saldo o transacciones, deberá restaurar una copia de seguridad.</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; puede ser:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; puede </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Intento de recuperar claves privadas de un wallet.dat corrupto</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opciones de creación de bloques:</translation>
+        <source>Block creation </source>
+        <translation>Opciones de creación de </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -2204,7 +2204,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Dirección -onion inválida: '%s'</translation>
+        <translation>Dirección -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2263,12 +2263,12 @@
         <translation>Inválido por el monto -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opciones RPC SSL: (Vea la Wiki de Bitcoin para las instrucciones de la configuración de SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opciones RPC (Vea la Wiki de Bitcoin para las instrucciones de la configuración de SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opciones del sservidor RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opciones del sservidor </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2375,19 +2375,19 @@
         <translation>Error al cargar wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Dirección -proxy inválida: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Dirección -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>La red especificada en -onlynet '%s' es desconocida</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>No se puede resolver la dirección de -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>No se puede resolver la dirección de -externalip: '%s'</translation>
     </message>
     <message>
