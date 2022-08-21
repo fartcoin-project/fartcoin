@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 The Fartcoin developer
+// Copyright (c) 2018-2022 The Fartcoin developer
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
