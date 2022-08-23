@@ -515,8 +515,8 @@
         <translation>Opciones</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Activar las opciones de linea de comando que sobre escriben las siguientes opciones:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Activar las opciones de linea de comando que sobre escriben las siguientes </translation>
     </message>
     </context>
 <context>
@@ -748,8 +748,8 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pago para:</translation>
+        <source>Pay </source>
+        <translation>Pago </translation>
     </message>
     </context>
 <context>
@@ -1055,24 +1055,24 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;categoria&gt; puede ser:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;categoria&gt; puede </translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opciones de cartera:</translation>
+        <source>Wallet </source>
+        <translation>Opciones de </translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Escojer el directorio de información al iniciar (por defecto : 0)</translation>
+        <translation>Escojer el directorio de información al iniciar (por 0)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Definir idioma, por ejemplo "de_DE" (por defecto: Sistema local)</translation>
+        <translation>Definir idioma, por ejemplo "de_DE" (por Sistema local)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Mostrar pantalla de arraque al iniciar (por defecto: 1)</translation>
+        <translation>Mostrar pantalla de arraque al iniciar (por 1)</translation>
     </message>
     <message>
         <source>Start minimized</source>

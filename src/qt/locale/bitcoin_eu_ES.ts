@@ -526,11 +526,11 @@
     </message>
     <message>
         <source>Received with</source>
-        <translation>Jasota honekin: </translation>
+        <translation>Jasota </translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Hona bidalia: </translation>
+        <translation>Hona </translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -593,11 +593,11 @@
     </message>
     <message>
         <source>Received with</source>
-        <translation>Jasota honekin: </translation>
+        <translation>Jasota </translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Hona bidalia: </translation>
+        <translation>Hona </translation>
     </message>
     <message>
         <source>To yourself</source>

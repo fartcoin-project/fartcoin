@@ -383,7 +383,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Solicitar pagamentos (gera códigos QR e URIs fartcoin:)</translation>
     </message>
     <message>
@@ -399,8 +399,8 @@
         <translation>Mostrar a lista de rótulos e endereços de receção usados</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Abrir URI fartcoin: ou pedido de pagamento</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Abrir URI ou pedido de pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -525,8 +525,8 @@
         <translation>Lixo:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Depois da Taxa:</translation>
+        <source>After </source>
+        <translation>Depois da </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -837,8 +837,8 @@
         <translation>Utilizar a pasta de dados padrão</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Utilizar uma pasta de dados personalizada:</translation>
+        <source>Use a custom data </source>
+        <translation>Utilizar uma pasta de dados </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -928,8 +928,8 @@
         <translation>URLs de transação de outrem</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Opções de linha de comandos ativas que se sobrepõem ás opções anteriores:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Opções de linha de comandos ativas que se sobrepõem ás opções </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -985,7 +985,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP do proxy:</translation>
+        <translation>&amp;IP do </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1017,11 +1017,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Linguagem da interface de utilizador:</translation>
+        <translation>&amp;Linguagem da interface de </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unidade para mostrar quantias:</translation>
+        <translation>&amp;Unidade para mostrar </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1170,8 +1170,8 @@
         <translation>Erro de pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Impossível iniciar o controlador de fartcoin: click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Impossível iniciar o controlador de click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1691,7 +1691,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Funcionalidades de Coin Control:</translation>
+        <translation>Funcionalidades de Coin </translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1726,8 +1726,8 @@
         <translation>Taxa:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Depois da taxa:</translation>
+        <source>After </source>
+        <translation>Depois da </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1742,8 +1742,8 @@
         <translation>Endereço de troco personalizado</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Custo da Transação:</translation>
+        <source>Transaction </source>
+        <translation>Custo da </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1786,8 +1786,8 @@
         <translation>(Taxa inteligente ainda não foi acionada. Normalmente demora alguns blocos...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Tempo de confirmação:</translation>
+        <source>Confirmation </source>
+        <translation>Tempo de </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1938,7 +1938,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Pagar A:</translation>
+        <translation>&amp;Pagar </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1985,12 +1985,12 @@
         <translation>Introduza um rótulo para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Uma mensagem que estava anexada ao URI fartcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Fartcoin.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Uma mensagem que estava anexada ao URI que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagar a:</translation>
+        <source>Pay </source>
+        <translation>Pagar </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2169,7 +2169,7 @@
     </message>
     <message>
         <source>conflicted</source>
-        <translation>em conflito:</translation>
+        <translation>em </translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -2367,7 +2367,7 @@
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Não confirmado:</translation>
+        <translation>Não </translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
@@ -2375,7 +2375,7 @@
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>Em Conflito:</translation>
+        <translation>Em </translation>
     </message>
     <message>
         <source>Received with</source>
@@ -2716,32 +2716,32 @@
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;categoria&gt; pode ser:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;categoria&gt; pode </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Tentar recuperar chaves privadas de um wallet.dat corrupto</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opções de criação de bloco:</translation>
+        <source>Block creation </source>
+        <translation>Opções de criação de </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Apenas ligar ao(s) nó(s) especificado(s)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opcões de conexção:</translation>
+        <source>Connection </source>
+        <translation>Opcões de </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Cadeia de blocos corrompida detectada</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Depuração/Opções teste:</translation>
+        <source>Debugging/Testing </source>
+        <translation>Depuração/Opções </translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2793,7 +2793,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Endereço -onion inválido: '%s'</translation>
+        <translation>Endereço -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2832,8 +2832,8 @@
         <translation>A carteira %s reside fora da pasta de dados %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opções da carteira:</translation>
+        <source>Wallet </source>
+        <translation>Opções da </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2869,7 +2869,7 @@
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Escolha a pasta de dados ao iniciar (por defeito: 0)</translation>
+        <translation>Escolha a pasta de dados ao iniciar (por 0)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -2893,15 +2893,15 @@
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Definir linguagem, por exemplo "pt_PT" (por defeito: linguagem do sistema)</translation>
+        <translation>Definir linguagem, por exemplo "pt_PT" (por linguagem do sistema)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Mostrar imagem ao iniciar (por defeito: 1)</translation>
+        <translation>Mostrar imagem ao iniciar (por 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Encolher ficheiro debug.log ao iniciar o cliente (por defeito: 1 sem -debug definido)</translation>
+        <translation>Encolher ficheiro debug.log ao iniciar o cliente (por 1 sem -debug definido)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2984,19 +2984,19 @@
         <translation>Erro ao carregar wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Endereço -proxy inválido: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Endereço -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Rede desconhecida especificada em -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Não foi possível resolver o endereço -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Não foi possível resolver o endereço -externalip: '%s'</translation>
     </message>
     <message>

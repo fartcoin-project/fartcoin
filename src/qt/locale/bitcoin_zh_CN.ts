@@ -391,8 +391,8 @@
         <translation>狗狗币核心</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>请求支付（生成二维码和 fartcoin: URI）</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>请求支付（生成二维码和 URI）</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -411,7 +411,7 @@
         <translation>显示用过的接收地址和标签的列表</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>打开一个狗狗币：URI 或支付请求</translation>
     </message>
     <message>
@@ -571,7 +571,7 @@
         <translation>小额：</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>加上交易费用后:</translation>
     </message>
     <message>
@@ -895,7 +895,7 @@
         <translation>使用默认的数据目录</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>使用自定义的数据目录：</translation>
     </message>
     <message>
@@ -974,7 +974,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>代理的 IP 地址 (例如 IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>代理的 IP 地址 (例如 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -993,7 +993,7 @@
         <translation>第三方交易网址</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>有效的命令行参数覆盖上述选项:</translation>
     </message>
     <message>
@@ -1247,7 +1247,7 @@
         <translation>支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation>暂时无法启动狗狗币：点击支付功能</translation>
     </message>
     <message>
@@ -1827,7 +1827,7 @@
         <translation>费用：</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>加上交易费用后:</translation>
     </message>
     <message>
@@ -1843,7 +1843,7 @@
         <translation>自定义零钱地址</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>交易费用:</translation>
     </message>
     <message>
@@ -1891,7 +1891,7 @@
         <translation>(智能交易费用 尚未初始化。 需要再下载一些数据块...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>确认时间：</translation>
     </message>
     <message>
@@ -2027,7 +2027,7 @@
         <translation>接收人地址无效。请重新检查。</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>发现重复地址：每个地址应该只使用一次。</translation>
     </message>
     <message>
@@ -2126,11 +2126,11 @@
         <translation>请为此地址输入一个标签以将它加入用过的地址列表</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>fartcoin:URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过狗狗币网络传输。</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>支付给:</translation>
     </message>
     <message>
@@ -2891,7 +2891,7 @@
         <translation>(默认值: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation>&lt;category&gt; 可能是：</translation>
     </message>
     <message>
@@ -2899,7 +2899,7 @@
         <translation>尝试从损坏的钱包文件wallet.dat中恢复私钥</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>数据块创建选项：</translation>
     </message>
     <message>
@@ -2907,7 +2907,7 @@
         <translation>仅连接到指定节点</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>连接选项：</translation>
     </message>
     <message>
@@ -2915,7 +2915,7 @@
         <translation>检测发现数据块数据库损坏。请使用 -reindex参数重启客户端。</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>调试/测试选项：</translation>
     </message>
     <message>
@@ -2967,7 +2967,7 @@
         <translation>不正确或没有找到起源区块。网络错误？</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
+        <source>Invalid -onion '%s'</source>
         <translation>无效的 -onion 地址：“%s”</translation>
     </message>
     <message>
@@ -3015,7 +3015,7 @@
         <translation>钱包 %s 在外部的数据目录 %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>钱包选项:</translation>
     </message>
     <message>
@@ -3056,7 +3056,7 @@
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>发现自己的 IP 地址（默认: 监听并且无 -externalip 或 -proxy 时为 1）</translation>
+        <translation>发现自己的 IP 地址（监听并且无 -externalip 或 -proxy 时为 1）</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3117,8 +3117,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3171,8 +3170,8 @@ rpcpassword=%s
         <translation>不能在修剪模式下运行一个钱包。</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>无法解析 -whitebind 地址: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>无法解析 -whitebind '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3243,15 +3242,15 @@ rpcpassword=%s
         <translation>-whitebind: '%s' 需要指定一个端口</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>节点中继选项:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>RPC SSL选项：(见有关比特币设置用于SSL说明的维基百科)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>RPC 服务器选项：</translation>
     </message>
     <message>
@@ -3324,7 +3323,7 @@ rpcpassword=%s
         <translation>交易太大</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>界面选项：</translation>
     </message>
     <message>
@@ -3340,7 +3339,7 @@ rpcpassword=%s
         <translation>JSON-RPC 连接用户名</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation>钱包需要被改写：重新启动核心钱包来完成</translation>
     </message>
     <message>
@@ -3454,7 +3453,7 @@ rpcpassword=%s
         <translation>在调试输出中包含IP地址 (默认: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>无效的代理地址：%s</translation>
     </message>
     <message>
@@ -3538,12 +3537,12 @@ rpcpassword=%s
         <translation>-onlynet 指定的是未知网络：%s</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>无法解析 -bind 端口地址: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>无法解析 -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>无法解析 -externalip 地址: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>无法解析 -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

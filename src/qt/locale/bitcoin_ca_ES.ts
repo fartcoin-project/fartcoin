@@ -391,8 +391,8 @@
         <translation>Nucli de Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Sol·licita pagaments (genera codis QR i fartcoin: URI)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Sol·licita pagaments (genera codis QR i URI)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -411,8 +411,8 @@
         <translation>Mostra la llista d'adreces de recepció i etiquetes utilitzades</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Obre una fartcoin: sol·licitud d'URI o pagament</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Obre una sol·licitud d'URI o pagament</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -571,8 +571,8 @@
         <translation>Polsim:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Comissió posterior:</translation>
+        <source>After </source>
+        <translation>Comissió </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -895,8 +895,8 @@
         <translation>Utilitza el directori de dades per defecte</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Utilitza un directori de dades personalitzat:</translation>
+        <source>Use a custom data </source>
+        <translation>Utilitza un directori de dades </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -993,7 +993,7 @@
         <translation>URL de transaccions de terceres parts</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>Opcions de línies d'ordre active que sobreescriuen les opcions de dalt:</translation>
     </message>
     <message>
@@ -1058,7 +1058,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP del proxy:</translation>
+        <translation>&amp;IP del </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1094,7 +1094,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unitats per mostrar els imports en:</translation>
+        <translation>&amp;Unitats per mostrar els imports </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1153,7 +1153,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Només lectura:</translation>
+        <translation>Només </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1197,7 +1197,7 @@
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>Que es pot gastar:</translation>
+        <translation>Que es pot </translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1247,8 +1247,8 @@
         <translation>Error en la sol·licitud de pagament</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>No es pot iniciar fartcoin: gestor clica-per-pagar</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>No es pot iniciar gestor clica-per-pagar</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1827,8 +1827,8 @@
         <translation>Comissió:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Comissió posterior:</translation>
+        <source>After </source>
+        <translation>Comissió </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1843,7 +1843,7 @@
         <translation>Personalitza l'adreça de canvi</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Comissió de transacció</translation>
     </message>
     <message>
@@ -1891,8 +1891,8 @@
         <translation>(No s'ha inicialitzat encara la comissió intel·ligent. Normalment pren uns pocs blocs...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Temps de confirmació:</translation>
+        <source>Confirmation </source>
+        <translation>Temps de </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2027,7 +2027,7 @@
         <translation>L'adreça de destinatari no és vàlida. Torneu-la a comprovar.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>S'ha trobat una adreça duplicada: cal utilitzar les adreces només un cop cada vegada.</translation>
     </message>
     <message>
@@ -2126,12 +2126,12 @@
         <translation>Introduïu una etiqueta per a aquesta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Un missatge que s'ha adjuntat al fartcoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Paga a:</translation>
+        <source>Pay </source>
+        <translation>Paga </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2806,7 +2806,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepta connexions de fora (per defecte: 1 si no -proxy o -connect)</translation>
+        <translation>Accepta connexions de fora (per 1 si no -proxy o -connect)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -2866,34 +2866,34 @@
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(per defecte: 1)</translation>
+        <translation>(per 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; pot ser:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; pot </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Intenta recuperar les claus privades d'un fitxer wallet.dat corrupte</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opcions de la creació de blocs:</translation>
+        <source>Block creation </source>
+        <translation>Opcions de la creació de </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Connecta només al(s) node(s) especificats</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opcions de connexió:</translation>
+        <source>Connection </source>
+        <translation>Opcions de </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>S'ha detectat una base de dades de blocs corrupta</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Opcions de depuració/proves:</translation>
     </message>
     <message>
@@ -2945,8 +2945,8 @@
         <translation>No s'ha trobat el bloc de gènesi o és incorrecte. El directori de dades de la xarxa és incorrecte?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Adreça -onion no vàlida: '%s'</translation>
+        <source>Invalid -onion '%s'</source>
+        <translation>Adreça -onion no '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2985,8 +2985,8 @@
         <translation>El moneder %s resideix fora del directori de dades %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opcions de moneder:</translation>
+        <source>Wallet </source>
+        <translation>Opcions de </translation>
     </message>
     <message>
         <source>Warning: This version is obsolete; upgrade required!</source>
@@ -3071,8 +3071,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3082,14 +3081,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>Per utilitzar fartcoind, o l'opció de serviddor de fartcoin-qt, heu de definir una rpcpassword en el fitxer de configuració:
 %s
-Es recomana que utilitzeu la contrasenya aleatòria següent:
-rpcuser=fartcoinrpc
+Es recomana que utilitzeu la contrasenya aleatòria rpcuser=fartcoinrpc
 rpcpassword=%s
 (no cal que recordeu la contrasenya)
 El nom d'usuari i la contrasenya NO han de ser els mateixos.
 Si el fitxer no existeix, creeu-ne un amb permisos de lectura només per al seu propietari.
 Es recomana definir alertnotify per tal de ser notificat de qualsevol problema;
-per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</translation>
+per alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</translation>
     </message>
     <message>
         <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -3108,7 +3106,7 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>Accepta sol·licituds REST públiques (per defecte: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>No es pot resoldre l'adreça -whitebind: «%s»</translation>
     </message>
     <message>
@@ -3184,16 +3182,16 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>Cal especificar un port amb -whitebind: «%s»</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Opcions de transmissió del node:</translation>
+        <source>Node relay </source>
+        <translation>Opcions de transmissió del </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opcions RPC SSL: (veieu el wiki del Fartcoin per a instruccions de configuració de l'SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opcions RPC (veieu el wiki del Fartcoin per a instruccions de configuració de l'SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opcions del servidor RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opcions del servidor </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3209,11 +3207,11 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Defineix certificats arrel SSL per a la sol·licitud de pagament (per defecte: -sistema-)</translation>
+        <translation>Defineix certificats arrel SSL per a la sol·licitud de pagament (per -sistema-)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Defineix un idioma, per exemple «de_DE» (per defecte: preferències locals de sistema)</translation>
+        <translation>Defineix un idioma, per exemple «de_DE» (per preferències locals de sistema)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3260,7 +3258,7 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>La transacció és massa gran</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>Opcions d'interfície:</translation>
     </message>
     <message>
@@ -3276,8 +3274,8 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>Nom d'usuari per a connexions JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Cal reescriure el moneder: reiniceu el Fartcoin Core per completar-ho.</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Cal reescriure el reiniceu el Fartcoin Core per completar-ho.</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3392,8 +3390,8 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>Inclou l'adreça IP a la sortida de depuració (per defecte: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Adreça -proxy invalida: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Adreça -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3476,11 +3474,11 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Fartcoin" admin@foo.com</t
         <translation>Xarxa desconeguda especificada a -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>No es pot resoldre l'adreça -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>No es pot resoldre l'adreça -externalip: '%s'</translation>
     </message>
     <message>

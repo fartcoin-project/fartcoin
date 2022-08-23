@@ -520,7 +520,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP vicarii:</translation>
+        <translation>&amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -552,11 +552,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Lingua monstranda utenti:</translation>
+        <translation>&amp;Lingua monstranda </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unita qua quantitates monstrare:</translation>
+        <translation>&amp;Unita qua quantitates </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -609,8 +609,8 @@
         <translation>Tractatio URI</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Fartcoin incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Fartcoin incipere non cliccare-ad-pensandum handler</translation>
     </message>
     </context>
 <context>
@@ -1423,8 +1423,8 @@
         <translation>Conare recipere claves privatas de corrupto wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Optiones creandi frustorum:</translation>
+        <source>Block creation </source>
+        <translation>Optiones creandi </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -1583,20 +1583,20 @@
         <translation>Error legendi wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Inscriptio -proxy non valida: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Inscriptio -proxy non '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Ignotum rete specificatum in -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Non posse resolvere -bind inscriptonem: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Non posse resolvere -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Non posse resolvere -externalip inscriptionem: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Non posse resolvere -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

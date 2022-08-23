@@ -442,7 +442,7 @@
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>بایت ها:</translation>
+        <translation>بایت </translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -457,12 +457,12 @@
         <translation>هزینه:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>هزینه ی پسین:</translation>
+        <source>After </source>
+        <translation>هزینه ی </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>پول خورد:</translation>
+        <translation>پول </translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -645,8 +645,8 @@
         <translation>استفاده از مسیر پیش‌فرض</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>استفاده از یک مسیر سفارشی:</translation>
+        <source>Use a custom data </source>
+        <translation>استفاده از یک مسیر </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -696,7 +696,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>آ&amp;ی‌پی پراکسی:</translation>
+        <translation>آ&amp;ی‌پی </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -728,11 +728,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>زبان &amp;رابط کاربری:</translation>
+        <translation>زبان &amp;رابط </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;واحد نمایش مبالغ:</translation>
+        <translation>&amp;واحد نمایش </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -779,7 +779,7 @@
     </message>
     <message>
         <source>Available:</source>
-        <translation>در دسترس:</translation>
+        <translation>در </translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -799,7 +799,7 @@
     </message>
     <message>
         <source>Total:</source>
-        <translation>جمع کل:</translation>
+        <translation>جمع </translation>
     </message>
     <message>
         <source>Your current total balance</source>
@@ -817,8 +817,8 @@
         <translation>خطای درخواست پرداخت</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>نمی‌توان بیت‌کوین را اجرا کرد: کنترل‌کنندهٔ کلیک-و-پرداخت</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>نمی‌توان بیت‌کوین را اجرا کنترل‌کنندهٔ کلیک-و-پرداخت</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
@@ -910,7 +910,7 @@
     </message>
     <message>
         <source>Totals</source>
-        <translation>جمع کل:</translation>
+        <translation>جمع </translation>
     </message>
     <message>
         <source>Build date</source>
@@ -1018,7 +1018,7 @@
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>بایت ها:</translation>
+        <translation>بایت </translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -1033,12 +1033,12 @@
         <translation>هزینه:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>هزینه ی پسین:</translation>
+        <source>After </source>
+        <translation>هزینه ی </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>پول خورد:</translation>
+        <translation>پول </translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1105,7 +1105,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>پرداخ&amp;ت به:</translation>
+        <translation>پرداخ&amp;ت </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1716,7 +1716,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>پذیرش اتصالات از بیرون (پیش فرض:1 بدون پراکسی یا اتصال)</translation>
+        <translation>پذیرش اتصالات از بیرون (پیش 1 بدون پراکسی یا اتصال)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1735,7 +1735,7 @@
         <translation>هشدار: مبلغ paytxfee بسیار بالایی تنظیم شده است! این مبلغ هزینه‌ای است که شما برای تراکنش‌ها پرداخت می‌کنید.</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>بستن گزینه ایجاد</translation>
     </message>
     <message>
@@ -1812,19 +1812,19 @@
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>فایل debug.log  را در startup مشتری کوچک کن (پیش فرض:1 اگر اشکال زدایی روی نداد)</translation>
+        <translation>فایل debug.log  را در startup مشتری کوچک کن (پیش 1 اگر اشکال زدایی روی نداد)</translation>
     </message>
     <message>
         <source>Start minimized</source>
         <translation>اجرای برنامه به صورت کوچک‌شده</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>گزینه‌های رابط کاربری:</translation>
+        <source>UI </source>
+        <translation>گزینه‌های رابط </translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>از UPnP  برای شناسایی درگاه شنیداری استفاده کنید (پیش فرض:1 در زمان شنیدن)</translation>
+        <translation>از UPnP  برای شناسایی درگاه شنیداری استفاده کنید (پیش 1 در زمان شنیدن)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -1875,19 +1875,19 @@
         <translation>خطا در بارگیری wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>آدرس پراکسی اشتباه %s</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>شبکه مشخص شده غیرقابل شناسایی در onlynet: '%s'</translation>
+        <translation>شبکه مشخص شده غیرقابل شناسایی در '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>آدرس قابل اتصال- شناسایی نیست %s</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>آدرس خارجی قابل اتصال- شناسایی نیست %s</translation>
     </message>
     <message>

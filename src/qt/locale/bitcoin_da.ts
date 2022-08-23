@@ -391,7 +391,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Anmod om betalinger (genererer QR-koder og "fartcoin:"-URI'er)</translation>
     </message>
     <message>
@@ -411,7 +411,7 @@
         <translation>Vis listen over brugte modtagelsesadresser og -mærkater</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>Åbn en "fartcoin:"-URI eller betalingsanmodning</translation>
     </message>
     <message>
@@ -571,8 +571,8 @@
         <translation>Støv:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter gebyr:</translation>
+        <source>After </source>
+        <translation>Efter </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -895,7 +895,7 @@
         <translation>Brug standardmappen for data</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>Brug tilpasset mappe for data:</translation>
     </message>
     <message>
@@ -970,7 +970,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP-adresse for proxyen (fx IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>IP-adresse for proxyen (fx 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -989,8 +989,8 @@
         <translation>Tredjeparts-transaktions-URL'er</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktuelle tilvalg for kommandolinjen, der tilsidesætter ovenstående tilvalg:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktuelle tilvalg for kommandolinjen, der tilsidesætter ovenstående </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1090,7 +1090,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Enhed at vise beløb i:</translation>
+        <translation>&amp;Enhed at vise beløb </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1243,8 +1243,8 @@
         <translation>Fejl i betalingsanmodning</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Kan ikke starte fartcoin: click-to-pay-håndtering</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Kan ikke starte click-to-pay-håndtering</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1823,8 +1823,8 @@
         <translation>Gebyr:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter gebyr:</translation>
+        <source>After </source>
+        <translation>Efter </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1839,7 +1839,7 @@
         <translation>Tilpasset byttepengeadresse</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Transaktionsgebyr:</translation>
     </message>
     <message>
@@ -1887,7 +1887,7 @@
         <translation>(Smart-gebyr er ikke initialiseret endnu. Dette tager typisk nogle få blokke …)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>Bekræftelsestid:</translation>
     </message>
     <message>
@@ -2023,7 +2023,7 @@
         <translation>Modtageradressen er ikke gyldig. Tjek venligst igen.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>Adressegenganger fundet. Adresser bør kun bruges én gang hver.</translation>
     </message>
     <message>
@@ -2122,12 +2122,12 @@
         <translation>Indtast et mærkat for denne adresse for at føje den til listen over brugte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>En besked, som blev føjet til "bitcon:"-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Fartcoin-netværket.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Betal til:</translation>
+        <source>Pay </source>
+        <translation>Betal </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2881,15 +2881,15 @@
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;kategori&gt; kan være:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;kategori&gt; kan </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>Blokoprettelsestilvalg:</translation>
     </message>
     <message>
@@ -2897,7 +2897,7 @@
         <translation>Tilslut kun til de(n) angivne knude(r)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>Tilvalg for forbindelser:</translation>
     </message>
     <message>
@@ -2905,7 +2905,7 @@
         <translation>Ødelagt blokdatabase opdaget</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Tilvalg for fejlfinding/test:</translation>
     </message>
     <message>
@@ -2958,7 +2958,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Ugyldig -onion adresse: "%s"</translation>
+        <translation>Ugyldig -onion "%s"</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -3005,7 +3005,7 @@
         <translation>Tegnebog %s findes uden for datamappe %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>Tilvalg for tegnebog:</translation>
     </message>
     <message>
@@ -3107,8 +3107,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3118,8 +3117,7 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>For at bruge fartcoind eller valgmuligheden -server i fartcoin-qt skal du oprette et rpcpassword i konfigurationsfilen:
 %s
-Det anbefales, at du bruger følgende tilfældige adgangskode:
-rpcuser=fartcoinrpc
+Det anbefales, at du bruger følgende tilfældige rpcuser=fartcoinrpc
 rpcpassword=%s
 (du behøver ikke at huske adgangskoden)
 Brugernavnet og adgangskoden MÅ IKKE være det samme.
@@ -3161,8 +3159,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Kan ikke køre med en tegnebog i beskåret tilstand.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kan ikke løse -whitebind adresse: "%s"</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>Kan ikke løse -whitebind "%s"</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3237,15 +3235,15 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Nødt til at angive en port med -whitebinde: "%s"</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>Videresendelsesvalgmuligheder for knude:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Tilvalg for RPC SSL: (se Bitcoin Wiki for instruktioner i SSL-opstart)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Tilvalg for RPC (se Bitcoin Wiki for instruktioner i SSL-opstart)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>Tilvalg for RPC-server:</translation>
     </message>
     <message>
@@ -3317,7 +3315,7 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Transaktionen er for stor</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>Indstillinger for brugerflade:</translation>
     </message>
     <message>
@@ -3333,8 +3331,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Brugernavn til JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Det var nødvendigt at genskrive tegnebogen: genstart Fartcoin Core for at gennemføre</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Det var nødvendigt at genskrive genstart Fartcoin Core for at gennemføre</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3449,8 +3447,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Inkludér IP-adresser i fejlretningsoutput (standard: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ugyldig -proxy adresse: "%s"</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Ugyldig -proxy "%s"</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3535,12 +3533,12 @@ for eksempel: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Ukendt netværk anført i -onlynet: "%s"</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kan ikke finde -bind adressen: "%s"</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Kan ikke finde -bind "%s"</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kan ikke finde -externalip adressen: "%s"</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Kan ikke finde -externalip "%s"</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

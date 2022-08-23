@@ -496,7 +496,7 @@
     </message>
     <message>
         <location line="+164"/>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -521,7 +521,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -731,7 +731,7 @@
     </message>
     <message>
         <location line="+48"/>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1137,8 +1137,8 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Use a custom data directory:</source>
-        <translation>Use a custom data directory:</translation>
+        <source>Use a custom data </source>
+        <translation>Use a custom data </translation>
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
@@ -1265,7 +1265,7 @@
     </message>
     <message>
         <location line="+41"/>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1594,7 +1594,7 @@
     </message>
     <message>
         <location line="-408"/>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
+        <source>Cannot start click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2346,7 +2346,7 @@
     </message>
     <message>
         <location line="+80"/>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2366,7 +2366,7 @@
     </message>
     <message>
         <location line="+206"/>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2428,7 +2428,7 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2604,7 +2604,7 @@
     </message>
     <message>
         <location line="+12"/>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2731,13 +2731,13 @@
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+448"/>
         <location line="+529"/>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3708,7 +3708,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3718,8 +3718,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Block creation options:</source>
-        <translation>Block creation options:</translation>
+        <source>Block creation </source>
+        <translation>Block creation </translation>
     </message>
     <message>
         <location line="+8"/>
@@ -3728,7 +3728,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3738,7 +3738,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3863,7 +3863,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3990,8 +3990,7 @@
         <location line="+4"/>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4133,17 +4132,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Fartcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4233,7 +4232,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fartcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4253,7 +4252,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fartcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+4"/>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

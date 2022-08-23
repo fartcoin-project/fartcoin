@@ -384,7 +384,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις fartcoin: )</translation>
     </message>
     <message>
@@ -400,8 +400,8 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Άνοιγμα fartcoin: URI αίτησης πληρωμής</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Άνοιγμα URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -506,7 +506,7 @@
         <translation>Σκόνη</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>Ταρίφα αλλαγής</translation>
     </message>
     <message>
@@ -811,8 +811,8 @@
         <translation>Χρήση του προεπιλεγμένου φακέλου δεδομένων</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Προσαρμογή του φακέλου δεδομένων: </translation>
+        <source>Use a custom data </source>
+        <translation>Προσαρμογή του φακέλου </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -893,8 +893,8 @@
         <translation>Διευθύνσεις τρίτων συναλλαγών.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Ενεργές επιλογές γραμμής-εντολών που παρακάμπτουν τις παραπάνω επιλογές:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Ενεργές επιλογές γραμμής-εντολών που παρακάμπτουν τις παραπάνω </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -950,7 +950,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP διαμεσολαβητή:</translation>
+        <translation>&amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -982,11 +982,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Γλώσσα περιβάλλοντος εργασίας: </translation>
+        <translation>Γλώσσα περιβάλλοντος </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Μονάδα μέτρησης:</translation>
+        <translation>&amp;Μονάδα </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1042,7 +1042,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Επίβλεψη μόνο:</translation>
+        <translation>Επίβλεψη </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1132,8 +1132,8 @@
         <translation>Σφάλμα αιτήματος πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του Fartcoin: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1628,7 +1628,7 @@
         <translation>Ταρίφα</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>Ταρίφα αλλαγής</translation>
     </message>
     <message>
@@ -1644,8 +1644,8 @@
         <translation>Προσαρμοσμένη διεύθυνση ρέστων</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Τέλος συναλλαγής:</translation>
+        <source>Transaction </source>
+        <translation>Τέλος </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1664,8 +1664,8 @@
         <translation>Προσαρμογή:</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Χρόνος επικύρωσης:</translation>
+        <source>Confirmation </source>
+        <translation>Χρόνος </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1847,8 +1847,8 @@
         <translation>Εισάγεται μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Πληρωμή σε:</translation>
+        <source>Pay </source>
+        <translation>Πληρωμή </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2071,7 +2071,7 @@
     </message>
     <message>
         <source>watch-only</source>
-        <translation>Επίβλεψη μόνο:</translation>
+        <translation>Επίβλεψη </translation>
     </message>
     <message>
         <source>label</source>
@@ -2115,7 +2115,7 @@
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>ID Συναλλαγής:</translation>
+        <translation>ID </translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -2233,7 +2233,7 @@
     </message>
     <message>
         <source>watch-only</source>
-        <translation>Επίβλεψη μόνο:</translation>
+        <translation>Επίβλεψη </translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -2344,7 +2344,7 @@
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>Επίβλεψη μόνο:</translation>
+        <translation>Επίβλεψη </translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -2522,16 +2522,16 @@
         <translation>Προσπάθεια για ανακτησει ιδιωτικων κλειδιων από ενα διεφθαρμένο αρχειο wallet.dat </translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Αποκλεισμός επιλογων δημιουργίας: </translation>
+        <source>Block creation </source>
+        <translation>Αποκλεισμός επιλογων </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Σύνδεση μόνο με ορισμένους κόμβους</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Επιλογές σύνδεσης:</translation>
+        <source>Connection </source>
+        <translation>Επιλογές </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2574,7 +2574,7 @@
         <translation>ΕΙσαγωγή...</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
+        <source>Invalid -onion '%s'</source>
         <translation>Άκυρη διεύθυνση -onion : '%s'</translation>
     </message>
     <message>
@@ -2602,8 +2602,8 @@
         <translation>Το πορτοφόλι %s βρίσκεται έξω από το φάκελο δεδομένων %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Επιλογές πορτοφολιού:</translation>
+        <source>Wallet </source>
+        <translation>Επιλογές </translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
@@ -2658,16 +2658,16 @@
         <translation>Μη έγκυρο ποσό για την παράμετρο -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Επιλογές αναμετάδοσης κόμβου: </translation>
+        <source>Node relay </source>
+        <translation>Επιλογές αναμετάδοσης </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Bitcoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Ρυθμίσεις (ανατρέξτε στο Bitcoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Επιλογές διακομιστή RPC:</translation>
+        <source>RPC server </source>
+        <translation>Επιλογές διακομιστή </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2806,8 +2806,8 @@
         <translation>Να συμπεριληφθεί η διεύθυνση IP στην αναφορά? (προεπιλογή: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Δεν είναι έγκυρη η διεύθυνση '%s'</translation>
     </message>
     <message>
         <source>Server certificate file (default: %s)</source>
@@ -2827,15 +2827,15 @@
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Άγνωστo δίκτυο ορίζεται σε onlynet: '%s'</translation>
+        <translation>Άγνωστo δίκτυο ορίζεται σε '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη διεύθυνση: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Δεν μπορώ να γράψω την προεπιλεγμένη '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

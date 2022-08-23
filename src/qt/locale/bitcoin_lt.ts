@@ -405,8 +405,8 @@
         <translation>Mokestis:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po mokesčio:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -692,7 +692,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Vienetai, kuriais rodyti sumas:</translation>
+        <translation>&amp;Vienetai, kuriais rodyti </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -961,8 +961,8 @@
         <translation>Mokestis:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po mokesčio:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1639,8 +1639,8 @@
         <translation> wallet.dat pakrovimo klaida</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neteisingas proxy adresas: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Neteisingas proxy '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

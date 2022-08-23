@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>לתשומת לבך: כל גיבוי קודם שביצעת לארנק שלך יש להחליף בקובץ הארנק המוצפן שזה עתה נוצר. מטעמי אבטחה, גיבויים קודמים של קובץ הארנק הבלתי-מוצפן יהפכו לחסרי תועלת עם התחלת השימוש בארנק החדש המוצפן.</translation>
+        <translation>לתשומת כל גיבוי קודם שביצעת לארנק שלך יש להחליף בקובץ הארנק המוצפן שזה עתה נוצר. מטעמי אבטחה, גיבויים קודמים של קובץ הארנק הבלתי-מוצפן יהפכו לחסרי תועלת עם התחלת השימוש בארנק החדש המוצפן.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -379,8 +379,8 @@
         <translation>ליבת ביטקוין</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :fartcoin)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב fartcoin)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -395,8 +395,8 @@
         <translation>הצגת רשימת הכתובות והתוויות הנמצאות בשימוש</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>פתיחת ביטקוין: כתובת משאב או בקשת תשלום</translation>
+        <source>Open a URI or payment request</source>
+        <translation>פתיחת כתובת משאב או בקשת תשלום</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -493,8 +493,8 @@
         <translation>אבק:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>לאחר עמלה:</translation>
+        <source>After </source>
+        <translation>לאחר </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -793,8 +793,8 @@
         <translation>שימוש בבררת המחדל של תיקיית הנתונים.</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>שימוש בתיקיית נתונים מותאמת אישית:</translation>
+        <source>Use a custom data </source>
+        <translation>שימוש בתיקיית נתונים מותאמת </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -821,7 +821,7 @@
     </message>
     <message>
         <source>URI:</source>
-        <translation>כתובת משאב:</translation>
+        <translation>כתובת </translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -864,7 +864,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>כתובת ה־IP של המתווך (לדוגמה IPv4: 127.0.0.1‏ / IPv6: ::1)</translation>
+        <translation>כתובת ה־IP של המתווך (לדוגמה 127.0.0.1‏ / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -875,8 +875,8 @@
         <translation>כתובות העברה צד־שלישי</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>אפשרויות פעילות בשורת הפקודה שדורסות את האפשרויות שלהלן:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>אפשרויות פעילות בשורת הפקודה שדורסות את האפשרויות </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -956,11 +956,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;שפת מנשק המשתמש:</translation>
+        <translation>&amp;שפת מנשק </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>י&amp;חידת מידה להצגת כמויות:</translation>
+        <translation>י&amp;חידת מידה להצגת </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1015,7 +1015,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>צפייה בלבד:</translation>
+        <translation>צפייה </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1035,7 +1035,7 @@
     </message>
     <message>
         <source>Immature:</source>
-        <translation>לא בשל:</translation>
+        <translation>לא </translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
@@ -1047,7 +1047,7 @@
     </message>
     <message>
         <source>Total:</source>
-        <translation>סך הכול:</translation>
+        <translation>סך </translation>
     </message>
     <message>
         <source>Your current total balance</source>
@@ -1105,8 +1105,8 @@
         <translation>שגיאה בבקשת תשלום</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>לא ניתן להתחיל את ביטקוין: טיפול בלחיצה–לתשלום </translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>לא ניתן להתחיל את טיפול בלחיצה–לתשלום </translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1465,7 +1465,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fartcoin network.</source>
-        <translation>הודעת רשות לצירוף לבקשת התשלום שתוצג בעת פתיחת הבקשה. לתשומת לבך: ההודעה לא תישלח עם התשלום ברשת ביטקוין.</translation>
+        <translation>הודעת רשות לצירוף לבקשת התשלום שתוצג בעת פתיחת הבקשה. לתשומת ההודעה לא תישלח עם התשלום ברשת ביטקוין.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1653,8 +1653,8 @@
         <translation>עמלה:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>לאחר עמלה:</translation>
+        <source>After </source>
+        <translation>לאחר </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1844,12 +1844,12 @@
         <translation>יש להזין תווית עבור כתובת זו כדי להוסיף אותה לרשימת הכתובות בשימוש</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>הודעה שצורפה לביטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת הביטקוין.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>הודעה שצורפה כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת הודעה זו לא תישלח ברשת הביטקוין.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>תשלום לטובת:</translation>
+        <source>Pay </source>
+        <translation>תשלום </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2500,7 +2500,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>קבלת חיבורים מבחוץ (בררת מחדל: 1 ללא ‎-proxy או ‎-connect)</translation>
+        <translation>קבלת חיבורים מבחוץ (בררת 1 ללא ‎-proxy או ‎-connect)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -2544,34 +2544,34 @@
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(בררת מחדל: 1)</translation>
+        <translation>(בררת 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;קטגוריה&gt; יכולה להיות:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;קטגוריה&gt; יכולה </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>נסה לשחזר מפתחות פרטיים מקובץ wallet.dat מושחת.</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>אפשרויות יצירת מקטע:</translation>
+        <source>Block creation </source>
+        <translation>אפשרויות יצירת </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>התחבר רק לצמתים המצוינים</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>הגדרות חיבור:</translation>
+        <source>Connection </source>
+        <translation>הגדרות </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>התגלה מסד נתוני מקטעים לא תקין</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>אפשרויות ניפוי/בדיקה:</translation>
     </message>
     <message>
@@ -2655,8 +2655,8 @@
         <translation>הארנק %s יושב מחוץ לתיקיית הנתונים %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>אפשרויות הארנק:</translation>
+        <source>Wallet </source>
+        <translation>אפשרויות </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2675,12 +2675,12 @@
         <translation>אזהרה: נא לבדוק שהתאריך והשעה של המחשב שלך נכונים! אם השעון שלך שגוי ליבת ביטקוין לא תעבוד כראוי.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>לא ניתן לפתור את הכתובת ‎-whitebind:‏ '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>בחירת תיקיית נתונים עם ההפעלה (בררת מחדל: 0)</translation>
+        <translation>בחירת תיקיית נתונים עם ההפעלה (בררת 0)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -2728,22 +2728,22 @@
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>מסכת הרשת שצוינה עם ‎-whitelist שגויה: '%s'</translation>
+        <translation>מסכת הרשת שצוינה עם ‎-whitelist '%s'</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>עליך לציין פתחה עם ‎-whitebind:‏ '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>אפשרויות ממסר מפרק:</translation>
+        <source>Node relay </source>
+        <translation>אפשרויות ממסר </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>אפשרויות RPC SSL: (נא לעיין בוויקי של ביטקוין לקבלת הנחיות על הגדרת SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>אפשרויות RPC (נא לעיין בוויקי של ביטקוין לקבלת הנחיות על הגדרת SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>הגדרות שרת RPC</translation>
     </message>
     <message>
@@ -2752,11 +2752,11 @@
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>הגדרות אישורי בסיס של SSL לבקשות תשלום (בררת המחדל: -מערכת-)</translation>
+        <translation>הגדרות אישורי בסיס של SSL לבקשות תשלום (בררת -מערכת-)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>הגדרת שפה, למשל „he_il“ (בררת מחדל: שפת המערכת)</translation>
+        <translation>הגדרת שפה, למשל „he_il“ (בררת שפת המערכת)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -2764,11 +2764,11 @@
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>הצגת מסך פתיחה בעת הפעלה (בררת מחדל: 1)</translation>
+        <translation>הצגת מסך פתיחה בעת הפעלה (בררת 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>כיווץ הקובץ debug.log בהפעלת הלקוח (בררת מחדל: 1 ללא ‎-debug)</translation>
+        <translation>כיווץ הקובץ debug.log בהפעלת הלקוח (בררת 1 ללא ‎-debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2800,15 +2800,15 @@
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>יש להשתמש ב־UPnP כדי למפות את הפתחה להאזנה (בררת מחדל: 1 בעת האזנה)</translation>
+        <translation>יש להשתמש ב־UPnP כדי למפות את הפתחה להאזנה (בררת 1 בעת האזנה)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>שם משתמש לחיבורי JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>יש לכתוב את הארנק מחדש: נא להפעיל את ליבת ביטקוין מחדש כדי להשלים את הפעולה</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>יש לכתוב את הארנק נא להפעיל את ליבת ביטקוין מחדש כדי להשלים את הפעולה</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -2871,19 +2871,19 @@
         <translation>שגיאה בטעינת הקובץ wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>כתובת ‎-proxy לא תקינה: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>כתובת ‎-proxy לא '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>רשת לא ידועה צוינה דרך ‎-onlynet:‏ '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>לא ניתן לפתור את הכתובת ‎-bind:‏ '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>לא ניתן לפתור את הכתובת ‎-externalip:‏ '%s'</translation>
     </message>
     <message>

@@ -387,7 +387,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Запатрабаваць плацёж (генеруецца QR-код для біткойн URI)</translation>
     </message>
     <message>
@@ -407,8 +407,8 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Адкрыць біткойн: URI ці запыт плацяжу</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Адкрыць URI ці запыт плацяжу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -563,8 +563,8 @@
         <translation>Пыл:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Пасля камісіі:</translation>
+        <source>After </source>
+        <translation>Пасля </translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -951,8 +951,8 @@
         <translation>Камісія:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Пасля камісіі:</translation>
+        <source>After </source>
+        <translation>Пасля </translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1019,7 +1019,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>Заплаціць да:</translation>
+        <translation>Заплаціць </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1425,8 +1425,8 @@
         <translation>Праверка гаманца...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Опцыі гаманца:</translation>
+        <source>Wallet </source>
+        <translation>Опцыі </translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
@@ -1441,8 +1441,8 @@
         <translation>Інфармацыя</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Опцыі RPC сервера:</translation>
+        <source>RPC server </source>
+        <translation>Опцыі RPC </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>

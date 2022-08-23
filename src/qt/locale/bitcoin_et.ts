@@ -555,7 +555,7 @@
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
-        <translation>Selline aadress on juba olemas: "%1"</translation>
+        <translation>Selline aadress on juba "%1"</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Fartcoin address.</source>
@@ -763,8 +763,8 @@
         <translation>URI käsitsemine</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Fartcoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Fartcoin ei vajuta-maksa toiming</translation>
     </message>
     </context>
 <context>
@@ -1693,8 +1693,8 @@
         <translation>Püüa vigasest wallet.dat failist taastada turvavõtmed</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Blokeeri loomise valikud:</translation>
+        <source>Block creation </source>
+        <translation>Blokeeri loomise </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -1741,8 +1741,8 @@
         <translation>Kontrollin rahakotti...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Rahakoti valikud:</translation>
+        <source>Wallet </source>
+        <translation>Rahakoti </translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
@@ -1753,8 +1753,8 @@
         <translation>Informatsioon</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC serveri valikud:</translation>
+        <source>RPC server </source>
+        <translation>RPC serveri </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -1793,8 +1793,8 @@
         <translation>Tehing liiga suur</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>UI Valikud:</translation>
+        <source>UI </source>
+        <translation>UI </translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
@@ -1861,24 +1861,24 @@
         <translation>Viga wallet.dat käivitamisel</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Vigane -proxi aadress: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Vigane -proxi '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Kirjeldatud tundmatu võrgustik -onlynet'is: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Tundmatu -bind aadress: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Tundmatu -bind '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Tundmatu -externalip aadress: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Tundmatu -externalip '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-paytxfee=&lt;amount&gt; jaoks vigane kogus: '%s'</translation>
+        <translation>-paytxfee=&lt;amount&gt; jaoks vigane '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

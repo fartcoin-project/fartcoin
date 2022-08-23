@@ -256,7 +256,7 @@
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Näytä tietoja QT:ta</translation>
+        <translation>Näytä tietoja ta</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
@@ -340,7 +340,7 @@
     </message>
     <message>
         <source>Show information about Fartcoin Core</source>
-        <translation>Näytä tietoja Fartcoin Core:sta</translation>
+        <translation>Näytä tietoja Fartcoin sta</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -383,8 +383,8 @@
         <translation>Fartcoin-ydin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja fartcoin: URIt)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja URIt)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -399,8 +399,8 @@
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Avaa fartcoin: URI tai maksupyyntö</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Avaa URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -525,8 +525,8 @@
         <translation>Tomu:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Palkkion jälkeen:</translation>
+        <source>After </source>
+        <translation>Palkkion </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -837,8 +837,8 @@
         <translation>Käytä oletuskansiota</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Määritä oma kansio:</translation>
+        <source>Use a custom data </source>
+        <translation>Määritä oma </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -869,7 +869,7 @@
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Avaa maksupyyntö URI:sta tai tiedostosta</translation>
+        <translation>Avaa maksupyyntö sta tai tiedostosta</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -924,11 +924,11 @@
     </message>
     <message>
         <source>Third party transaction URLs</source>
-        <translation>Kolmannen osapuolen rahansiirto URL:t</translation>
+        <translation>Kolmannen osapuolen rahansiirto t</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktiiviset komentorivivalinnat jotka ohittavat ylläolevat valinnat:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktiiviset komentorivivalinnat jotka ohittavat ylläolevat </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -968,7 +968,7 @@
     </message>
     <message>
         <source>Automatically open the Fartcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Fartcoin-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <translation>Avaa Fartcoin-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1169,8 +1169,8 @@
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Ei voida käynnistää fartcoin: klikkaa-maksu käsittelijää</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Ei voida käynnistää klikkaa-maksu käsittelijää</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1636,7 +1636,7 @@
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Virhe käännettäessä URI:a QR-koodiksi.</translation>
+        <translation>Virhe käännettäessä a QR-koodiksi.</translation>
     </message>
 </context>
 <context>
@@ -1713,8 +1713,8 @@
         <translation>Palkkio:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Palkkion jälkeen:</translation>
+        <source>After </source>
+        <translation>Palkkion </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1729,7 +1729,7 @@
         <translation>Kustomoitu vaihtorahan osoite</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Rahansiirtokulu:</translation>
     </message>
     <message>
@@ -1761,7 +1761,7 @@
         <translation>Muokattu:</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>Vahvistusaika:</translation>
     </message>
     <message>
@@ -1913,7 +1913,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>Maksun saaja:</translation>
+        <translation>Maksun </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1960,11 +1960,11 @@
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Viesti joka liitettiin fartcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Fartcoin-verkkoon.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Viesti joka liitettiin iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Fartcoin-verkkoon.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Saaja:</translation>
     </message>
     <message>
@@ -2632,7 +2632,7 @@
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:portin merkintätapaa IPv6:lle.</translation>
+        <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:portin merkintätapaa lle.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2675,32 +2675,32 @@
         <translation>(oletus: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; voi olla:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; voi </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Yritetään palauttaa privaattiavaimia korruptoituneesta wallet.dat -lompakkotiedostosta</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Lohkon luonnin asetukset:</translation>
+        <source>Block creation </source>
+        <translation>Lohkon luonnin </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Yhidstä ainoastaan määrättyihin noodeihin</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Yhteyden valinnat:</translation>
+        <source>Connection </source>
+        <translation>Yhteyden </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Vioittunut lohkotietokanta havaittu</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Debuggaus/Testauksen valinnat:</translation>
+        <source>Debugging/Testing </source>
+        <translation>Debuggaus/Testauksen </translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2748,7 +2748,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Virheellinen -onion osoite: '%s'</translation>
+        <translation>Virheellinen -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2768,7 +2768,7 @@
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Käytä UPnP:ta kuuntelevan portin kartoittamiseen (oletus: %u)</translation>
+        <translation>Käytä ta kuuntelevan portin kartoittamiseen (oletus: %u)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2783,8 +2783,8 @@
         <translation>Lompakko %s sijaitsee data-hakemiston ulkopuolella %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Lompakon valinnat:</translation>
+        <source>Wallet </source>
+        <translation>Lompakon </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2843,16 +2843,16 @@
         <translation>Virheellinen määrä -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Välityssolmukohdan asetukset:</translation>
+        <source>Node relay </source>
+        <translation>Välityssolmukohdan </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL valinnat: (katso Bitcoin Wikistä SSL-asennuksen ohjeet)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (katso Bitcoin Wikistä SSL-asennuksen ohjeet)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC-palvelimen valinnat:</translation>
+        <source>RPC server </source>
+        <translation>RPC-palvelimen </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2868,7 +2868,7 @@
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Näytä kaikki debuggaus valinnat: (käyttö: --help -help-debug)</translation>
+        <translation>Näytä kaikki debuggaus (käyttö: --help -help-debug)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
@@ -2904,15 +2904,15 @@
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Käytä UPnP:tä kuunneltavan portin avaamiseen (vakioasetus: 1 kun kuuntelemassa)</translation>
+        <translation>Käytä tä kuunneltavan portin avaamiseen (vakioasetus: 1 kun kuuntelemassa)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Käyttäjätunnus JSON-RPC-yhteyksille</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä Fartcoin uudelleen</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Lompakko tarvitsee käynnistä Fartcoin uudelleen</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -2948,7 +2948,7 @@
     </message>
     <message>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Käytä OpenSSL:ää (https) JSON-RPC-yhteyksille</translation>
+        <translation>Käytä ää (https) JSON-RPC-yhteyksille</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -2991,7 +2991,7 @@
         <translation>Sisällytä IP-osoitteet virheenkorjauslokissa (oletus: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Virheellinen proxy-osoite '%s'</translation>
     </message>
     <message>
@@ -3028,14 +3028,14 @@
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Tuntematon verkko -onlynet parametrina: '%s'</translation>
+        <translation>Tuntematon verkko -onlynet '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>-bind osoitteen '%s' selvittäminen epäonnistui</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>-externalip osoitteen '%s' selvittäminen epäonnistui</translation>
     </message>
     <message>

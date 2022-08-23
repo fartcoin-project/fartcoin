@@ -391,7 +391,7 @@
         <translation>Fartcoin Çekirdeği</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Ödeme talep et (QR kodu ve fartcoin URI'si oluşturur)</translation>
     </message>
     <message>
@@ -411,8 +411,8 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Bir fartcoin: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Bir bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -571,12 +571,12 @@
         <translation>Toz:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Ücretten sonra:</translation>
+        <source>After </source>
+        <translation>Ücretten </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Para üstü:</translation>
+        <translation>Para </translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -895,8 +895,8 @@
         <translation>Varsayılan veri klasörünü kullan</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Özel bir veri klasörü kullan:</translation>
+        <source>Use a custom data </source>
+        <translation>Özel bir veri klasörü </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -974,7 +974,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Vekil sunucusunun IP adresi (mesela IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>Vekil sunucusunun IP adresi (mesela 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -993,8 +993,8 @@
         <translation>Üçüncü taraf muamele URL'leri</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Yukarıdaki seçeneklerin yerine geçen faal komut satırı seçenekleri:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Yukarıdaki seçeneklerin yerine geçen faal komut satırı </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1247,8 +1247,8 @@
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Fartcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Fartcoin tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1827,12 +1827,12 @@
         <translation>Ücret:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Ücretten sonra:</translation>
+        <source>After </source>
+        <translation>Ücretten </translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Para üstü:</translation>
+        <translation>Para </translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -1843,8 +1843,8 @@
         <translation>Özel para üstü adresi</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Muamele ücreti:</translation>
+        <source>Transaction </source>
+        <translation>Muamele </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1880,7 +1880,7 @@
     </message>
     <message>
         <source>Recommended:</source>
-        <translation>Tavsiye edilen:</translation>
+        <translation>Tavsiye </translation>
     </message>
     <message>
         <source>Custom:</source>
@@ -1891,8 +1891,8 @@
         <translation>(Zeki ücret henüz başlatılmadı. Bu genelde birkaç blok alır...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Teyit süresi:</translation>
+        <source>Confirmation </source>
+        <translation>Teyit </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2023,8 +2023,8 @@
         <translation>Alıcı adresi geçerli değildir. Lütfen denetleyiniz.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Çift adres bulundu: adresler herbiri için sadece bir kez kullanılmalıdır.</translation>
+        <source>Duplicate address addresses should only be used once each.</source>
+        <translation>Çift adres adresler herbiri için sadece bir kez kullanılmalıdır.</translation>
     </message>
     <message>
         <source>Warning: Invalid Fartcoin address</source>
@@ -2059,7 +2059,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Şu adrese öde:</translation>
+        <translation>&amp;Şu adrese </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -2122,12 +2122,12 @@
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Fartcoin: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Fartcoin şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Şu adrese öde:</translation>
+        <source>Pay </source>
+        <translation>Şu adrese </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2873,32 +2873,32 @@
         <translation>(varsayılan: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;kategori&gt; şunlar olabilir:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;kategori&gt; şunlar </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Bozuk bir wallet.dat dosyasından özel anahtarları geri kazanmayı dene</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Blok oluşturma seçenekleri:</translation>
+        <source>Block creation </source>
+        <translation>Blok oluşturma </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Sadece belirtilen düğüme veya düğümlere bağlan</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Bağlantı seçenekleri:</translation>
+        <source>Connection </source>
+        <translation>Bağlantı </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Bozuk blok veritabanı tespit edildi</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Hata ayıklama/deneme seçenekleri:</translation>
+        <source>Debugging/Testing </source>
+        <translation>Hata ayıklama/deneme </translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2950,7 +2950,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Geçersiz -onion adresi: '%s'</translation>
+        <translation>Geçersiz -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2997,8 +2997,8 @@
         <translation>%s cüzdan %s veri klasörünün dışında bulunuyor</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Cüzdan seçenekleri:</translation>
+        <source>Wallet </source>
+        <translation>Cüzdan </translation>
     </message>
     <message>
         <source>Warning: This version is obsolete; upgrade required!</source>
@@ -3014,7 +3014,7 @@
     </message>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Belirtilen kaynaktan JSON-RPC bağlantılarını kabul et. Bir &lt;ip&gt; için geçerli olanlar şunlardır: salt IP adresi (mesela 1.2.3.4), bir şebeke/ağ maskesi (örneğin 1.2.3.4/255.255.255.0) ya da bir şebeke/CIDR (mesela 1.2.3.4/24). Bu seçenek birden fazla kez belirtilebilir</translation>
+        <translation>Belirtilen kaynaktan JSON-RPC bağlantılarını kabul et. Bir &lt;ip&gt; için geçerli olanlar salt IP adresi (mesela 1.2.3.4), bir şebeke/ağ maskesi (örneğin 1.2.3.4/255.255.255.0) ya da bir şebeke/CIDR (mesela 1.2.3.4/24). Bu seçenek birden fazla kez belirtilebilir</translation>
     </message>
     <message>
         <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
@@ -3062,7 +3062,7 @@
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz tutar: '%s' (Sıkışmış muameleleri önlemek için en az %s değerinde asgari aktarım ücretine eşit olmalıdır)</translation>
+        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz '%s' (Sıkışmış muameleleri önlemek için en az %s değerinde asgari aktarım ücretine eşit olmalıdır)</translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
@@ -3099,8 +3099,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3110,14 +3109,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>fartcoind ya da fartcoin-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
 %s
-Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=fartcoinrpc
+Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye rpcuser=fartcoinrpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekli değildir)
 Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
 Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
 Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
+alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3153,8 +3151,8 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Prune kipindeki bir cüzdan ile çalışamaz.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>-whitebind adresi çözümlenemedi: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>-whitebind adresi '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3178,7 +3176,7 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Fartcoin Core</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Fartcoin Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
+        <translation>wallet.dat dosyasının yüklenmesinde Cüzdan Fartcoin Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3202,15 +3200,15 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
+        <translation>-maxtxfee=&lt;tutar&gt; için geçersiz '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-minrelaytxfee=&lt;amount&gt; için geçersiz meblağ: '%s'</translation>
+        <translation>-minrelaytxfee=&lt;amount&gt; için geçersiz '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-mintxfee=&lt;amount&gt; için geçersiz meblağ: '%s'</translation>
+        <translation>-mintxfee=&lt;amount&gt; için geçersiz '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
@@ -3229,16 +3227,16 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>-whitebind: '%s' ile bir port belirtilmesi lazımdır</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Düğüm röle seçenekleri:</translation>
+        <source>Node relay </source>
+        <translation>Düğüm röle </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Fartcoin vikisine bakınız)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (SSL kurulumu yönergeleri için Fartcoin vikisine bakınız)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC sunucu seçenekleri:</translation>
+        <source>RPC server </source>
+        <translation>RPC sunucu </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3309,8 +3307,8 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Muamele çok büyük</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>Arayüz Seçenkleri:</translation>
+        <source>UI </source>
+        <translation>Arayüz </translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3325,8 +3323,8 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Fartcoin Çekirdeğini yeniden başlatın</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması tamamlamak için Fartcoin Çekirdeğini yeniden başlatın</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3386,7 +3384,7 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
+        <translation>wallet.dat dosyasının yüklenmesinde hata bozuk cüzdan</translation>
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3441,8 +3439,8 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
         <translation>Hata ayıklama çıktısına IP adreslerini dahil et (varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Geçersiz -proxy adresi: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Geçersiz -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3522,19 +3520,19 @@ mesela: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet için bilinmeyen bir şebeke belirtildi: '%s'</translation>
+        <translation>-onlynet için bilinmeyen bir şebeke '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>-bind adresi çözümlenemedi: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>-bind adresi '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>-externalip adresi çözümlenemedi: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>-externalip adresi '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-paytxfee=&lt;meblağ&gt; için geçersiz meblağ: '%s'</translation>
+        <translation>-paytxfee=&lt;meblağ&gt; için geçersiz '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

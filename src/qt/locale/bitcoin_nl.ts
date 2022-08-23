@@ -391,8 +391,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en fartcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Vraag betaling aan (genereert QR codes en URIs)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -407,8 +407,8 @@
         <translation>Toon de lijst met gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Open een fartcoin: URI of betalingsverzoek</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Open een URI of betalingsverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -567,8 +567,8 @@
         <translation>Stof:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Na vergoeding:</translation>
+        <source>After </source>
+        <translation>Na </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -891,8 +891,8 @@
         <translation>Gebruik de standaard gegevensmap</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Gebruik een persoonlijke gegevensmap:</translation>
+        <source>Use a custom data </source>
+        <translation>Gebruik een persoonlijke </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -985,8 +985,8 @@
         <translation>Transactie-URLs van derde partijen</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Actieve commandoregelopties die bovenstaande opties overschrijven:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Actieve commandoregelopties die bovenstaande opties </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1086,7 +1086,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Eenheid om bedrag in te tonen:</translation>
+        <translation>&amp;Eenheid om bedrag in te </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1239,8 +1239,8 @@
         <translation>Fout bij betalingsverzoek</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Kan Fartcoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Kan Fartcoin niet click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1795,8 +1795,8 @@
         <translation>Vergoeding:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Na vergoeding:</translation>
+        <source>After </source>
+        <translation>Na </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1811,7 +1811,7 @@
         <translation>Aangepast wisselgeldadres</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>Transactiekosten:</translation>
     </message>
     <message>
@@ -1855,8 +1855,8 @@
         <translation>(Slimme vergoeding is nog niet geïnitialiseerd. Dit duurt meestal een paar blokken...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Bevestigings tijd:</translation>
+        <source>Confirmation </source>
+        <translation>Bevestigings </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2054,12 +2054,12 @@
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de fartcoin: URI deze wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Fartcoin netwerk.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de URI deze wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Fartcoin netwerk.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Betaal Aan:</translation>
+        <source>Pay </source>
+        <translation>Betaal </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2785,15 +2785,15 @@
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; kan zijn:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; kan </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Poog de geheime sleutels uit een corrupt wallet.dat bestand terug te halen</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>Blokcreatie-opties:</translation>
     </message>
     <message>
@@ -2801,7 +2801,7 @@
         <translation>Verbind alleen naar de gespecificeerde node(s)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>Verbindingsopties:</translation>
     </message>
     <message>
@@ -2809,7 +2809,7 @@
         <translation>Corrupte blokkendatabase gedetecteerd</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Foutopsporing/Testopties:</translation>
     </message>
     <message>
@@ -2901,8 +2901,8 @@
         <translation>Portemonnee %s bevindt zich buiten de gegevensmap %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Portemonnee instellingen:</translation>
+        <source>Wallet </source>
+        <translation>Portemonnee </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2983,7 +2983,7 @@
     </message>
     <message>
         <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Let op: -maxtxfee is erg hoog ingesteld! Transactiekosten van dergelijke groottes kunnen in een enkele transactie worden betaald.</translation>
+        <translation>Let -maxtxfee is erg hoog ingesteld! Transactiekosten van dergelijke groottes kunnen in een enkele transactie worden betaald.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Fartcoin Core will not work properly.</source>
@@ -2998,8 +2998,8 @@
         <translation>Accepteer publieke REST-requests (standaard: %u)</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kan -whitebind adres niet herleiden: '%s'</translation>
+        <source>Cannot resolve -whitebind '%s'</source>
+        <translation>Kan -whitebind adres niet '%s'</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
@@ -3071,19 +3071,19 @@
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Verplicht een poort met -whitebind op te geven: '%s'</translation>
+        <translation>Verplicht een poort met -whitebind op te '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Node relay opties:</translation>
+        <source>Node relay </source>
+        <translation>Node relay </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL opties: (zie de Bitcoin Wiki voor SSL installatie-instructies)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (zie de Bitcoin Wiki voor SSL installatie-instructies)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>RPC server opties:</translation>
+        <source>RPC server </source>
+        <translation>RPC server </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3158,8 +3158,8 @@
         <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart Fartcoin Core om te voltooien</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Portemonnee moest herschreven Herstart Fartcoin Core om te voltooien</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3270,8 +3270,8 @@
         <translation>IP-adressen toevoegen in de debuguitvoer (standaard: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ongeldig -proxy adres: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Ongeldig -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3350,12 +3350,12 @@
         <translation>Onbekend netwerk gespecificeerd in -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kan -bind adres niet herleiden: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Kan -bind adres niet '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kan -externlip adres niet herleiden: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Kan -externlip adres niet '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

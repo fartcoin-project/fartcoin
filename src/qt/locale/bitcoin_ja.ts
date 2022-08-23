@@ -391,7 +391,7 @@
         <translation>Fartcoin のコア</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>支払いを要求する (QRコードとfartcoin:ではじまるURIを生成する)</translation>
     </message>
     <message>
@@ -411,7 +411,7 @@
         <translation>支払いを受け取るアドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>fartcoin: URIまたは支払いリクエストを開く</translation>
     </message>
     <message>
@@ -571,7 +571,7 @@
         <translation>ダスト：</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>手数料差引後:</translation>
     </message>
     <message>
@@ -895,8 +895,8 @@
         <translation>初期値のデータ ディレクトリを使用</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>任意のデータ ディレクトリを使用:</translation>
+        <source>Use a custom data </source>
+        <translation>任意のデータ </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -974,7 +974,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>プロキシのIPアドレス (例えば IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>プロキシのIPアドレス (例えば 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -993,8 +993,8 @@
         <translation>サードパーティのトランザクションURL</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>上のオプションを置き換えることのできる、有効なコマンドラインオプションの一覧:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>上のオプションを置き換えることのできる、</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1247,8 +1247,8 @@
         <translation>支払いのリクエストのエラーです</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Fartcoin を起動できません: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Fartcoin click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1827,7 +1827,7 @@
         <translation>手数料:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>手数料差引後:</translation>
     </message>
     <message>
@@ -1843,7 +1843,7 @@
         <translation>カスタムおつりアドレス</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
+        <source>Transaction </source>
         <translation>トランザクション手数料：</translation>
     </message>
     <message>
@@ -1891,7 +1891,7 @@
         <translation>（スマート手数料はまだ初期化されていません。これにはおおよそ数ブロックほどかかります……）</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
+        <source>Confirmation </source>
         <translation>検証時間：</translation>
     </message>
     <message>
@@ -2027,7 +2027,7 @@
         <translation>受取アドレスが不正です。再チェックしてください。</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
+        <source>Duplicate address addresses should only be used once each.</source>
         <translation>重複したアドレスが見つかりました: アドレスはそれぞれ一度のみ使用することができます。</translation>
     </message>
     <message>
@@ -2126,11 +2126,11 @@
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>fartcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはFartcoinネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>支払先:</translation>
     </message>
     <message>
@@ -2834,7 +2834,7 @@
     </message>
     <message>
         <source>Reduce storage requirements by pruning (deleting) old blocks. This mode disables wallet support and is incompatible with -txindex. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
-        <translation>古いブロックを剪定する（削除する）ことで記憶容量の必要量を削減する。このモードを有効にするとウォレット機能のサポートは無効になり、-txindexとも互換性がなくなります。警告: この設定の再有効化には全ブロックチェインの再ダウンロードが必要となります。(規定値: 0 = ブロックの剪定無効、&gt;%u = ブロックファイルに使用するMiB単位の目標サイズ)</translation>
+        <translation>古いブロックを剪定する（削除する）ことで記憶容量の必要量を削減する。このモードを有効にするとウォレット機能のサポートは無効になり、-txindexとも互換性がなくなります。この設定の再有効化には全ブロックチェインの再ダウンロードが必要となります。(規定値: 0 = ブロックの剪定無効、&gt;%u = ブロックファイルに使用するMiB単位の目標サイズ)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -2877,7 +2877,7 @@
         <translation>(デフォルト: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
+        <source>&lt;category&gt; can </source>
         <translation>&lt;category&gt;は以下の値を指定できます：</translation>
     </message>
     <message>
@@ -2885,7 +2885,7 @@
         <translation>壊れた wallet.dat から秘密鍵を復旧することを試す</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
+        <source>Block creation </source>
         <translation>ブロック作成オプション:</translation>
     </message>
     <message>
@@ -2893,7 +2893,7 @@
         <translation>指定したノードだけに接続</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>接続オプション：</translation>
     </message>
     <message>
@@ -2902,8 +2902,8 @@
 </translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>デバッグ／テスト用オプション:</translation>
+        <source>Debugging/Testing </source>
+        <translation>デバッグ／</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -3002,7 +3002,7 @@
         <translation>財布 %s はデータ・ディレクトリ%sの外にあります</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
+        <source>Wallet </source>
         <translation>ウォレットオプション：</translation>
     </message>
     <message>
@@ -3079,7 +3079,7 @@
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>保有するピアアドレスが少ない場合、DNS ルックアップによりピアアドレスを問い合わせる (-connect を使っていない場合の初期値: 1)</translation>
+        <translation>保有するピアアドレスが少ない場合、DNS ルックアップによりピアアドレスを問い合わせる (-connect 1)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
@@ -3104,8 +3104,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3115,14 +3114,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>fartcoindを用いる場合や、-server オプションをfartcoin-qtに指定する場合には、設定ファイルにrpcpasswordを設定しなければなりません:
 %s
-以下のランダムなパスワードを用いることが推奨されます:
 rpcuser=fartcoinrpc
 rpcpassword=%s
 (このパスワードを暗記する必要はありません)
 ユーザ名とパスワードは一致してはいけません。
 ファイルが存在しない場合には、所有者のみ読み込み可能なファイルパーミッションでファイルを作成してください。
 またalertnotifyを設定し、問題発生時に通知が行くようにすることをおすすめします;
-例: alertnotify=echo %%s | mail -s "Fartcoinアラート" admin@foo.com
+alertnotify=echo %%s | mail -s "Fartcoinアラート" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3158,7 +3156,7 @@ rpcpassword=%s
         <translation>剪定モードではウォレット機能付きで起動できません。</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>-whitebind アドレス '%s' を解決できません</translation>
     </message>
     <message>
@@ -3183,7 +3181,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Fartcoin Core</source>
-        <translation>wallet.dat の読み込みに失敗しました: ウォレットの読み込みにはより新しいバージョンの Fartcoin Core が必要です</translation>
+        <translation>wallet.dat ウォレットの読み込みにはより新しいバージョンの Fartcoin Core が必要です</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3223,7 +3221,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>-whitelist に対する無効なネットマスクです: '%s'</translation>
+        <translation>-whitelist '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -3231,18 +3229,18 @@ rpcpassword=%s
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>-whitebind を用いてポートを指定する必要があります: '%s'</translation>
+        <translation>-whitebind '%s'</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
+        <source>Node relay </source>
         <translation>ノード中継オプション:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL オプション: (SSLのセットアップ手順はドージコインWikiを参照してください)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL (SSLのセットアップ手順はドージコインWikiを参照してください)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
+        <source>RPC server </source>
         <translation>RPCサーバのオプション:</translation>
     </message>
     <message>
@@ -3267,7 +3265,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>言語設定 例: "de_DE" (初期値: システムの言語)</translation>
+        <translation>言語設定 "de_DE" (初期値: システムの言語)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3314,7 +3312,7 @@ rpcpassword=%s
         <translation>取引が大き過ぎます</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>UIオプション:</translation>
     </message>
     <message>
@@ -3330,7 +3328,7 @@ rpcpassword=%s
         <translation>JSON-RPC 接続のユーザー名</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation>ウォレットが書き直される必要がありました: 完了するために Fartcoin Core を再起動します</translation>
     </message>
     <message>
@@ -3391,7 +3389,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat 読み込みエラー: ウォレットが壊れました</translation>
+        <translation>wallet.dat ウォレットが壊れました</translation>
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3446,8 +3444,8 @@ rpcpassword=%s
         <translation>デバッグ出力にIPアドレスを含める (初期値: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>無効な -proxy アドレス: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>無効な -proxy '%s'</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3530,11 +3528,11 @@ rpcpassword=%s
         <translation>-onlynet で指定された '%s' は未知のネットワークです</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>-bind のアドレス '%s' を解決できません</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>-externalip のアドレス '%s' を解決できません</translation>
     </message>
     <message>

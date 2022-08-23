@@ -383,7 +383,7 @@
         <translation>Rdzeń Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Żądaj płatności (generuje kod QR oraz fartcoin URI)</translation>
     </message>
     <message>
@@ -399,8 +399,8 @@
         <translation>Pokaż listę adresów i etykiet użytych do odbierania</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Otwórz URI fartcoin: lub żądanie zapłaty</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Otwórz URI lub żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -505,8 +505,8 @@
         <translation>Pył:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po opłacie:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -817,7 +817,7 @@
         <translation>Użyj domyślnego folderu danych</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>Użyj wybranego folderu dla danych</translation>
     </message>
     <message>
@@ -891,8 +891,8 @@
         <translation>Adres IP serwera proxy (np. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktywne opcje linii komend, które nadpisują powyższe opcje:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Aktywne opcje linii komend, które nadpisują powyższe </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -980,7 +980,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Jednostka pokazywana przy kwocie:</translation>
+        <translation>&amp;Jednostka pokazywana przy </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1035,7 +1035,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Tylko podglądaj:</translation>
+        <translation>Tylko </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1047,7 +1047,7 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>W toku:</translation>
+        <translation>W </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1067,7 +1067,7 @@
     </message>
     <message>
         <source>Total:</source>
-        <translation>Wynosi ogółem:</translation>
+        <translation>Wynosi </translation>
     </message>
     <message>
         <source>Your current total balance</source>
@@ -1079,7 +1079,7 @@
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>Możliwe do wydania:</translation>
+        <translation>Możliwe do </translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1129,8 +1129,8 @@
         <translation>Błąd żądania płatności</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Nie można uruchomić protokołu fartcoin: kliknij-by-zapłacić</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Nie można uruchomić protokołu kliknij-by-zapłacić</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1621,8 +1621,8 @@
         <translation>Opłata:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Po opłacie:</translation>
+        <source>After </source>
+        <translation>Po </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1637,8 +1637,8 @@
         <translation>Niestandardowe zmiany adresu</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Opłata transakcyjna:</translation>
+        <source>Transaction </source>
+        <translation>Opłata </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1665,8 +1665,8 @@
         <translation>(Sprytne opłaty nie są jeszcze zainicjowane. Trwa to zwykle kilka bloków...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Czas potwierdzenia:</translation>
+        <source>Confirmation </source>
+        <translation>Czas </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1860,7 +1860,7 @@
         <translation>Wprowadź etykietę dla tego adresu by dodać go do listy użytych adresów</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Wpłać do:</translation>
     </message>
     <message>
@@ -2527,31 +2527,31 @@
         <translation>(domyślnie: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; mogą być:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; mogą </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Próbuj odzyskać klucze prywatne z uszkodzonego wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opcje tworzenia bloku:</translation>
+        <source>Block creation </source>
+        <translation>Opcje tworzenia </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Łącz się tylko do wskazanego węzła/węzłów</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opcje połączenia:</translation>
+        <source>Connection </source>
+        <translation>Opcje </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Wykryto uszkodzoną bazę bloków</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Opcje debugowania/testowania:</translation>
     </message>
     <message>
@@ -2639,8 +2639,8 @@
         <translation>Portfel %s znajduje się poza folderem danych %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Opcje portfela:</translation>
+        <source>Wallet </source>
+        <translation>Opcje </translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
@@ -2755,16 +2755,16 @@
         <translation>Nieprawidłowa kwota dla -paytxfee=&lt;amount&gt;: '%s' (musi być co najmniej %s)</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Opcje przekaźnikowe węzła:</translation>
+        <source>Node relay </source>
+        <translation>Opcje przekaźnikowe </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opcje RPC SSL: (odwiedź Bitcoin Wiki w celu uzyskania instrukcji)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opcje RPC (odwiedź Bitcoin Wiki w celu uzyskania instrukcji)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opcje serwera RPC:</translation>
+        <source>RPC server </source>
+        <translation>Opcje serwera </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2835,8 +2835,8 @@
         <translation>Nazwa użytkownika dla połączeń JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Portfel wymaga przepisania: zrestartuj Fartcoina aby ukończyć</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Portfel wymaga zrestartuj Fartcoina aby ukończyć</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -2935,7 +2935,7 @@
         <translation>Dołącz adresy IP do logowania (domyślnie: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Nieprawidłowy adres -proxy: '%s'</translation>
     </message>
     <message>
@@ -3015,11 +3015,11 @@
         <translation>Nieznana sieć w -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Nie można uzyskać adresu -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Nie można uzyskać adresu -externalip: '%s'</translation>
     </message>
     <message>

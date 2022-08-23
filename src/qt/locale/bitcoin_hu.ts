@@ -383,7 +383,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Fizetési kérelem (QR-kódot és "fartcoin:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
@@ -399,7 +399,7 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
+        <source>Open a URI or payment request</source>
         <translation>"fartcoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
@@ -501,8 +501,8 @@
         <translation>Por-határ:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Utólagos díj:</translation>
+        <source>After </source>
+        <translation>Utólagos </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -793,8 +793,8 @@
         <translation>Az alapértelmezett adat könyvtár használata</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Saját adatkönyvtár használata:</translation>
+        <source>Use a custom data </source>
+        <translation>Saját adatkönyvtár </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>A proxy IP címe (pl.: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>A proxy IP címe (pl.: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1009,8 +1009,8 @@
         <translation>URI kezelés</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>A fartcoint nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>A fartcoint nem lehet click-to-pay handler</translation>
     </message>
     </context>
 <context>
@@ -1345,8 +1345,8 @@
         <translation>Díjak:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Utólagos díj:</translation>
+        <source>After </source>
+        <translation>Utólagos </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -2168,27 +2168,27 @@
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Hiba a wallet.dat betöltése közben: meghibásodott tárca</translation>
+        <translation>Hiba a wallet.dat betöltése meghibásodott tárca</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
         <translation>Hiba az wallet.dat betöltése közben</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Érvénytelen -proxy cím: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Érvénytelen -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Ismeretlen hálózat lett megadva -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Csatlakozási cím (-bind address) feloldása nem sikerült: '%s'</translation>
+        <source>Cannot resolve -bind '%s'</source>
+        <translation>Csatlakozási cím (-bind address) feloldása nem '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Külső cím (-externalip address) feloldása nem sikerült: '%s'</translation>
+        <source>Cannot resolve -externalip '%s'</source>
+        <translation>Külső cím (-externalip address) feloldása nem '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

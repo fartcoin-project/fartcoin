@@ -445,7 +445,7 @@
     </message>
     <message>
         <source>Balance:</source>
-        <translation>बाकी रकम :</translation>
+        <translation>बाकी </translation>
     </message>
     <message>
         <source>Confirm the send action</source>

@@ -282,7 +282,7 @@
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Tầm quan trọng:</translation>
+        <translation>Tầm quan </translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -290,7 +290,7 @@
     </message>
     <message>
         <source>Change:</source>
-        <translation>Thay đổi:</translation>
+        <translation>Thay </translation>
     </message>
     <message>
         <source>Amount</source>
@@ -546,7 +546,7 @@
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Tầm quan trọng:</translation>
+        <translation>Tầm quan </translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -554,7 +554,7 @@
     </message>
     <message>
         <source>Change:</source>
-        <translation>Thay đổi:</translation>
+        <translation>Thay </translation>
     </message>
     <message>
         <source>Copy amount</source>

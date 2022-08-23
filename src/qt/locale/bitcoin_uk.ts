@@ -391,8 +391,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Створити запит платежу (генерує QR-код та fartcoin: URI)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Створити запит платежу (генерує QR-код та URI)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -411,8 +411,8 @@
         <translation>Показати список адрес і міток, що були використані для отримання</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Відкрити fartcoin: URI чи запит платежу</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Відкрити URI чи запит платежу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -571,8 +571,8 @@
         <translation>Пил:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Після комісії:</translation>
+        <source>After </source>
+        <translation>Після </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -895,8 +895,8 @@
         <translation>Використовувати типовий каталог даних</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Використовувати свій каталог даних:</translation>
+        <source>Use a custom data </source>
+        <translation>Використовувати свій каталог </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -974,7 +974,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP-адреса проксі-сервера (наприклад IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>IP-адреса проксі-сервера (наприклад 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -993,8 +993,8 @@
         <translation>Сторонні URL транзакцій</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Активовані параметри командного рядка, що перекривають вищевказані параметри:</translation>
+        <source>Active command-line options that override above </source>
+        <translation>Активовані параметри командного рядка, що перекривають вищевказані </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1058,7 +1058,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP проксі:</translation>
+        <translation>&amp;IP </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1090,11 +1090,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Мов&amp;а інтерфейсу користувача:</translation>
+        <translation>Мов&amp;а інтерфейсу </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>В&amp;имірювати монети в:</translation>
+        <translation>В&amp;имірювати монети </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1153,7 +1153,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Тільки спостереження:</translation>
+        <translation>Тільки </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1247,8 +1247,8 @@
         <translation>Помилка запиту платежу</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Неможливо запустити fartcoin: обробник click-to-pay</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Неможливо запустити обробник click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1827,8 +1827,8 @@
         <translation>Комісія:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Після комісії:</translation>
+        <source>After </source>
+        <translation>Після </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1843,8 +1843,8 @@
         <translation>Вказати адресу для решти</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Комісія за передачу:</translation>
+        <source>Transaction </source>
+        <translation>Комісія за </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1891,8 +1891,8 @@
         <translation>(Розумна оплата ще не ініціалізована. Це звичайно займає кілька блоків...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Час підтвердження:</translation>
+        <source>Confirmation </source>
+        <translation>Час </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2027,8 +2027,8 @@
         <translation>Адреса отримувача неправильна. Будь ласка, перевірте її.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Знайдено адресу, що дублюється: кожна адреса має бути вказана не більше одного разу.</translation>
+        <source>Duplicate address addresses should only be used once each.</source>
+        <translation>Знайдено адресу, що кожна адреса має бути вказана не більше одного разу.</translation>
     </message>
     <message>
         <source>Warning: Invalid Fartcoin address</source>
@@ -2126,11 +2126,11 @@
         <translation>Введіть мітку для цієї адреси для додавання її в список використаних адрес</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
-        <translation>Повідомлення, що було додане до fartcoin:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Fartcoin.</translation>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <translation>Повідомлення, що було додане до URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
+        <source>Pay </source>
         <translation>Отримувач:</translation>
     </message>
     <message>
@@ -2217,7 +2217,7 @@
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Введіть нижче адресу отримувача, повідомлення (впевніться, що ви точно скопіювали символи завершення рядка, табуляцію, пробіли тощо) та підпис для перевірки повідомлення. Впевніться, що в підпис не було додано зайвих символів: це допоможе уникнути атак типу «людина посередині». Зауважте, що це лише засвідчує можливість отримання транзакцій підписувачем, але не в стані підтвердити джерело жодної транзакції!</translation>
+        <translation>Введіть нижче адресу отримувача, повідомлення (впевніться, що ви точно скопіювали символи завершення рядка, табуляцію, пробіли тощо) та підпис для перевірки повідомлення. Впевніться, що в підпис не було додано зайвих це допоможе уникнути атак типу «людина посередині». Зауважте, що це лише засвідчує можливість отримання транзакцій підписувачем, але не в стані підтвердити джерело жодної транзакції!</translation>
     </message>
     <message>
         <source>The Fartcoin address the message was signed with</source>
@@ -2715,7 +2715,7 @@
     </message>
     <message>
         <source>Range:</source>
-        <translation>Діапазон від:</translation>
+        <translation>Діапазон </translation>
     </message>
     <message>
         <source>to</source>
@@ -2885,23 +2885,23 @@
         <translation>(типово: 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може бути:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; може </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Спроба відновити закриті ключі з пошкодженого wallet.dat</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Опції створення блоку:</translation>
+        <source>Block creation </source>
+        <translation>Опції створення </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Підключитись лише до вказаного вузла</translation>
     </message>
     <message>
-        <source>Connection options:</source>
+        <source>Connection </source>
         <translation>Параметри з'єднання:</translation>
     </message>
     <message>
@@ -2909,7 +2909,7 @@
         <translation>Виявлено пошкоджений блок бази даних</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
+        <source>Debugging/Testing </source>
         <translation>Параметри тестування/налагодження:</translation>
     </message>
     <message>
@@ -3009,8 +3009,8 @@
         <translation>Гаманець %s знаходиться поза каталогом даних %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Параметри гаманця:</translation>
+        <source>Wallet </source>
+        <translation>Параметри </translation>
     </message>
     <message>
         <source>Warning: This version is obsolete; upgrade required!</source>
@@ -3107,8 +3107,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3118,14 +3117,13 @@ for example: alertnotify=echo %%s | mail -s "Fartcoin Alert" admin@foo.com
 </source>
         <translation>Для використання fartcoind, або fartcoin-qt з параметром -server, ви повинні встановити rpcpassword в файлі конфігурації:
 %s
-Рекомендується використати такий випадковий пароль:
-rpcuser=fartcoinrpc
+Рекомендується використати такий випадковий rpcuser=fartcoinrpc
 rpcpassword=%s
 (вам не треба запам'ятовувати цей пароль)
 Ім'я користувача та пароль ПОВИННІ бути різними.
 Якщо файлу не існує, створіть його, обмеживши доступ правом читання для власника.
 Також рекомендується використовувати alertnotify для того, щоб отримувати сповіщення про проблеми;
-наприклад: alertnotify=echo %%s | mail -s "Сповіщення Fartcoin" admin@foo.com
+alertnotify=echo %%s | mail -s "Сповіщення Fartcoin" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3161,7 +3159,7 @@ rpcpassword=%s
         <translation>Використання гаманця зі скороченим ланцюжком блоків неможливе.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>Не вдалося розпізнати адресу для -whitebind: «%s»</translation>
     </message>
     <message>
@@ -3237,16 +3235,16 @@ rpcpassword=%s
         <translation>Необхідно вказати порт для -whitebind: «%s»</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Параметри вузла ретрансляції:</translation>
+        <source>Node relay </source>
+        <translation>Параметри вузла </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Параметри RPC SSL: (див. Bitcoin Wiki для налаштування SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Параметри RPC (див. Bitcoin Wiki для налаштування SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Параметри сервера RPC:</translation>
+        <source>RPC server </source>
+        <translation>Параметри сервера </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3317,8 +3315,8 @@ rpcpassword=%s
         <translation>Транзакція занадто велика</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>Параметри інтерфейсу:</translation>
+        <source>UI </source>
+        <translation>Параметри </translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3333,8 +3331,8 @@ rpcpassword=%s
         <translation>Ім'я користувача для JSON-RPC-з'єднань</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
-        <translation>Потрібно перезаписати гаманець: перезапустіть Fartcoin Core для завершення</translation>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
+        <translation>Потрібно перезаписати перезапустіть Fartcoin Core для завершення</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3449,7 +3447,7 @@ rpcpassword=%s
         <translation>Включити IP-адреси до налагоджувального виводу (типово: %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Помилка в адресі проксі-сервера: «%s»</translation>
     </message>
     <message>
@@ -3533,11 +3531,11 @@ rpcpassword=%s
         <translation>Невідома мережа вказана в -onlynet: «%s»</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Не вдалося розпізнати адресу для -bind: «%s»</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Не вдалося розпізнати адресу для -externalip: «%s»</translation>
     </message>
     <message>

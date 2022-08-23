@@ -391,7 +391,7 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
+        <source>Request payments (generates QR codes and URIs)</source>
         <translation>Demander des paiements (génère des codes QR et des URIs fartcoin:)</translation>
     </message>
     <message>
@@ -411,8 +411,8 @@
         <translation>Afficher la liste d'adresses de réception et d'étiquettes utilisées</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Ouvrir un URI fartcoin: ou une demande de paiement</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Ouvrir un URI ou une demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -571,8 +571,8 @@
         <translation>Poussière :</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <source>After </source>
+        <translation>Après les </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -891,8 +891,8 @@
         <translation>Utiliser le répertoire de données par défaut</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Utiliser un répertoire de données personnalisé :</translation>
+        <source>Use a custom data </source>
+        <translation>Utiliser un répertoire de données </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -985,7 +985,7 @@
         <translation>URL de transaction d'un tiers</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
+        <source>Active command-line options that override above </source>
         <translation>Options actives de ligne de commande qui annulent les options ci-dessus :</translation>
     </message>
     <message>
@@ -1050,7 +1050,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP du serveur mandataire :</translation>
+        <translation>&amp;IP du serveur </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1157,7 +1157,7 @@
     </message>
     <message>
         <source>Pending:</source>
-        <translation>En attente :</translation>
+        <translation>En </translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -1239,8 +1239,8 @@
         <translation>Erreur de demande de paiement</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer fartcoin :</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer </translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1819,8 +1819,8 @@
         <translation>Frais :</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <source>After </source>
+        <translation>Après les </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1835,8 +1835,8 @@
         <translation>Adresse personnalisée de monnaie rendue</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Frais de transaction :</translation>
+        <source>Transaction </source>
+        <translation>Frais de </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1883,8 +1883,8 @@
         <translation>(Les frais intelligents ne sont pas encore initialisés. Ceci prend habituellement quelques blocs...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Temps de confirmation :</translation>
+        <source>Confirmation </source>
+        <translation>Temps de </translation>
     </message>
     <message>
         <source>normal</source>
@@ -2019,8 +2019,8 @@
         <translation>L'adresse du destinataire est invalide. Veuillez la vérifier.</translation>
     </message>
     <message>
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Adresse identique trouvée : chaque adresse ne devrait être utilisée qu'une fois.</translation>
+        <source>Duplicate address addresses should only be used once each.</source>
+        <translation>Adresse identique chaque adresse ne devrait être utilisée qu'une fois.</translation>
     </message>
     <message>
         <source>Warning: Invalid Fartcoin address</source>
@@ -2055,7 +2055,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Payer à :</translation>
+        <translation>&amp;Payer </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -2118,12 +2118,12 @@
         <translation>Saisir une étiquette pour cette adresse afin de l'ajouter à la liste d'adresses utilisées</translation>
     </message>
     <message>
-        <source>A message that was attached to the fartcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
+        <source>A message that was attached to the URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fartcoin network.</source>
         <translation>Un message qui était joint à l'URI Fartcoin et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau Fartcoin.</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Payer à :</translation>
+        <source>Pay </source>
+        <translation>Payer </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2802,7 +2802,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepter les connexions entrantes (par défaut : 1 si aucun -proxy ou -connect )</translation>
+        <translation>Accepter les connexions entrantes (par 1 si aucun -proxy ou -connect )</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -2874,35 +2874,35 @@
     </message>
     <message>
         <source>(default: 1)</source>
-        <translation>(par défaut : 1)</translation>
+        <translation>(par 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; peut être :</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; peut </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Tenter de récupérer les clefs privées d'un wallet.dat corrompu</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Options de création de bloc :</translation>
+        <source>Block creation </source>
+        <translation>Options de création de </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Ne se connecter qu'au(x) nœud(s) spécifié(s)</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Options de connexion :</translation>
+        <source>Connection </source>
+        <translation>Options de </translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Base corrompue de données des blocs détectée</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Options de test/de débogage :</translation>
+        <source>Debugging/Testing </source>
+        <translation>Options de test/de </translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -3001,8 +3001,8 @@
         <translation>Le portefeuille %s réside en dehors du répertoire de données %s</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Options du portefeuille :</translation>
+        <source>Wallet </source>
+        <translation>Options du </translation>
     </message>
     <message>
         <source>Warning: This version is obsolete; upgrade required!</source>
@@ -3030,7 +3030,7 @@
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Se lier à l'adresse donnée pour écouter des connexions JSON-RPC. Utiliser la notation [host]:port pour l'IPv6. Cette option peut être spécifiée plusieurs fois (par défaut : se lier à toutes les interfaces)</translation>
+        <translation>Se lier à l'adresse donnée pour écouter des connexions JSON-RPC. Utiliser la notation [host]:port pour l'IPv6. Cette option peut être spécifiée plusieurs fois (par se lier à toutes les interfaces)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Fartcoin Core is probably already running.</source>
@@ -3042,7 +3042,7 @@
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>Découvrir ses propres adresses (par défaut : 1 en écoute et sans externalip ou -proxy)</translation>
+        <translation>Découvrir ses propres adresses (par 1 en écoute et sans externalip ou -proxy)</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3078,7 +3078,7 @@
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Demander les adresses des pairs par recherche DNS si l'on manque d'adresses (par défaut : 1 sauf si -connect)</translation>
+        <translation>Demander les adresses des pairs par recherche DNS si l'on manque d'adresses (par 1 sauf si -connect)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
@@ -3103,8 +3103,7 @@
     <message>
         <source>To use fartcoind, or the -server option to fartcoin-qt, you must set an rpcpassword in the configuration file:
 %s
-It is recommended you use the following random password:
-rpcuser=fartcoinrpc
+It is recommended you use the following random rpcuser=fartcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3121,7 +3120,7 @@ rpcpassword=%s
 Le nom d'utilisateur et le mot de passe NE DOIVENT PAS être identiques.
 Si le fichier n'existe pas, créez-le avec la permission lecture-seule-par-le-propriétaire.
 Il est aussi recommandé de définir alertnotify afin que les problèmes vous soient signalés ;
-par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
+par alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3157,12 +3156,12 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
         <translation>L'exécution est impossible quand le portefeuille est en mode élagage.</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
+        <source>Cannot resolve -whitebind '%s'</source>
         <translation>Impossible de résoudre l'adresse -whitebind : « %s »</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Choisir un répertoire de données au démarrage (par défaut : 0)</translation>
+        <translation>Choisir un répertoire de données au démarrage (par 0)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -3233,16 +3232,16 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
         <translation>Un port doit être spécifié avec -whitebind : « %s »</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Options de relais du nœud :</translation>
+        <source>Node relay </source>
+        <translation>Options de relais du </translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Options RPC SSL : (voir le wiki Fartcoin pour les instructions de configuration de SSL)</translation>
+        <source>RPC SSL (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Options RPC (voir le wiki Fartcoin pour les instructions de configuration de SSL)</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Options du serveur RPC :</translation>
+        <source>RPC server </source>
+        <translation>Options du serveur </translation>
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
@@ -3262,11 +3261,11 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Définir les certificats racine SSL pour les demandes de paiement (par défaut : -système-)</translation>
+        <translation>Définir les certificats racine SSL pour les demandes de paiement (par -système-)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Définir la langue, par exemple « fr_CA » (par défaut : la langue du système)</translation>
+        <translation>Définir la langue, par exemple « fr_CA » (par la langue du système)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3274,11 +3273,11 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Afficher la page de garde au démarrage (par défaut : 1)</translation>
+        <translation>Afficher la page de garde au démarrage (par 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Réduire le fichier debug.log lors du démarrage du client (par défaut : 1 lorsque -debug n'est pas présent)</translation>
+        <translation>Réduire le fichier debug.log lors du démarrage du client (par 1 lorsque -debug n'est pas présent)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -3313,7 +3312,7 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
         <translation>Transaction trop volumineuse</translation>
     </message>
     <message>
-        <source>UI Options:</source>
+        <source>UI </source>
         <translation>Options de l'IU :</translation>
     </message>
     <message>
@@ -3322,14 +3321,14 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Utiliser l'UPnP pour mapper le port d'écoute (par défaut : 1 lors de l'écoute)</translation>
+        <translation>Utiliser l'UPnP pour mapper le port d'écoute (par 1 lors de l'écoute)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nom d'utilisateur pour les connexions JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Fartcoin Core to complete</source>
+        <source>Wallet needed to be restart Fartcoin Core to complete</source>
         <translation>Le portefeuille avait besoin d'être réécrit : veuillez redémarrer Fartcoin Core pour terminer</translation>
     </message>
     <message>
@@ -3445,7 +3444,7 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
         <translation>Inclure les adresses IP à la sortie de débogage (par défaut : %u)</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
+        <source>Invalid -proxy '%s'</source>
         <translation>Adresse -proxy invalide : « %s »</translation>
     </message>
     <message>
@@ -3517,11 +3516,11 @@ par exemple : alertnotify=echo %%s | mail -s "Alerte Fartcoin" admin@foo.com
         <translation>Réseau inconnu spécifié sur -onlynet : « %s »</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Impossible de résoudre l'adresse -bind : « %s »</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Impossible de résoudre l'adresse -externalip : « %s »</translation>
     </message>
     <message>

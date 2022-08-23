@@ -193,7 +193,7 @@
         <translation>Шаң</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>Комиссия алу кейін</translation>
     </message>
     <message>
@@ -325,8 +325,8 @@
         <translation>Комиссия:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Комиссия алу кейін:</translation>
+        <source>After </source>
+        <translation>Комиссия алу </translation>
     </message>
     <message>
         <source>Dust:</source>

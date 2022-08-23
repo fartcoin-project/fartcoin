@@ -387,8 +387,8 @@
         <translation>Fartcoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Zatraži uplatu (stvara QR kod i fartcoin: URI adresu)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Zatraži uplatu (stvara QR kod i URI adresu)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -407,8 +407,8 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje novca</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Otvori fartcoin: URI adresu ili zahtjev za uplatu</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Otvori URI adresu ili zahtjev za uplatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -918,11 +918,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Jezi&amp;k sučelja:</translation>
+        <translation>Jezi&amp;k </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Jedinica za prikaz iznosa:</translation>
+        <translation>&amp;Jedinica za prikaz </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1311,7 +1311,7 @@
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Primatelj plaćanja:</translation>
+        <translation>&amp;Primatelj </translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1338,8 +1338,8 @@
         <translation>Poruka:</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Primatelj plaćanja:</translation>
+        <source>Pay </source>
+        <translation>Primatelj </translation>
     </message>
     </context>
 <context>
@@ -1777,8 +1777,8 @@
         <translation>Upozorenje: -paytxfee je podešen na preveliki iznos.  To je iznos koji ćete platiti za obradu transakcije.</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opcije za kreiranje bloka:</translation>
+        <source>Block creation </source>
+        <translation>Opcije za kreiranje </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -1857,8 +1857,8 @@
         <translation>Greška kod učitavanja datoteke wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Nevaljala -proxy adresa: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Nevaljala -proxy '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>

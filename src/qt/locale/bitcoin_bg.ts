@@ -371,8 +371,8 @@
         <translation>Биткойн ядро</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и URIs)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -387,8 +387,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Отворете биткойн: URI  или заявка за плащане</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Отворете URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -489,7 +489,7 @@
         <translation>Прах:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>След прилагане на ДДС</translation>
     </message>
     <message>
@@ -582,7 +582,7 @@
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Копирай прахта:</translation>
+        <translation>Копирай </translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -781,7 +781,7 @@
         <translation>Използване на директория по подразбиране</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
@@ -828,7 +828,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP адрес на прокси (напр. за IPv4: 127.0.0.1 / за IPv6: ::1)</translation>
+        <translation>IP адрес на прокси (напр. за 127.0.0.1 / за ::1)</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
@@ -912,7 +912,7 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Мерна единица за показваните суми:</translation>
+        <translation>Мерна единица за показваните </translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -967,7 +967,7 @@
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>В наблюдателен режим:</translation>
+        <translation>В наблюдателен </translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1003,7 +1003,7 @@
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>За харчене:</translation>
+        <translation>За </translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1037,8 +1037,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start fartcoin: click-to-pay handler</source>
-        <translation>Биткойн не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start click-to-pay handler</source>
+        <translation>Биткойн не можe да се click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1521,7 +1521,7 @@
         <translation>Такса:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
+        <source>After </source>
         <translation>След прилагане на ДДС</translation>
     </message>
     <message>
@@ -1533,8 +1533,8 @@
         <translation>Ако тази опция е активирана,но адресът на промяна е празен или невалиден,промяната ще бъде изпратена на новосъздаден адрес.</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Такса за транзакцията:</translation>
+        <source>Transaction </source>
+        <translation>Такса за </translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1554,11 +1554,11 @@
     </message>
     <message>
         <source>Custom:</source>
-        <translation>По избор:</translation>
+        <translation>По </translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Време за потвърждение:</translation>
+        <source>Confirmation </source>
+        <translation>Време за </translation>
     </message>
     <message>
         <source>normal</source>
@@ -1674,7 +1674,7 @@
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Копирай прахта:</translation>
+        <translation>Копирай </translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1732,8 +1732,8 @@
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Плащане на:</translation>
+        <source>Pay </source>
+        <translation>Плащане </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2316,7 +2316,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Приемайте връзки отвън.(по подразбиране:1 в противен случай -proxy или -connect)</translation>
+        <translation>Приемайте връзки отвън.(по 1 в противен случай -proxy или -connect)</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2331,12 +2331,12 @@
         <translation>(по подразбиране 1)</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може да бъде:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;category&gt; може да </translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Настройки на връзката:</translation>
+        <source>Connection </source>
+        <translation>Настройки на </translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2367,8 +2367,8 @@
         <translation>Проверка на портфейла...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Настройки на портфейла:</translation>
+        <source>Wallet </source>
+        <translation>Настройки на </translation>
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
@@ -2380,7 +2380,7 @@
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Изберете директория при стартиране на програмата.( настройка по подразбиране:0)</translation>
+        <translation>Изберете директория при стартиране на програмата.( настройка по 0)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -2408,7 +2408,7 @@
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Задаване на език,например "de_DE" (по подразбиране: system locale)</translation>
+        <translation>Задаване на език,например "de_DE" (по system locale)</translation>
     </message>
     <message>
         <source>Start minimized</source>
@@ -2475,8 +2475,8 @@
         <translation>Грешка при зареждане на wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Невалиден -proxy address: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Невалиден -proxy '%s'</translation>
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>

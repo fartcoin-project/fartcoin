@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2015 The Dogecoin Core developers
-// Copyright (c) 2018-2019 The Fartcoin Core developer
+// Copyright (c) 2018-2022 The Fartcoin Core developer
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -127,7 +127,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x6f55421a39ad2bf3fee45a38abe5800e580ed9042ee885a54f8f8001148a034f"));
 
 	vSeeds.push_back(CDNSSeedData("omariskandarani.com", "dnsseed.omariskandarani.com"));
-	vSeeds.push_back(CDNSSeedData("fartcoin-project.com", "dnsseed.fartcoin-project.com"));    
+	vSeeds.push_back(CDNSSeedData("fartcoin-project.com", "dnsseed.fartcoin-project.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);  
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);  
@@ -154,14 +154,14 @@ public:
 	    (  22222, uint256S("0x93898c15a6de929cce6157a1e095a44dcc53193dbaa1524794d02e9f329e2c0c"))
 	    (  33333, uint256S("0xda3117a2800de5e871c8d7a5282e849c819a66afe76caae183c36ba009458cd9"))
 	    (  44444, uint256S("0xcbc6e9cd9cd517594fae59059f2af48f58f3b7aa6abf4e135235f81c5c5ad2e2"))
-	    (  55555, uint256S("0x006123f241e0d8c0d80d8f69b4be45bead50de1d36860dab6d46056c8be27279"))		
+	    (  55555, uint256S("0x006123f241e0d8c0d80d8f69b4be45bead50de1d36860dab6d46056c8be27279"))
 	    (  66666, uint256S("0x2299742330af6eb29e15e0cf462f66e6a3bbf6778a36d84bf1de78977b34e253"))
 	    (  77777, uint256S("0xea6dc57860e56c688f560cb1548a4c4de441bd382343152189e6e972475b318f"))
 	    (  88888, uint256S("0x268585c03710e483b29a3eb8ed9aa09885db8f7983b272a4d8d83e063dc250fd"))
-	    (  99999, uint256S("0x575c8e69e2ae508ba27dc3959eb808299df46b5fdf7c9d51558d39c3f4ba1846"))		
+	    (  99999, uint256S("0x575c8e69e2ae508ba27dc3959eb808299df46b5fdf7c9d51558d39c3f4ba1846"))
 	    ( 111111, uint256S("0x65199689879e7e4def5e8dfb76a478b831582cfe7781c1d4724c6e6818f3d355")),
 
-		
+
             1567184021, // * UNIX timestamp of last checkpoint block
                 111908, // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
@@ -248,7 +248,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("omariskandarani.com", "testnet.omariskandarani.com"));
-	vSeeds.push_back(CDNSSeedData("fartcoin-project.com", "testnet.fartcoin-project.com")); 	    
+	    vSeeds.push_back(CDNSSeedData("fartcoin-project.com", "testnet.fartcoin-project.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,95); 
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); 

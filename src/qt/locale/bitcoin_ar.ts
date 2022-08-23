@@ -429,8 +429,8 @@
         <translation>رسوم :</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>بعد الرسوم :</translation>
+        <source>After </source>
+        <translation>بعد </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -629,8 +629,8 @@
         <translation>استخدام دليل البانات الافتراضي</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>استخدام دليل بيانات مخصص:</translation>
+        <source>Use a custom data </source>
+        <translation>استخدام دليل بيانات </translation>
     </message>
     <message>
         <source>Fartcoin Core</source>
@@ -692,7 +692,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>بروكسي &amp;اي بي:</translation>
+        <translation>بروكسي &amp;اي </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1053,8 +1053,8 @@
         <translation>رسوم :</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>بعد الرسوم :</translation>
+        <source>After </source>
+        <translation>بعد </translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1647,16 +1647,16 @@
         <translation>فشل في الاستماع على أي منفذ. استخدام الاستماع = 0 إذا كنت تريد هذا.</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>عنوان اونيون غير صحيح : '%s'</translation>
+        <source>Invalid -onion '%s'</source>
+        <translation>عنوان اونيون غير '%s'</translation>
     </message>
     <message>
         <source>Verifying wallet...</source>
         <translation>التحقق من المحفظة ...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>خيارات المحفظة :</translation>
+        <source>Wallet </source>
+        <translation>خيارات </translation>
     </message>
     <message>
         <source>Information</source>
@@ -1703,8 +1703,8 @@
         <translation>خطأ عند تنزيل wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>عنوان البروكسي غير صحيح : '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>عنوان البروكسي غير '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

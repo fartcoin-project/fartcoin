@@ -322,7 +322,7 @@
     <name>CoinControlDialog</name>
     <message>
         <source>Amount:</source>
-        <translation>میزان وجه:</translation>
+        <translation>میزان </translation>
     </message>
     <message>
         <source>Amount</source>
@@ -408,7 +408,7 @@
     </message>
     <message>
         <source>Usage:</source>
-        <translation>میزان استفاده:</translation>
+        <translation>میزان </translation>
     </message>
     </context>
 <context>
@@ -567,7 +567,7 @@
     </message>
     <message>
         <source>Amount:</source>
-        <translation>میزان وجه:</translation>
+        <translation>میزان </translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -575,7 +575,7 @@
     </message>
     <message>
         <source>Balance:</source>
-        <translation>مانده حساب:</translation>
+        <translation>مانده </translation>
     </message>
     <message>
         <source>Confirm the send action</source>
@@ -641,8 +641,8 @@
         <translation>پیام:</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>پرداخت به:</translation>
+        <source>Pay </source>
+        <translation>پرداخت </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -997,8 +997,8 @@
         <translation>مبلغ تراکنش کمتر از آن است که پس از کسر هزینه  تراکنش قابل ارسال باشد</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>گزینه های سرویس دهنده RPC:</translation>
+        <source>RPC server </source>
+        <translation>گزینه های سرویس دهنده </translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>

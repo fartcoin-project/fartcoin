@@ -347,8 +347,8 @@
         <translation>Core de Fartcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and fartcoin: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e fartcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e URIs)</translation>
     </message>
     <message>
         <source>&amp;About Fartcoin Core</source>
@@ -363,8 +363,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a fartcoin: URI or payment request</source>
-        <translation>Abrir un fartcoin: URI ou solicitude de pago</translation>
+        <source>Open a URI or payment request</source>
+        <translation>Abrir un URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -705,7 +705,7 @@
         <translation>Empregar o directorio de datos por defecto</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
+        <source>Use a custom data </source>
         <translation>Empregar un directorio de datos personalizado</translation>
     </message>
     <message>
@@ -772,7 +772,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP do Proxy:</translation>
+        <translation>&amp;IP do </translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -804,7 +804,7 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Linguaxe de interface de usuario:</translation>
+        <translation>&amp;Linguaxe de interface de </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1352,8 +1352,8 @@
         <translation>Introduce unha etiqueta para esta dirección para engadila á listaxe de direccións empregadas</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagar A:</translation>
+        <source>Pay </source>
+        <translation>Pagar </translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -1936,7 +1936,7 @@
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Aceptar conexións de fóra (por defecto: 1 se non -proxy ou -connect)</translation>
+        <translation>Aceptar conexións de fóra (por 1 se non -proxy ou -connect)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1971,16 +1971,16 @@
         <translation>Precaución: wallet.dat corrupto, datos salvagardados! O wallet.dat orixinal foi gardado como wallet.{timestamp}.bak en %s; se o teu balance ou transaccións son incorrectas deberías restauralas dende unha copia de seguridade.</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;categoría&gt; pode ser:</translation>
+        <source>&lt;category&gt; can </source>
+        <translation>&lt;categoría&gt; pode </translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Tentar recuperar claves privadas dende un wallet.dat corrupto</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opcións de creación de bloque:</translation>
+        <source>Block creation </source>
+        <translation>Opcións de creación de </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -2024,7 +2024,7 @@
     </message>
     <message>
         <source>Invalid -onion address: '%s'</source>
-        <translation>Dirección -onion inválida: '%s'</translation>
+        <translation>Dirección -onion '%s'</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -2060,7 +2060,7 @@
     </message>
     <message>
         <source>Choose data directory on startup (default: 0)</source>
-        <translation>Escolle directorio de datos ao arrancar (por defecto: 0)</translation>
+        <translation>Escolle directorio de datos ao arrancar (por 0)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -2080,15 +2080,15 @@
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Fixar idioma, por exemplo "de_DE" (por defecto: locale del sistema)</translation>
+        <translation>Fixar idioma, por exemplo "de_DE" (por locale del sistema)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation>Amosar pantalla splash no arranque (por defecto: 1)</translation>
+        <translation>Amosar pantalla splash no arranque (por 1)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Recortar o arquivo debug.log ao arrancar o cliente (por defecto: 1 cando no-debug)</translation>
+        <translation>Recortar o arquivo debug.log ao arrancar o cliente (por 1 cando no-debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2112,7 +2112,7 @@
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Usar UPnP para mapear o porto de escoita (por defecto: 1 se á escoita)</translation>
+        <translation>Usar UPnP para mapear o porto de escoita (por 1 se á escoita)</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -2167,19 +2167,19 @@
         <translation>Erro cargando wallet.dat</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Dirección -proxy inválida: '%s'</translation>
+        <source>Invalid -proxy '%s'</source>
+        <translation>Dirección -proxy '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Rede descoñecida especificada en -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: '%s'</source>
+        <source>Cannot resolve -bind '%s'</source>
         <translation>Non se pode resolver a dirección -bind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
+        <source>Cannot resolve -externalip '%s'</source>
         <translation>Non se pode resolver dirección -externalip: '%s'</translation>
     </message>
     <message>
