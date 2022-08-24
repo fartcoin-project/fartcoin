@@ -8,15 +8,26 @@
 from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 
-from test_framework import auxpow
+from test_framework import scrypt_auxpow as auxpow
 
 class GetAuxBlockTest (BitcoinTestFramework):
 
-  def run_test (self):
-    BitcoinTestFramework.run_test (self)
+  def __init__(self):
+    super().__init__()
+    self.setup_clean_chain = True
+    self.num_nodes = 2
+    self.is_network_split = False
 
+  def setup_network(self):
+    self.nodes = []
+    self.nodes.append(start_node(0, self.options.tmpdir, ["-debug"]))
+    self.nodes.append(start_node(1, self.options.tmpdir, ["-debug", "-rpcnamecoinapi"]))
+    connect_nodes_bi(self.nodes, 0, 1)
+    self.sync_all()
+
+  def run_test (self):
     # Generate a block so that we are not "downloading blocks".
-    self.nodes[0].generate (1)
+    self.nodes[0].generate(100)
 
     # Compare basic data of getauxblock to getblocktemplate.
     auxblock = self.nodes[0].getauxblock ()
@@ -27,12 +38,12 @@ class GetAuxBlockTest (BitcoinTestFramework):
     assert_equal (auxblock['previousblockhash'], blocktemplate['previousblockhash'])
 
     # Compare target and take byte order into account.
-    target = auxblock['_target']
+    target = auxblock['target']
     reversedTarget = auxpow.reverseHex (target)
     assert_equal (reversedTarget, blocktemplate['target'])
 
     # Verify data that can be found in another way.
-    assert_equal (auxblock['chainid'], 1)
+    assert_equal (auxblock['chainid'], 98)
     assert_equal (auxblock['height'], self.nodes[0].getblockcount () + 1)
     assert_equal (auxblock['previousblockhash'], self.nodes[0].getblockhash (auxblock['height'] - 1))
 
@@ -71,12 +82,12 @@ class GetAuxBlockTest (BitcoinTestFramework):
     target = blocktemplate['target']
 
     # Compute invalid auxpow.
-    apow = auxpow.computeAuxpow (auxblock['hash'], target, False)
+    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "98", False)
     res = self.nodes[0].getauxblock (auxblock['hash'], apow)
     assert not res
 
     # Compute and submit valid auxpow.
-    apow = auxpow.computeAuxpow (auxblock['hash'], target, True)
+    apow = auxpow.computeAuxpowWithChainId (auxblock['hash'], target, "98", True)
     res = self.nodes[0].getauxblock (auxblock['hash'], apow)
     assert res
 
@@ -106,7 +117,7 @@ class GetAuxBlockTest (BitcoinTestFramework):
     assert_equal (t['category'], "immature")
     assert_equal (t['blockhash'], auxblock['hash'])
     assert t['generated']
-    assert t['amount'] >= Decimal ("25")
+    assert t['amount'] >= Decimal ("500000")
     assert_equal (t['confirmations'], 1)
 
     # Verify the coinbase script.  Ensure that it includes the block height
@@ -117,7 +128,21 @@ class GetAuxBlockTest (BitcoinTestFramework):
     blk = self.nodes[1].getblock (auxblock['hash'])
     tx = self.nodes[1].getrawtransaction (blk['tx'][0], 1)
     coinbase = tx['vin'][0]['coinbase']
-    assert_equal ("02%02x00" % auxblock['height'], coinbase[0 : 6])
+    assert_equal ("01%02x01" % auxblock['height'], coinbase[0 : 6]) # FART: We mine less blocks in these tests
+
+    # Call getauxblock while using the Namecoin API
+    nmc_api_auxblock = self.nodes[1].getauxblock()
+
+    # must not contain a "target" field, but a "_target" field
+    assert "target" not in nmc_api_auxblock
+    assert "_target" in nmc_api_auxblock
+
+    reversedTarget = auxpow.reverseHex(nmc_api_auxblock["_target"])
+    apow = auxpow.computeAuxpowWithChainId(nmc_api_auxblock["hash"], reversedTarget, "98", True)
+    res = self.nodes[1].getauxblock(nmc_api_auxblock["hash"], apow)
+    assert res
+
+    self.sync_all()
 
 if __name__ == '__main__':
   GetAuxBlockTest ().main ()

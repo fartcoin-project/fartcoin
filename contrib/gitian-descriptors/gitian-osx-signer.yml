@@ -1,13 +1,13 @@
 ---
 name: "fartcoin-dmg-signer"
 suites:
-- "trusty"
+- "bionic"
 architectures:
 - "amd64"
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/fartcoin-project/fartcoin-detached-sigs.git"
+- "url": "https://github.com/fartcoin/fartcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "fartcoin-osx-unsigned.tar.gz"

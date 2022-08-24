@@ -48,9 +48,9 @@ Other
 ### Assets Used
     src/qt/res/icons/about.png
     src/qt/res/icons/about_qt.png,
-    src/qt/res/icons/bitcoin.icns
-    src/qt/res/icons/bitcoin.ico,
-    src/qt/res/icons/bitcoin.png
+    src/qt/res/icons/fartcoin.icns
+    src/qt/res/icons/fartcoin.ico,
+    src/qt/res/icons/fartcoin.png
     src/qt/res/icons/clock*.png,
     src/qt/res/icons/connect*.png
     src/qt/res/icons/eye_minus.png,

@@ -1,4 +1,5 @@
 // Copyright (c) 2014 The Bitcoin Core developers
+// Copyright (c) 2018 The Fartcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,6 +10,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <string.h>
 
 /** A hasher class for HMAC-SHA-512. */
 class CHMAC_SHA256
@@ -21,6 +23,10 @@ public:
     static const size_t OUTPUT_SIZE = 32;
 
     CHMAC_SHA256(const unsigned char* key, size_t keylen);
+    void Copy(CHMAC_SHA256* dest)
+    {
+        memcpy(dest, this, sizeof(CHMAC_SHA256));
+    }
     CHMAC_SHA256& Write(const unsigned char* data, size_t len)
     {
         inner.Write(data, len);

@@ -1,11 +1,10 @@
-// Copyright (c) 2015 The Dogecoin Core developers
+// Copyright (c) 2015-2021 The Fartcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "arith_uint256.h"
 #include "chainparams.h"
 #include "fartcoin.h"
-#include "main.h"
 #include "test/test_bitcoin.h"
 
 #include <boost/test/unit_test.hpp>
@@ -59,50 +58,65 @@ uint64_t expectedMinSubsidy(int height) {
     }
 }
 
-BOOST_AUTO_TEST_CASE(subsidy_limit_test)
+BOOST_AUTO_TEST_CASE(subsidy_first_100k_test)
 {
-    int nHeight = 0;
-    int nStepSize= 1;
+    const CChainParams& mainParams = Params(CBaseChainParams::MAIN);
     CAmount nSum = 0;
-    uint256 prevHash = uint256S("0");
-    const CChainParams mainParams = Params(CBaseChainParams::MAIN);
+    arith_uint256 prevHash = UintToArith256(uint256S("0"));
 
-    for (nHeight = 0; nHeight <= 100000; nHeight++) {
+    for (int nHeight = 0; nHeight <= 100000; nHeight++) {
         const Consensus::Params& params = mainParams.GetConsensus(nHeight);
-        CAmount nSubsidy = GetFartcoinBlockSubsidy(nHeight, params, prevHash);
+        CAmount nSubsidy = GetFartcoinBlockSubsidy(nHeight, params, ArithToUint256(prevHash));
         BOOST_CHECK(MoneyRange(nSubsidy));
         BOOST_CHECK(nSubsidy <= 1000000 * COIN);
-        nSum += nSubsidy * nStepSize;
+        nSum += nSubsidy;
+        // Use nSubsidy to give us some variation in previous block hash, without requiring full block templates
+        prevHash += nSubsidy;
     }
-    for (; nHeight <= 145000; nHeight++) {
+
+    const CAmount expected = 54894174438 * COIN;
+    BOOST_CHECK_EQUAL(expected, nSum);
+}
+
+BOOST_AUTO_TEST_CASE(subsidy_100k_145k_test)
+{
+    const CChainParams& mainParams = Params(CBaseChainParams::MAIN);
+    CAmount nSum = 0;
+    arith_uint256 prevHash = UintToArith256(uint256S("0"));
+
+    for (int nHeight = 100000; nHeight <= 145000; nHeight++) {
         const Consensus::Params& params = mainParams.GetConsensus(nHeight);
-        CAmount nSubsidy = GetFartcoinBlockSubsidy(nHeight, params, prevHash);
+        CAmount nSubsidy = GetFartcoinBlockSubsidy(nHeight, params, ArithToUint256(prevHash));
         BOOST_CHECK(MoneyRange(nSubsidy));
         BOOST_CHECK(nSubsidy <= 500000 * COIN);
-        nSum += nSubsidy * nStepSize;
+        nSum += nSubsidy;
+        // Use nSubsidy to give us some variation in previous block hash, without requiring full block templates
+        prevHash += nSubsidy;
     }
-    for (; nHeight < 600000; nHeight++) {
+
+    const CAmount expected = 12349960000 * COIN;
+    BOOST_CHECK_EQUAL(expected, nSum);
+}
+
+// Check the simplified rewards after block 145,000
+BOOST_AUTO_TEST_CASE(subsidy_post_145k_test)
+{
+    const CChainParams& mainParams = Params(CBaseChainParams::MAIN);
+    const uint256 prevHash = uint256S("0");
+
+    for (int nHeight = 145000; nHeight < 600000; nHeight++) {
         const Consensus::Params& params = mainParams.GetConsensus(nHeight);
         CAmount nSubsidy = GetFartcoinBlockSubsidy(nHeight, params, prevHash);
         CAmount nExpectedSubsidy = (500000 >> (nHeight / 100000)) * COIN;
         BOOST_CHECK(MoneyRange(nSubsidy));
         BOOST_CHECK_EQUAL(nSubsidy, nExpectedSubsidy);
-        nSum += nSubsidy * nStepSize;
     }
 
-    //test sum +- ~10billion
-    arith_uint256 upperlimit = arith_uint256("95e14ec776380000"); //108 billion fart
-    BOOST_CHECK(nSum <= upperlimit);
-    
-    arith_uint256 lowerlimit = arith_uint256("7a1fe16027700000"); //88 billion fart
-    BOOST_CHECK(nSum >= lowerlimit);
-    
     // Test reward at 600k+ is constant
-    const Consensus::Params& params = mainParams.GetConsensus(600000);
-    CAmount nConstantSubsidy = GetFartcoinBlockSubsidy(600000, params, prevHash);
+    CAmount nConstantSubsidy = GetFartcoinBlockSubsidy(600000, mainParams.GetConsensus(600000), prevHash);
     BOOST_CHECK_EQUAL(nConstantSubsidy, 10000 * COIN);
 
-    nConstantSubsidy = GetFartcoinBlockSubsidy(700000, params, prevHash);
+    nConstantSubsidy = GetFartcoinBlockSubsidy(700000, mainParams.GetConsensus(700000), prevHash);
     BOOST_CHECK_EQUAL(nConstantSubsidy, 10000 * COIN);
 }
 

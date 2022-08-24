@@ -1,6 +1,6 @@
 usr/local/bin/fartcoin-qt usr/bin
-share/pixmaps/bitcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitcoin16.xpm usr/share/pixmaps
-share/pixmaps/bitcoin128.png usr/share/pixmaps
+share/pixmaps/fartcoin32.xpm usr/share/pixmaps
+share/pixmaps/fartcoin16.xpm usr/share/pixmaps
+share/pixmaps/fartcoin128.png usr/share/pixmaps
 debian/fartcoin-qt.desktop usr/share/applications
 debian/fartcoin-qt.protocol usr/share/kde4/services/

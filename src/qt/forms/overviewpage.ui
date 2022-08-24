@@ -20,13 +20,16 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">border: 1px solid grey; border-radius: 7px; color:#000000; </string>
+      <string notr="true">QLabel { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop:0 #F0D0A0, stop:1 #F8D488); color:#000000; }</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
      </property>
      <property name="margin">
       <number>3</number>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::TextSelectableByMouse</set>
      </property>
     </widget>
    </item>
@@ -47,9 +50,6 @@
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QLabel" name="label_5">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -64,7 +64,7 @@
             <item>
              <widget class="QPushButton" name="labelWalletStatus">
               <property name="enabled">
-               <bool>false</bool>
+               <bool>true</bool>
               </property>
               <property name="maximumSize">
                <size>
@@ -74,9 +74,6 @@
               </property>
               <property name="toolTip">
                <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Fartcoin network after a connection is established, but this process has not completed yet.</string>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLabel { color: red; background-color: rgba(0, 0, 0, 0%); }</string>
               </property>
               <property name="text">
                <string/>
@@ -119,9 +116,6 @@
             </property>
             <item row="2" column="2">
              <widget class="QLabel" name="labelWatchPending">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -147,9 +141,6 @@
             </item>
             <item row="2" column="1">
              <widget class="QLabel" name="labelUnconfirmed">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -175,9 +166,6 @@
             </item>
             <item row="3" column="2">
              <widget class="QLabel" name="labelWatchImmature">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -229,9 +217,6 @@
             </item>
             <item row="5" column="0">
              <widget class="QLabel" name="labelTotalText">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Total:</string>
               </property>
@@ -239,9 +224,6 @@
             </item>
             <item row="3" column="1">
              <widget class="QLabel" name="labelImmature">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -280,9 +262,6 @@
             </item>
             <item row="3" column="0">
              <widget class="QLabel" name="labelImmatureText">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Immature:</string>
               </property>
@@ -290,9 +269,6 @@
             </item>
             <item row="5" column="1">
              <widget class="QLabel" name="labelTotal">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -318,9 +294,6 @@
             </item>
             <item row="5" column="2">
              <widget class="QLabel" name="labelWatchTotal">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -346,9 +319,6 @@
             </item>
             <item row="0" column="2">
              <widget class="QLabel" name="labelWatchonly">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Watch-only:</string>
               </property>
@@ -359,9 +329,6 @@
             </item>
             <item row="1" column="0">
              <widget class="QLabel" name="labelBalanceText">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Available:</string>
               </property>
@@ -369,9 +336,6 @@
             </item>
             <item row="1" column="1">
              <widget class="QLabel" name="labelBalance">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -397,9 +361,6 @@
             </item>
             <item row="1" column="2">
              <widget class="QLabel" name="labelWatchAvailable">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -425,9 +386,6 @@
             </item>
             <item row="2" column="0">
              <widget class="QLabel" name="labelPendingText">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Pending:</string>
               </property>
@@ -435,9 +393,6 @@
             </item>
             <item row="0" column="1">
              <widget class="QLabel" name="labelSpendable">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="text">
                <string>Spendable:</string>
               </property>
@@ -449,9 +404,6 @@
            </layout>
           </item>
          </layout>
-            <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 40%); </string>             
-            </property>
         </widget>
        </item>
        <item>
@@ -468,26 +420,45 @@
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="label_wallet_bgcoin">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
+        <layout class="QGridLayout" name="logo_grid">
+          <item>
+            <widget class="QLabel" name="label_wallet_bgcoin">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../bitcoin.qrc">:/icons/wallet_bgcoin</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="margin">
+              <number>-2</number>
+             </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QLabel" name="label_wallet_version_overlay">
+              <property name="text">
+               <string></string>
               </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="../bitcoin.qrc">:/icons/wallet_bgcoin</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>false</bool>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="margin">
-          <number>-2</number>
-         </property>
-        </widget>
+              <property name="pixmap">
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignBottom</set>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+            </widget>
+          </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -506,9 +477,6 @@
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
              <widget class="QLabel" name="label_4">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgba(0, 0, 0, 0%); color: #DDDDDD; </string>
-              </property>
               <property name="font">
                <font>
                 <weight>75</weight>
@@ -523,7 +491,7 @@
             <item>
              <widget class="QPushButton" name="labelTransactionsStatus">
               <property name="enabled">
-               <bool>false</bool>
+               <bool>true</bool>
               </property>
               <property name="maximumSize">
                <size>
@@ -571,7 +539,7 @@
           <item>
            <widget class="QListView" name="listTransactions">
             <property name="styleSheet">
-             <string notr="true"> background-color: rgba(255, 255, 255, 0%); color: #DDDDDD;  </string>
+             <string notr="true">QListView { background: transparent; }</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -588,9 +556,6 @@
            </widget>
           </item>
          </layout>
-            <property name="styleSheet">
-             <string notr="true"> background-color: rgba(0, 0, 0, 40%); </string>
-            </property>
         </widget>
        </item>
        <item>
@@ -606,12 +571,57 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_tip_header">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Helpful tip of the day:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_tip">
+           <property name="text">
+            <string>Tip</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
     </layout>
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../bitcoin.qrc"/>
+ </resources>
  <connections/>
 </ui>

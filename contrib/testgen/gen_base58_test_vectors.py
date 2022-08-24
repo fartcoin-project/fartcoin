@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Copyright (c) 2012-2016 The Bitcoin Core developers
+# Copyright (c) 2019 The Fartcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -19,11 +20,11 @@ from binascii import b2a_hex
 
 # key types
 PUBKEY_ADDRESS = 30
-SCRIPT_ADDRESS = 5
-PUBKEY_ADDRESS_TEST = 111
+SCRIPT_ADDRESS = 22
+PUBKEY_ADDRESS_TEST = 113
 SCRIPT_ADDRESS_TEST = 196
 PRIVKEY = 158
-PRIVKEY_TEST = 239
+PRIVKEY_TEST = 241
 
 metadata_keys = ['isPrivkey', 'isTestnet', 'addrType', 'isCompressed']
 # templates for valid sequences

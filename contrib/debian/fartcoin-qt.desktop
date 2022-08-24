@@ -1,7 +1,7 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=Fartcoin
-Comment=Fartcoin P2P Cryptocurrency
+Name=Fartcoin Core
+Comment=Connect to the Fartcoin P2P Network
+Comment[de]=Verbinde mit dem Fartcoin peer-to-peer Netzwerk
 Comment[fr]=Fartcoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Fartcoin, eşten eşe kriptografik sanal para birimi
 Exec=fartcoin-qt %u

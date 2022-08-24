@@ -1,5 +1,6 @@
-#!/usr/bin/env python2
-# Copyright (c) 2014 The Bitcoin Core developers
+#!/usr/bin/env python3
+# Copyright (c) 2014-2016 The Bitcoin Core developers
+# Copyright (c) 2022 The Fartcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,19 +38,20 @@ from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 from random import randint
 import logging
-logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO, stream=sys.stdout)
 
 class WalletBackupTest(BitcoinTestFramework):
 
-    def setup_chain(self):
-        logging.info("Initializing test directory "+self.options.tmpdir)
-        initialize_chain_clean(self.options.tmpdir, 4)
+    def __init__(self):
+        super().__init__()
+        self.setup_clean_chain = True
+        self.num_nodes = 4
+        # nodes 1, 2,3 are spenders, let's give them a keypool=100
+        self.extra_args = [["-keypool=100"], ["-keypool=100"], ["-keypool=100"], []]
 
     # This mirrors how the network was setup in the bash test
     def setup_network(self, split=False):
-        # nodes 1, 2,3 are spenders, let's give them a keypool=100
-        extra_args = [["-keypool=100"], ["-keypool=100"], ["-keypool=100"], []]
-        self.nodes = start_nodes(4, self.options.tmpdir, extra_args)
+        self.nodes = start_nodes(self.num_nodes, self.options.tmpdir, self.extra_args)
         connect_nodes(self.nodes[0], 3)
         connect_nodes(self.nodes[1], 3)
         connect_nodes(self.nodes[2], 3)
@@ -78,6 +80,7 @@ class WalletBackupTest(BitcoinTestFramework):
         # Must sync mempools before mining.
         sync_mempools(self.nodes)
         self.nodes[3].generate(1)
+        sync_blocks(self.nodes)
 
     # As above, this mirrors the original bash test.
     def start_three(self):
@@ -122,11 +125,11 @@ class WalletBackupTest(BitcoinTestFramework):
 
         logging.info("Backing up")
         tmpdir = self.options.tmpdir
-        self.nodes[0].backupwallet(tmpdir + "/node0/wallet.bak")
+        self.nodes[0].backupwallet(tmpdir + "/node0/wallet0.bak")
         self.nodes[0].dumpwallet(tmpdir + "/node0/wallet.dump")
-        self.nodes[1].backupwallet(tmpdir + "/node1/wallet.bak")
+        self.nodes[1].backupwallet(tmpdir + "/node1/wallet1.bak")
         self.nodes[1].dumpwallet(tmpdir + "/node1/wallet.dump")
-        self.nodes[2].backupwallet(tmpdir + "/node2/wallet.bak")
+        self.nodes[2].backupwallet(tmpdir + "/node2/wallet2.bak")
         self.nodes[2].dumpwallet(tmpdir + "/node2/wallet.dump")
 
         logging.info("More transactions")
@@ -159,9 +162,9 @@ class WalletBackupTest(BitcoinTestFramework):
         shutil.rmtree(self.options.tmpdir + "/node2/regtest/chainstate")
 
         # Restore wallets from backup
-        shutil.copyfile(tmpdir + "/node0/wallet.bak", tmpdir + "/node0/regtest/wallet.dat")
-        shutil.copyfile(tmpdir + "/node1/wallet.bak", tmpdir + "/node1/regtest/wallet.dat")
-        shutil.copyfile(tmpdir + "/node2/wallet.bak", tmpdir + "/node2/regtest/wallet.dat")
+        shutil.copyfile(tmpdir + "/node0/regtest/backups/wallet0.bak", tmpdir + "/node0/regtest/wallet.dat")
+        shutil.copyfile(tmpdir + "/node1/regtest/backups/wallet1.bak", tmpdir + "/node1/regtest/wallet.dat")
+        shutil.copyfile(tmpdir + "/node2/regtest/backups/wallet2.bak", tmpdir + "/node2/regtest/wallet.dat")
 
         logging.info("Re-starting nodes")
         self.start_three()
@@ -185,15 +188,26 @@ class WalletBackupTest(BitcoinTestFramework):
         assert_equal(self.nodes[1].getbalance(), 0)
         assert_equal(self.nodes[2].getbalance(), 0)
 
-        self.nodes[0].importwallet(tmpdir + "/node0/wallet.dump")
-        self.nodes[1].importwallet(tmpdir + "/node1/wallet.dump")
-        self.nodes[2].importwallet(tmpdir + "/node2/wallet.dump")
+        self.nodes[0].importwallet(tmpdir + "/node0/regtest/backups/wallet.dump")
+        self.nodes[1].importwallet(tmpdir + "/node1/regtest/backups/wallet.dump")
+        self.nodes[2].importwallet(tmpdir + "/node2/regtest/backups/wallet.dump")
 
         sync_blocks(self.nodes)
 
         assert_equal(self.nodes[0].getbalance(), balance0)
         assert_equal(self.nodes[1].getbalance(), balance1)
         assert_equal(self.nodes[2].getbalance(), balance2)
+
+        # start a node that writes backups with a -backupdir
+        initialize_datadir(tmpdir, 4)
+        backupdir = tmpdir + "/onebackup"
+        os.makedirs(backupdir)
+        backupdirnode = start_node(4, tmpdir, extra_args=["-backupdir=" + backupdir])
+        backupdirnode.dumpwallet('backupwallet.dump')
+        backupdirnode.importwallet(tmpdir + "/onebackup/backupwallet.dump")
+        stop_node(backupdirnode, 4)
+        assert(os.path.exists(tmpdir + "/onebackup/backupwallet.dump"))
+
 
 
 if __name__ == '__main__':
