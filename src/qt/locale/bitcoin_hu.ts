@@ -2401,7 +2401,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Add meg a választott tranzakciós díjat kB (1000 bájt) -onként a tranzakció virtuális méretére számolva.
 
-Figyelem: Mivel bájtonként lesz a dj kiszámolva ezért a "100 satoshi per kB" egy 500 bájtos (fél kB) tranzakciónál  ténylegesen 50 satoshi lesz.</translation>
+Figyelem: Mivel bájtonként lesz a dj kiszámolva ezért a "100 farticleper kB" egy 500 bájtos (fél kB) tranzakciónál  ténylegesen 50 farticlelesz.</translation>
     </message>
     <message>
         <source>per kilobyte</source>

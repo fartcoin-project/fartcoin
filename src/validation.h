@@ -52,6 +52,29 @@ struct DisconnectedBlockTransactions;
 struct PrecomputedTransactionData;
 struct LockPoints;
 
+#include <iostream>
+using namespace std;
+
+template <class TblockValue>
+class nHeightDivided {
+    private:
+        TblockValue firstValue, secondValue;
+    public:
+        nHeightDivided (TblockValue a, TblockValue b):
+        firstValue(a), secondValue(b) { }
+        TblockValue devideValue();
+};
+
+template <class TblockValue>
+TblockValue nHeightDivided<TblockValue>::devideValue() {
+    return (firstValue/secondValue);
+}
+
+template <class UblockValue, class VblockValue>
+UblockValue SubsidyValue(UblockValue a, VblockValue b) {
+    return (a / b);
+}
+
 /** Default for -minrelaytxfee, minimum relay fee for transactions */
 static const unsigned int DEFAULT_MIN_RELAY_TX_FEE = 1000;
 /** Default for -limitancestorcount, max number of in-mempool ancestors */

@@ -338,9 +338,9 @@ static RPCHelpMan disconnectnode()
                 },
                 RPCResult{RPCResult::Type::NONE, "", ""},
                 RPCExamples{
-                    HelpExampleCli("disconnectnode", "\"192.168.0.6:8333\"")
+                    HelpExampleCli("disconnectnode", "\"192.168.0.6:13377\"")
             + HelpExampleCli("disconnectnode", "\"\" 1")
-            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:8333\"")
+            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:13377\"")
             + HelpExampleRpc("disconnectnode", "\"\", 1")
                 },
         [&](const RPCHelpMan& self, const JSONRPCRequest& request) -> UniValue
@@ -392,7 +392,7 @@ static RPCHelpMan getaddednodeinfo()
                             {
                                 {RPCResult::Type::OBJ, "", "",
                                 {
-                                    {RPCResult::Type::STR, "address", "The litecoin server IP and port we're connected to"},
+                                    {RPCResult::Type::STR, "address", "The fartcoin server IP and port we're connected to"},
                                     {RPCResult::Type::STR, "connected", "connection, inbound or outbound"},
                                 }},
                             }},
@@ -856,8 +856,8 @@ static RPCHelpMan addpeeraddress()
             },
         },
         RPCExamples{
-            HelpExampleCli("addpeeraddress", "\"1.2.3.4\" 8333")
-    + HelpExampleRpc("addpeeraddress", "\"1.2.3.4\", 8333")
+            HelpExampleCli("addpeeraddress", "\"1.2.3.4\" 13377")
+    + HelpExampleRpc("addpeeraddress", "\"1.2.3.4\", 13377")
         },
         [&](const RPCHelpMan& self, const JSONRPCRequest& request) -> UniValue
 {

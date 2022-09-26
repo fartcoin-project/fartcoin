@@ -725,7 +725,7 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Puede variar +/- %1 satoshi (s) por entrada.</translation>
+        <translation>Puede variar +/- %1 farticle(s) por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>

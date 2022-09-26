@@ -807,7 +807,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Kan variere med ±%1 satoshi per input.</translation>
+        <translation>Kan variere med ±%1 farticleper input.</translation>
     </message>
     <message>
         <source>(no label)</source>

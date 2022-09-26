@@ -808,7 +808,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>インプット毎に %1 satoshi 前後変動する場合があります。</translation>
+        <translation>インプット毎に %1 farticle前後変動する場合があります。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2407,7 +2407,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>トランザクションの仮想サイズの1 kB(1,000 バイト)あたりのカスタム手数料を指定する。
 
-注: 手数料はバイト単位で計算されるので、500 バイト(1 kBの半分)のトランザクションサイズに対する「1 kBあたり 100 satoshi」の手数料は、最終的にはわずか 50 satoshi となります。</translation>
+注: 手数料はバイト単位で計算されるので、500 バイト(1 kBの半分)のトランザクションサイズに対する「1 kBあたり 100 satoshi」の手数料は、最終的にはわずか 50 farticleとなります。</translation>
     </message>
     <message>
         <source>per kilobyte</source>

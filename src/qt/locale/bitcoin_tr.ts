@@ -800,7 +800,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Her girdi için +/- %1 satoshi değişebilir.</translation>
+        <translation>Her girdi için +/- %1 farticledeğişebilir.</translation>
     </message>
     <message>
         <source>(no label)</source>

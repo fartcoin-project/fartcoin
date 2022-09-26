@@ -26,11 +26,11 @@ TxType MWEB::GetTxType(const std::vector<CRecipient>& recipients, const std::set
     } else {
         // If any inputs are MWEB inputs, this is a peg-out transaction.
         // NOTE: This does not exclude the possibility that it's also pegging-in in addition to the pegout.
-        // Otherwise, if there are no MWEB inputs, it's a simple LTC-to-LTC transaction.
+        // Otherwise, if there are no MWEB inputs, it's a simple FART-to-FART transaction.
         if (std::any_of(input_coins.cbegin(), input_coins.cend(), is_mweb)) {
             return TxType::PEGOUT;
         } else {
-            return TxType::LTC_TO_LTC;
+            return TxType::FART_TO_FART;
         }
     }
 }
@@ -75,7 +75,7 @@ uint64_t MWEB::CalcMWEBWeight(const MWEB::TxType& mweb_type, const bool change_o
         mweb_weight += mw::STANDARD_OUTPUT_WEIGHT;
     }
 
-    if (mweb_type != MWEB::TxType::LTC_TO_LTC) {
+    if (mweb_type != MWEB::TxType::FART_TO_FART) {
         CScript pegout_script = (mweb_type == MWEB::TxType::PEGOUT) ? recipients.front().GetScript() : CScript();
         mweb_weight += Weight::CalcKernelWeight(true, pegout_script);
     }
@@ -120,7 +120,7 @@ void Transact::AddMWEBTx(InProcessTx& new_tx)
         }
     }
 
-    // Lookup the change paid on the LTC side
+    // Lookup the change paid on the FART side
     CAmount ltc_change = 0;
     if (new_tx.change_position != -1) {
         assert(new_tx.tx.vout.size() > (size_t)new_tx.change_position);

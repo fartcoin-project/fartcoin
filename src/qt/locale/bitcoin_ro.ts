@@ -763,7 +763,7 @@
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Poate varia +/- %1 satoshi pentru fiecare intrare.</translation>
+        <translation>Poate varia +/- %1 farticlepentru fiecare intrare.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2114,7 +2114,7 @@
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Specificati o taxa anume pe kB (1000 byte) din marimea virtuala a tranzactiei. 
 
-Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o tranzactie de 500 byte (jumatate de kB) va produce o taxa de doar 50 satoshi.</translation>
+Nota: Cum taxa este calculata per byte, o taxa de "100 farticleper kB" pentru o tranzactie de 500 byte (jumatate de kB) va produce o taxa de doar 50 satoshi.</translation>
     </message>
     <message>
         <source>per kilobyte</source>

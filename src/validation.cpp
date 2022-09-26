@@ -640,7 +640,7 @@ bool MemPoolAccept::PreChecks(ATMPArgs& args, Workspace& ws)
                 // insecure.
                 bool fReplacementOptOut = true;
 
-                // Litecoin: Only support BIP125 RBF when -mempoolreplacement arg is set
+                // Fartcoin: Only support BIP125 RBF when -mempoolreplacement arg is set
                 if (gArgs.GetArg("-mempoolreplacement", DEFAULT_ENABLE_REPLACEMENT)) {
                     for (const CTxIn &_txin : ptxConflicting->vin)
                     {
@@ -1265,14 +1265,23 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+	// After block 10.000.000 block reward stays at 1 FART per block
+    CAmount nSubsidy = 1 * COIN;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+    if(nHeight < 10000001)
+    {
+	int64_t minsub = 1 * COIN;
+        nHeightDivided <double> obj(nHeight, 10000000);
+        double heightresult = obj.devideValue();
+        nSubsidy = SubsidyValue(minsub,heightresult);
+
+    }
+
+    else
+    {
+        nSubsidy = 1 * COIN;
+    }
+
     return nSubsidy;
 }
 

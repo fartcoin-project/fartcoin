@@ -14,7 +14,7 @@ struct InProcessTx;
 namespace MWEB {
 
 enum class TxType {
-    LTC_TO_LTC,
+    FART_TO_FART,
     MWEB_TO_MWEB,
     PEGIN,
     PEGOUT // NOTE: It's possible pegout transactions will also have pegins, but they will still be classified as PEGOUT

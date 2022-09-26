@@ -2,13 +2,13 @@
 # Copyright (c) 2015-2019 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test litecoind with different proxy configuration.
+"""Test fartcoind with different proxy configuration.
 
 Test plan:
-- Start litecoind's with different proxy configurations
+- Start fartcoind's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on litecoind side:
+- Proxy configurations to test on fartcoind side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -142,28 +142,28 @@ class ProxyTest(BitcoinTestFramework):
             self.network_test(node, addr, network=NET_IPV6)
 
         if test_onion:
-            addr = "bitcoinostk4e4re.onion:8333"
+            addr = "bitcoinostk4e4re.onion:13377"
             self.log.debug("Test: outgoing onion connection through node for address {}".format(addr))
             node.addnode(addr, "onetry")
             cmd = proxies[2].queue.get()
             assert isinstance(cmd, Socks5Command)
             assert_equal(cmd.atyp, AddressType.DOMAINNAME)
             assert_equal(cmd.addr, b"bitcoinostk4e4re.onion")
-            assert_equal(cmd.port, 8333)
+            assert_equal(cmd.port, 13377)
             if not auth:
                 assert_equal(cmd.username, None)
                 assert_equal(cmd.password, None)
             rv.append(cmd)
             self.network_test(node, addr, network=NET_ONION)
 
-        addr = "node.noumenon:8333"
+        addr = "node.noumenon:13377"
         self.log.debug("Test: outgoing DNS name connection through node for address {}".format(addr))
         node.addnode(addr, "onetry")
         cmd = proxies[3].queue.get()
         assert isinstance(cmd, Socks5Command)
         assert_equal(cmd.atyp, AddressType.DOMAINNAME)
         assert_equal(cmd.addr, b"node.noumenon")
-        assert_equal(cmd.port, 8333)
+        assert_equal(cmd.port, 13377)
         if not auth:
             assert_equal(cmd.username, None)
             assert_equal(cmd.password, None)

@@ -11,7 +11,7 @@
 
 #include <string>
 
-const std::string CURRENCY_UNIT = "LTC"; // One formatted unit
+const std::string CURRENCY_UNIT = "FART"; // One formatted unit
 const std::string CURRENCY_ATOM = "sat"; // One indivisible minimum value unit
 
 /* Used to determine type of fee estimation requested */
@@ -29,16 +29,16 @@ enum class FeeEstimateMode {
 class CFeeRate
 {
 private:
-    CAmount nSatoshisPerK; // unit is satoshis-per-1,000-bytes
+    CAmount nFarticlesPerK; // unit is satoshis-per-1,000-bytes
     CAmount m_nFeePaid;
     size_t m_nBytes;
     uint64_t m_weight;
 
 public:
     /** Fee rate of 0 satoshis per kB */
-    CFeeRate() : nSatoshisPerK(0) { }
+    CFeeRate() : nFarticlesPerK(0) { }
     template<typename I>
-    explicit CFeeRate(const I _nSatoshisPerK): nSatoshisPerK(_nSatoshisPerK) {
+    explicit CFeeRate(const I _nFarticlesPerK): nFarticlesPerK(_nFarticlesPerK) {
         // We've previously had bugs creep in from silent double->int conversion...
         static_assert(std::is_integral<I>::value, "CFeeRate should be used without floats");
     }
@@ -72,13 +72,13 @@ public:
 
     bool MeetsFeePerK(const CAmount& min_fee_per_k) const;
 
-    friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK < b.nSatoshisPerK; }
-    friend bool operator>(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK > b.nSatoshisPerK; }
-    friend bool operator==(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK == b.nSatoshisPerK; }
-    friend bool operator<=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK <= b.nSatoshisPerK; }
-    friend bool operator>=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK >= b.nSatoshisPerK; }
-    friend bool operator!=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK != b.nSatoshisPerK; }
-    CFeeRate& operator+=(const CFeeRate& a) { nSatoshisPerK += a.nSatoshisPerK; return *this; }
+    friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK < b.nFarticlesPerK; }
+    friend bool operator>(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK > b.nFarticlesPerK; }
+    friend bool operator==(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK == b.nFarticlesPerK; }
+    friend bool operator<=(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK <= b.nFarticlesPerK; }
+    friend bool operator>=(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK >= b.nFarticlesPerK; }
+    friend bool operator!=(const CFeeRate& a, const CFeeRate& b) { return a.nFarticlesPerK != b.nFarticlesPerK; }
+    CFeeRate& operator+=(const CFeeRate& a) { nFarticlesPerK += a.nFarticlesPerK; return *this; }
     std::string ToString(const FeeEstimateMode& fee_estimate_mode = FeeEstimateMode::BTC_KVB) const;
 
     SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.nSatoshisPerK); }
