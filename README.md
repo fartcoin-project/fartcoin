@@ -9,6 +9,18 @@
 Fartcoin is a cryptocurrency like Bitcoin, although it does not use SHA256 but Fartcoin currently employs a simplified variant of scrypt as its proof of work (POW). We are taking development cues from Bitcoin, Litecoin & Dogecoin.
 This is the first V1.0-Beta release of the fartcoin-core wallet. The Fartcoin blockchain is implemented in the dogecoin-1.14-beta-1 wallet and got a graphical upgrade to the "Space Police" theme.
 
+### Are you active on X (twitter)?   ---> @farticula <---
+##### No not at all, although I created an account @farticula for the fartcoin-project, as reaction to the request from the crypto community. Am still using the old fartcoin logo.
+
+### Is the marketcap of ƒartcoin [ƒ⌂┌†] listed somewhere?  
+##### No, any other Fartcoin is a token by someone else. As for the moment I am only involved with this github project, any other Fartcoin is unrelated to this project. 
+
+### Why is the network down?
+##### Over the past years there was only one core wallet online, because of a shortage of nodes, the blockchain paused. 
+
+### Who is that dog?
+##### That is our Shih Tzu named Katy
+
 # The website, Fartcoin-project.com  MemesExchange.com, the BlockExplorer and the MiningPool are all servers that are being build at home and are 24/7 online.
 
 ## Frequently Asked Questions
